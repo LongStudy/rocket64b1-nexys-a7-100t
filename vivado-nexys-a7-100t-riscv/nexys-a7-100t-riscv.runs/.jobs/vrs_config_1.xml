@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="riscv_axi_smc_1_0_synth_1" LaunchDir="/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.runs/riscv_axi_smc_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="riscv_mem_reset_control_0_0_synth_1" LaunchDir="/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.runs/riscv_mem_reset_control_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="riscv_mig_7series_0_0_synth_1" LaunchDir="/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.runs/riscv_mig_7series_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="riscv_Ethernet_0_synth_1" LaunchDir="/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.runs/riscv_Ethernet_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="riscv_SD_0_synth_1" LaunchDir="/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.runs/riscv_SD_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="riscv_UART_0_synth_1" LaunchDir="/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.runs/riscv_UART_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="riscv_XADC_0_synth_1" LaunchDir="/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.runs/riscv_XADC_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="riscv_ethernet_stream_0_0_synth_1" LaunchDir="/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.runs/riscv_ethernet_stream_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="riscv_io_axi_m_0_synth_1" LaunchDir="/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.runs/riscv_io_axi_m_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="riscv_io_axi_s_0_synth_1" LaunchDir="/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.runs/riscv_io_axi_s_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="riscv_RocketChip_0_synth_1" LaunchDir="/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.runs/riscv_RocketChip_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="riscv_clk_wiz_0_0_synth_1" LaunchDir="/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.runs/riscv_clk_wiz_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="riscv_util_vector_logic_0_0_synth_1" LaunchDir="/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.runs/riscv_util_vector_logic_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="riscv_axi_smc_1_0_synth_1"/>
+		<Parent Id="riscv_mem_reset_control_0_0_synth_1"/>
+		<Parent Id="riscv_mig_7series_0_0_synth_1"/>
+		<Parent Id="riscv_Ethernet_0_synth_1"/>
+		<Parent Id="riscv_SD_0_synth_1"/>
+		<Parent Id="riscv_UART_0_synth_1"/>
+		<Parent Id="riscv_XADC_0_synth_1"/>
+		<Parent Id="riscv_ethernet_stream_0_0_synth_1"/>
+		<Parent Id="riscv_io_axi_m_0_synth_1"/>
+		<Parent Id="riscv_io_axi_s_0_synth_1"/>
+		<Parent Id="riscv_RocketChip_0_synth_1"/>
+		<Parent Id="riscv_clk_wiz_0_0_synth_1"/>
+		<Parent Id="riscv_util_vector_logic_0_0_synth_1"/>
+	</Run>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+		<Parameter Name="runs.enableClusterConf" Val="true" Type="bool"/>
+	</Parameters>
+</Runs>
+

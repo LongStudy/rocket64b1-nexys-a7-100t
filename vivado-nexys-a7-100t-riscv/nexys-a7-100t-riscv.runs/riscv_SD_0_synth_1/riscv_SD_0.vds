@@ -1,0 +1,447 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Nov 15 19:22:26 2022
+# Process ID: 4528
+# Current directory: /mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.runs/riscv_SD_0_synth_1
+# Command line: vivado -log riscv_SD_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source riscv_SD_0.tcl
+# Log file: /mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.runs/riscv_SD_0_synth_1/riscv_SD_0.vds
+# Journal file: /mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.runs/riscv_SD_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+INFO: [Common 17-1239] XILINX_LOCAL_USER_DATA is set to 'no'.
+source riscv_SD_0.tcl -notrace
+Command: synth_design -top riscv_SD_0 -part xc7a100tcsg324-1 -mode out_of_context
+Starting synth_design
+WARNING: [IP_Flow 19-3571] IP 'riscv_SD_0' is restricted:
+* Module reference is stale and needs refreshing.
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 1 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 4671
+WARNING: [Synth 8-6901] identifier 'fifo_data_len' is used before its declaration [/mnt/d/vivado-risc-v/sdc/axi_sdc_controller.v:210]
+WARNING: [Synth 8-6901] identifier 'fifo_free_len' is used before its declaration [/mnt/d/vivado-risc-v/sdc/axi_sdc_controller.v:215]
+WARNING: [Synth 8-6901] identifier 'm_axi_write' is used before its declaration [/mnt/d/vivado-risc-v/sdc/axi_sdc_controller.v:425]
+WARNING: [Synth 8-6901] identifier 'm_bus_dat_i' is used before its declaration [/mnt/d/vivado-risc-v/sdc/axi_sdc_controller.v:425]
+WARNING: [Synth 8-6901] identifier 'm_axi_write' is used before its declaration [/mnt/d/vivado-risc-v/sdc/axi_sdc_controller.v:426]
+WARNING: [Synth 8-6901] identifier 'm_axi_write' is used before its declaration [/mnt/d/vivado-risc-v/sdc/axi_sdc_controller.v:427]
+WARNING: [Synth 8-6901] identifier 'm_axi_bresp_cnt' is used before its declaration [/mnt/d/vivado-risc-v/sdc/axi_sdc_controller.v:431]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2304.457 ; gain = 0.000 ; free physical = 18487 ; free virtual = 27389
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'riscv_SD_0' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_SD_0/synth/riscv_SD_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'sdc_controller' [/mnt/d/vivado-risc-v/sdc/axi_sdc_controller.v:33]
+	Parameter fifo_addr_bits bound to: 7 - type: integer 
+	Parameter sdio_card_detect_level bound to: 0 - type: integer 
+	Parameter voltage_controll_reg bound to: 3300 - type: integer 
+	Parameter capabilies_reg bound to: 16'b0000000000000011 
+INFO: [Synth 8-6157] synthesizing module 'IOBUF' [/opt/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:36242]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IOBUF' (1#1) [/opt/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:36242]
+INFO: [Synth 8-155] case statement is not full and has no default [/mnt/d/vivado-risc-v/sdc/axi_sdc_controller.v:348]
+INFO: [Synth 8-155] case statement is not full and has no default [/mnt/d/vivado-risc-v/sdc/axi_sdc_controller.v:388]
+INFO: [Synth 8-6157] synthesizing module 'sd_cmd_master' [/mnt/d/vivado-risc-v/sdc/sd_cmd_master.v:34]
+	Parameter IDLE bound to: 3'b001 
+	Parameter EXECUTE bound to: 3'b010 
+	Parameter BUSY_CHECK bound to: 3'b100 
+INFO: [Synth 8-155] case statement is not full and has no default [/mnt/d/vivado-risc-v/sdc/sd_cmd_master.v:90]
+INFO: [Synth 8-6155] done synthesizing module 'sd_cmd_master' (2#1) [/mnt/d/vivado-risc-v/sdc/sd_cmd_master.v:34]
+INFO: [Synth 8-6157] synthesizing module 'sd_cmd_serial_host' [/mnt/d/vivado-risc-v/sdc/sd_cmd_serial_host.v:33]
+	Parameter INIT_DELAY bound to: 4 - type: integer 
+	Parameter BITS_TO_SEND bound to: 48 - type: integer 
+	Parameter CMD_SIZE bound to: 40 - type: integer 
+	Parameter RESP_SIZE bound to: 128 - type: integer 
+	Parameter STATE_SIZE bound to: 8 - type: integer 
+	Parameter INIT bound to: 8'b00000001 
+	Parameter IDLE bound to: 8'b00000010 
+	Parameter SETUP_CRC bound to: 8'b00000100 
+	Parameter WRITE bound to: 8'b00001000 
+	Parameter READ_WAIT bound to: 8'b00010000 
+	Parameter READ bound to: 8'b00100000 
+	Parameter FINISH_WR bound to: 8'b01000000 
+	Parameter FINISH_WO bound to: 8'b10000000 
+INFO: [Synth 8-6157] synthesizing module 'sd_crc_7' [/mnt/d/vivado-risc-v/sdc/sd_cmd_serial_host.v:238]
+INFO: [Synth 8-6155] done synthesizing module 'sd_crc_7' (3#1) [/mnt/d/vivado-risc-v/sdc/sd_cmd_serial_host.v:238]
+INFO: [Synth 8-6155] done synthesizing module 'sd_cmd_serial_host' (4#1) [/mnt/d/vivado-risc-v/sdc/sd_cmd_serial_host.v:33]
+INFO: [Synth 8-6157] synthesizing module 'sd_data_master' [/mnt/d/vivado-risc-v/sdc/sd_data_master.v:34]
+	Parameter IDLE bound to: 4'b0001 
+	Parameter START_TX_FIFO bound to: 4'b0010 
+	Parameter START_RX_FIFO bound to: 4'b0100 
+	Parameter DATA_TRANSFER bound to: 4'b1000 
+INFO: [Synth 8-155] case statement is not full and has no default [/mnt/d/vivado-risc-v/sdc/sd_data_master.v:80]
+INFO: [Synth 8-6155] done synthesizing module 'sd_data_master' (5#1) [/mnt/d/vivado-risc-v/sdc/sd_data_master.v:34]
+INFO: [Synth 8-6157] synthesizing module 'sd_data_serial_host' [/mnt/d/vivado-risc-v/sdc/sd_data_serial_host.v:34]
+	Parameter IDLE bound to: 7'b0000001 
+	Parameter WRITE_DAT bound to: 7'b0000010 
+	Parameter WRITE_WAIT bound to: 7'b0000100 
+	Parameter WRITE_DRT bound to: 7'b0001000 
+	Parameter WRITE_BUSY bound to: 7'b0010000 
+	Parameter READ_WAIT bound to: 7'b0100000 
+	Parameter READ_DAT bound to: 7'b1000000 
+INFO: [Synth 8-6157] synthesizing module 'sd_crc_16' [/mnt/d/vivado-risc-v/sdc/sd_data_serial_host.v:278]
+INFO: [Synth 8-6155] done synthesizing module 'sd_crc_16' (6#1) [/mnt/d/vivado-risc-v/sdc/sd_data_serial_host.v:278]
+INFO: [Synth 8-6155] done synthesizing module 'sd_data_serial_host' (7#1) [/mnt/d/vivado-risc-v/sdc/sd_data_serial_host.v:34]
+WARNING: [Synth 8-689] width (32) of port connection 'byte_alignment' does not match port width (2) of module 'sd_data_serial_host' [/mnt/d/vivado-risc-v/sdc/axi_sdc_controller.v:642]
+INFO: [Synth 8-6155] done synthesizing module 'sdc_controller' (8#1) [/mnt/d/vivado-risc-v/sdc/axi_sdc_controller.v:33]
+INFO: [Synth 8-6155] done synthesizing module 'riscv_SD_0' (9#1) [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_SD_0/synth/riscv_SD_0.v:58]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2304.457 ; gain = 0.000 ; free physical = 18807 ; free virtual = 27708
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2304.457 ; gain = 0.000 ; free physical = 18867 ; free virtual = 27768
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2304.457 ; gain = 0.000 ; free physical = 18867 ; free virtual = 27768
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2304.457 ; gain = 0.000 ; free physical = 18859 ; free virtual = 27760
+INFO: [Netlist 29-17] Analyzing 5 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2312.395 ; gain = 0.000 ; free physical = 18701 ; free virtual = 27602
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 5 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 5 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.07 . Memory (MB): peak = 2312.395 ; gain = 0.000 ; free physical = 18700 ; free virtual = 27601
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2312.395 ; gain = 7.938 ; free physical = 18843 ; free virtual = 27744
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2312.395 ; gain = 7.938 ; free physical = 18843 ; free virtual = 27744
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2312.395 ; gain = 7.938 ; free physical = 18843 ; free virtual = 27744
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'sd_cmd_master'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'sd_cmd_serial_host'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'sd_data_master'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'sd_data_serial_host'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    IDLE |                              001 |                              001
+                 EXECUTE |                              010 |                              010
+              BUSY_CHECK |                              100 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'state_reg' in module 'sd_cmd_master'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    INIT |                         00000001 |                         00000001
+                    IDLE |                         00000010 |                         00000010
+               SETUP_CRC |                         00000100 |                         00000100
+                   WRITE |                         00001000 |                         00001000
+               READ_WAIT |                         00010000 |                         00010000
+                    READ |                         00100000 |                         00100000
+               FINISH_WR |                         01000000 |                         01000000
+               FINISH_WO |                         10000000 |                         10000000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'state_reg' in module 'sd_cmd_serial_host'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    IDLE |                             0001 |                             0001
+           START_TX_FIFO |                             0010 |                             0010
+           START_RX_FIFO |                             0100 |                             0100
+           DATA_TRANSFER |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'state_reg' in module 'sd_data_master'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    IDLE |                          0000001 |                          0000001
+               WRITE_DAT |                          0000010 |                          0000010
+              WRITE_WAIT |                          0000100 |                          0000100
+               WRITE_DRT |                          0001000 |                          0001000
+              WRITE_BUSY |                          0010000 |                          0010000
+               READ_WAIT |                          0100000 |                          0100000
+                READ_DAT |                          1000000 |                          1000000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'state_reg' in module 'sd_data_serial_host'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 2312.395 ; gain = 7.938 ; free physical = 18830 ; free virtual = 27731
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 4     
+	   3 Input   32 Bit       Adders := 1     
+	   2 Input   30 Bit       Adders := 1     
+	   2 Input   28 Bit       Adders := 1     
+	   2 Input   25 Bit       Adders := 1     
+	   2 Input   17 Bit       Adders := 5     
+	   2 Input   16 Bit       Adders := 3     
+	   2 Input   14 Bit       Adders := 1     
+	   2 Input   10 Bit       Adders := 2     
+	   2 Input    9 Bit       Adders := 1     
+	   2 Input    8 Bit       Adders := 2     
+	   2 Input    7 Bit       Adders := 5     
+	   3 Input    7 Bit       Adders := 4     
+	   2 Input    6 Bit       Adders := 2     
+	   2 Input    5 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 2     
+	   2 Input    3 Bit       Adders := 2     
+	   3 Input    3 Bit       Adders := 1     
+	   3 Input    2 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 14    
++---Registers : 
+	              128 Bit    Registers := 1     
+	              120 Bit    Registers := 1     
+	               40 Bit    Registers := 2     
+	               32 Bit    Registers := 14    
+	               30 Bit    Registers := 1     
+	               28 Bit    Registers := 2     
+	               25 Bit    Registers := 2     
+	               16 Bit    Registers := 9     
+	               14 Bit    Registers := 1     
+	               12 Bit    Registers := 1     
+	                8 Bit    Registers := 6     
+	                7 Bit    Registers := 4     
+	                6 Bit    Registers := 2     
+	                5 Bit    Registers := 3     
+	                4 Bit    Registers := 7     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 5     
+	                1 Bit    Registers := 55    
++---RAMs : 
+	               4K Bit	(128 X 32 bit)          RAMs := 1     
++---Muxes : 
+	   2 Input  128 Bit        Muxes := 3     
+	   9 Input  128 Bit        Muxes := 2     
+	   9 Input  120 Bit        Muxes := 1     
+	   9 Input   32 Bit        Muxes := 2     
+	   2 Input   32 Bit        Muxes := 8     
+	   8 Input   32 Bit        Muxes := 1     
+	  22 Input   32 Bit        Muxes := 1     
+	   2 Input   30 Bit        Muxes := 1     
+	   5 Input   28 Bit        Muxes := 1     
+	   4 Input   25 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 1     
+	   8 Input   16 Bit        Muxes := 2     
+	   9 Input    8 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 1     
+	   5 Input    8 Bit        Muxes := 2     
+	   2 Input    7 Bit        Muxes := 5     
+	   9 Input    7 Bit        Muxes := 1     
+	   8 Input    7 Bit        Muxes := 1     
+	   5 Input    6 Bit        Muxes := 2     
+	   2 Input    6 Bit        Muxes := 8     
+	   2 Input    5 Bit        Muxes := 10    
+	   4 Input    5 Bit        Muxes := 2     
+	   8 Input    5 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 17    
+	   5 Input    4 Bit        Muxes := 1     
+	   8 Input    4 Bit        Muxes := 6     
+	   4 Input    3 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 3     
+	   8 Input    2 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 12    
+	   5 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 94    
+	   4 Input    1 Bit        Muxes := 10    
+	   3 Input    1 Bit        Muxes := 3     
+	   9 Input    1 Bit        Muxes := 22    
+	   5 Input    1 Bit        Muxes := 8     
+	   8 Input    1 Bit        Muxes := 21    
+	  16 Input    1 Bit        Muxes := 18    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 2312.395 ; gain = 7.938 ; free physical = 18799 ; free virtual = 27701
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping	Report (see note below)
++------------+-------------------+-----------+----------------------+---------------------------+
+|Module Name | RTL Object        | Inference | Size (Depth x Width) | Primitives                | 
++------------+-------------------+-----------+----------------------+---------------------------+
+|riscv_SD_0  | inst/fifo_mem_reg | Implied   | 128 x 32             | RAM64X1D x 4	RAM64M x 20	 | 
++------------+-------------------+-----------+----------------------+---------------------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 2312.395 ; gain = 7.938 ; free physical = 18684 ; free virtual = 27585
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 2312.395 ; gain = 7.938 ; free physical = 18684 ; free virtual = 27585
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping	Report
++------------+-------------------+-----------+----------------------+---------------------------+
+|Module Name | RTL Object        | Inference | Size (Depth x Width) | Primitives                | 
++------------+-------------------+-----------+----------------------+---------------------------+
+|riscv_SD_0  | inst/fifo_mem_reg | Implied   | 128 x 32             | RAM64X1D x 4	RAM64M x 20	 | 
++------------+-------------------+-----------+----------------------+---------------------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 2312.395 ; gain = 7.938 ; free physical = 18685 ; free virtual = 27586
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 2312.395 ; gain = 7.938 ; free physical = 18685 ; free virtual = 27586
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 2312.395 ; gain = 7.938 ; free physical = 18685 ; free virtual = 27586
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 2312.395 ; gain = 7.938 ; free physical = 18685 ; free virtual = 27586
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 2312.395 ; gain = 7.938 ; free physical = 18685 ; free virtual = 27586
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 2312.395 ; gain = 7.938 ; free physical = 18685 ; free virtual = 27586
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 2312.395 ; gain = 7.938 ; free physical = 18685 ; free virtual = 27586
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY4   |   175|
+|2     |LUT1     |    59|
+|3     |LUT2     |   562|
+|4     |LUT3     |   203|
+|5     |LUT4     |   296|
+|6     |LUT5     |   293|
+|7     |LUT6     |   528|
+|8     |MUXF7    |    13|
+|9     |MUXF8    |     4|
+|10    |RAM64M   |    20|
+|11    |RAM64X1D |     4|
+|12    |FDCE     |     7|
+|13    |FDRE     |  1262|
+|14    |FDSE     |    25|
+|15    |IOBUF    |     5|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 2312.395 ; gain = 7.938 ; free physical = 18685 ; free virtual = 27586
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 2312.395 ; gain = 0.000 ; free physical = 18735 ; free virtual = 27636
+Synthesis Optimization Complete : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 2312.402 ; gain = 7.938 ; free physical = 18737 ; free virtual = 27638
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2312.402 ; gain = 0.000 ; free physical = 18826 ; free virtual = 27727
+INFO: [Netlist 29-17] Analyzing 221 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2312.402 ; gain = 0.000 ; free physical = 18772 ; free virtual = 27673
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 29 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 5 instances
+  RAM64M => RAM64M (RAMD64E(x4)): 20 instances
+  RAM64X1D => RAM64X1D (RAMD64E(x2)): 4 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+46 Infos, 9 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 2312.402 ; gain = 8.012 ; free physical = 18833 ; free virtual = 27734
+INFO: [Common 17-600] The following parameters have non-default value.
+general.maxThreads
+INFO: [Common 17-1381] The checkpoint '/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.runs/riscv_SD_0_synth_1/riscv_SD_0.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1174] Renamed 10 cell refs.
+INFO: [Common 17-1381] The checkpoint '/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.runs/riscv_SD_0_synth_1/riscv_SD_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file riscv_SD_0_utilization_synth.rpt -pb riscv_SD_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Nov 15 19:23:05 2022...

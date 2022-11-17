@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Nov 15 19:27:13 2022
+# Process ID: 7628
+# Current directory: /mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.runs/riscv_io_axi_s_0_synth_1
+# Command line: vivado -log riscv_io_axi_s_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source riscv_io_axi_s_0.tcl
+# Log file: /mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.runs/riscv_io_axi_s_0_synth_1/riscv_io_axi_s_0.vds
+# Journal file: /mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.runs/riscv_io_axi_s_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+source riscv_io_axi_s_0.tcl -notrace

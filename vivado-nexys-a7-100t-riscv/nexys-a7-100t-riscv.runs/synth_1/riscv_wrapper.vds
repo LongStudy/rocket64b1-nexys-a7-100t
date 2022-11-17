@@ -1,0 +1,570 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Nov 15 20:11:45 2022
+# Process ID: 31784
+# Current directory: /mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.runs/synth_1
+# Command line: vivado -log riscv_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source riscv_wrapper.tcl
+# Log file: /mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.runs/synth_1/riscv_wrapper.vds
+# Journal file: /mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+INFO: [Common 17-1239] XILINX_LOCAL_USER_DATA is set to 'no'.
+source riscv_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2020.2/data/ip'.
+add_files: Time (s): cpu = 00:00:11 ; elapsed = 00:00:48 . Memory (MB): peak = 2459.469 ; gain = 152.074 ; free physical = 20005 ; free virtual = 28998
+Command: synth_design -top riscv_wrapper -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 1 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 32179
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2459.469 ; gain = 0.000 ; free physical = 18743 ; free virtual = 27736
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'riscv_wrapper' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/hdl/riscv_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'riscv' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/synth/riscv.v:1314]
+INFO: [Synth 8-6157] synthesizing module 'DDR_imp_10J4PB3' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/synth/riscv.v:12]
+INFO: [Synth 8-6157] synthesizing module 'riscv_axi_smc_1_0' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.runs/synth_1/.Xil/Vivado-31784-DESKTOP-7ILI8OM/realtime/riscv_axi_smc_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'riscv_axi_smc_1_0' (1#1) [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.runs/synth_1/.Xil/Vivado-31784-DESKTOP-7ILI8OM/realtime/riscv_axi_smc_1_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'riscv_mem_reset_control_0_0' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.runs/synth_1/.Xil/Vivado-31784-DESKTOP-7ILI8OM/realtime/riscv_mem_reset_control_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'riscv_mem_reset_control_0_0' (2#1) [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.runs/synth_1/.Xil/Vivado-31784-DESKTOP-7ILI8OM/realtime/riscv_mem_reset_control_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'riscv_mig_7series_0_0' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.runs/synth_1/.Xil/Vivado-31784-DESKTOP-7ILI8OM/realtime/riscv_mig_7series_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'riscv_mig_7series_0_0' (3#1) [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.runs/synth_1/.Xil/Vivado-31784-DESKTOP-7ILI8OM/realtime/riscv_mig_7series_0_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'app_sr_active' of module 'riscv_mig_7series_0_0' is unconnected for instance 'mig_7series_0' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/synth/riscv.v:363]
+WARNING: [Synth 8-7071] port 'app_ref_ack' of module 'riscv_mig_7series_0_0' is unconnected for instance 'mig_7series_0' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/synth/riscv.v:363]
+WARNING: [Synth 8-7071] port 'app_zq_ack' of module 'riscv_mig_7series_0_0' is unconnected for instance 'mig_7series_0' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/synth/riscv.v:363]
+WARNING: [Synth 8-7071] port 's_axi_bid' of module 'riscv_mig_7series_0_0' is unconnected for instance 'mig_7series_0' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/synth/riscv.v:363]
+WARNING: [Synth 8-7071] port 's_axi_rid' of module 'riscv_mig_7series_0_0' is unconnected for instance 'mig_7series_0' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/synth/riscv.v:363]
+WARNING: [Synth 8-7023] instance 'mig_7series_0' of module 'riscv_mig_7series_0_0' has 62 connections declared, but only 57 given [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/synth/riscv.v:363]
+INFO: [Synth 8-6155] done synthesizing module 'DDR_imp_10J4PB3' (4#1) [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/synth/riscv.v:12]
+INFO: [Synth 8-6157] synthesizing module 'IO_imp_44488Y' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/synth/riscv.v:423]
+INFO: [Synth 8-6157] synthesizing module 'riscv_Ethernet_0' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.runs/synth_1/.Xil/Vivado-31784-DESKTOP-7ILI8OM/realtime/riscv_Ethernet_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'riscv_Ethernet_0' (5#1) [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.runs/synth_1/.Xil/Vivado-31784-DESKTOP-7ILI8OM/realtime/riscv_Ethernet_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'riscv_SD_0' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.runs/synth_1/.Xil/Vivado-31784-DESKTOP-7ILI8OM/realtime/riscv_SD_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'riscv_SD_0' (6#1) [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.runs/synth_1/.Xil/Vivado-31784-DESKTOP-7ILI8OM/realtime/riscv_SD_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'riscv_UART_0' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.runs/synth_1/.Xil/Vivado-31784-DESKTOP-7ILI8OM/realtime/riscv_UART_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'riscv_UART_0' (7#1) [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.runs/synth_1/.Xil/Vivado-31784-DESKTOP-7ILI8OM/realtime/riscv_UART_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'riscv_XADC_0' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.runs/synth_1/.Xil/Vivado-31784-DESKTOP-7ILI8OM/realtime/riscv_XADC_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'riscv_XADC_0' (8#1) [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.runs/synth_1/.Xil/Vivado-31784-DESKTOP-7ILI8OM/realtime/riscv_XADC_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'ip2intc_irpt' of module 'riscv_XADC_0' is unconnected for instance 'XADC' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/synth/riscv.v:1046]
+WARNING: [Synth 8-7071] port 'channel_out' of module 'riscv_XADC_0' is unconnected for instance 'XADC' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/synth/riscv.v:1046]
+WARNING: [Synth 8-7071] port 'busy_out' of module 'riscv_XADC_0' is unconnected for instance 'XADC' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/synth/riscv.v:1046]
+WARNING: [Synth 8-7071] port 'eoc_out' of module 'riscv_XADC_0' is unconnected for instance 'XADC' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/synth/riscv.v:1046]
+WARNING: [Synth 8-7071] port 'eos_out' of module 'riscv_XADC_0' is unconnected for instance 'XADC' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/synth/riscv.v:1046]
+WARNING: [Synth 8-7071] port 'ot_out' of module 'riscv_XADC_0' is unconnected for instance 'XADC' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/synth/riscv.v:1046]
+WARNING: [Synth 8-7071] port 'user_temp_alarm_out' of module 'riscv_XADC_0' is unconnected for instance 'XADC' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/synth/riscv.v:1046]
+WARNING: [Synth 8-7071] port 'alarm_out' of module 'riscv_XADC_0' is unconnected for instance 'XADC' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/synth/riscv.v:1046]
+WARNING: [Synth 8-7023] instance 'XADC' of module 'riscv_XADC_0' has 30 connections declared, but only 22 given [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/synth/riscv.v:1046]
+INFO: [Synth 8-6157] synthesizing module 'riscv_ethernet_stream_0_0' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.runs/synth_1/.Xil/Vivado-31784-DESKTOP-7ILI8OM/realtime/riscv_ethernet_stream_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'riscv_ethernet_stream_0_0' (9#1) [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.runs/synth_1/.Xil/Vivado-31784-DESKTOP-7ILI8OM/realtime/riscv_ethernet_stream_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'riscv_io_axi_m_0' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.runs/synth_1/.Xil/Vivado-31784-DESKTOP-7ILI8OM/realtime/riscv_io_axi_m_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'riscv_io_axi_m_0' (10#1) [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.runs/synth_1/.Xil/Vivado-31784-DESKTOP-7ILI8OM/realtime/riscv_io_axi_m_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'riscv_io_axi_s_0' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.runs/synth_1/.Xil/Vivado-31784-DESKTOP-7ILI8OM/realtime/riscv_io_axi_s_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'riscv_io_axi_s_0' (11#1) [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.runs/synth_1/.Xil/Vivado-31784-DESKTOP-7ILI8OM/realtime/riscv_io_axi_s_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'M00_AXI_awprot' of module 'riscv_io_axi_s_0' is unconnected for instance 'io_axi_s' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/synth/riscv.v:1194]
+WARNING: [Synth 8-7071] port 'M00_AXI_wstrb' of module 'riscv_io_axi_s_0' is unconnected for instance 'io_axi_s' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/synth/riscv.v:1194]
+WARNING: [Synth 8-7071] port 'M00_AXI_arprot' of module 'riscv_io_axi_s_0' is unconnected for instance 'io_axi_s' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/synth/riscv.v:1194]
+WARNING: [Synth 8-7071] port 'M01_AXI_awprot' of module 'riscv_io_axi_s_0' is unconnected for instance 'io_axi_s' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/synth/riscv.v:1194]
+WARNING: [Synth 8-7071] port 'M01_AXI_wstrb' of module 'riscv_io_axi_s_0' is unconnected for instance 'io_axi_s' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/synth/riscv.v:1194]
+WARNING: [Synth 8-7071] port 'M01_AXI_arprot' of module 'riscv_io_axi_s_0' is unconnected for instance 'io_axi_s' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/synth/riscv.v:1194]
+WARNING: [Synth 8-7071] port 'M02_AXI_awprot' of module 'riscv_io_axi_s_0' is unconnected for instance 'io_axi_s' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/synth/riscv.v:1194]
+WARNING: [Synth 8-7071] port 'M02_AXI_wstrb' of module 'riscv_io_axi_s_0' is unconnected for instance 'io_axi_s' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/synth/riscv.v:1194]
+WARNING: [Synth 8-7071] port 'M02_AXI_arprot' of module 'riscv_io_axi_s_0' is unconnected for instance 'io_axi_s' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/synth/riscv.v:1194]
+WARNING: [Synth 8-7071] port 'M03_AXI_awprot' of module 'riscv_io_axi_s_0' is unconnected for instance 'io_axi_s' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/synth/riscv.v:1194]
+WARNING: [Synth 8-7071] port 'M03_AXI_arprot' of module 'riscv_io_axi_s_0' is unconnected for instance 'io_axi_s' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/synth/riscv.v:1194]
+WARNING: [Synth 8-7023] instance 'io_axi_s' of module 'riscv_io_axi_s_0' has 117 connections declared, but only 106 given [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/synth/riscv.v:1194]
+INFO: [Synth 8-6157] synthesizing module 'riscv_xlconcat_0_0' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_xlconcat_0_0/synth/riscv_xlconcat_0_0.v:60]
+INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_4_xlconcat' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
+	Parameter IN0_WIDTH bound to: 1 - type: integer 
+	Parameter IN1_WIDTH bound to: 1 - type: integer 
+	Parameter IN2_WIDTH bound to: 1 - type: integer 
+	Parameter IN3_WIDTH bound to: 1 - type: integer 
+	Parameter IN4_WIDTH bound to: 1 - type: integer 
+	Parameter IN5_WIDTH bound to: 1 - type: integer 
+	Parameter IN6_WIDTH bound to: 1 - type: integer 
+	Parameter IN7_WIDTH bound to: 1 - type: integer 
+	Parameter IN8_WIDTH bound to: 1 - type: integer 
+	Parameter IN9_WIDTH bound to: 1 - type: integer 
+	Parameter IN10_WIDTH bound to: 1 - type: integer 
+	Parameter IN11_WIDTH bound to: 1 - type: integer 
+	Parameter IN12_WIDTH bound to: 1 - type: integer 
+	Parameter IN13_WIDTH bound to: 1 - type: integer 
+	Parameter IN14_WIDTH bound to: 1 - type: integer 
+	Parameter IN15_WIDTH bound to: 1 - type: integer 
+	Parameter IN16_WIDTH bound to: 1 - type: integer 
+	Parameter IN17_WIDTH bound to: 1 - type: integer 
+	Parameter IN18_WIDTH bound to: 1 - type: integer 
+	Parameter IN19_WIDTH bound to: 1 - type: integer 
+	Parameter IN20_WIDTH bound to: 1 - type: integer 
+	Parameter IN21_WIDTH bound to: 1 - type: integer 
+	Parameter IN22_WIDTH bound to: 1 - type: integer 
+	Parameter IN23_WIDTH bound to: 1 - type: integer 
+	Parameter IN24_WIDTH bound to: 1 - type: integer 
+	Parameter IN25_WIDTH bound to: 1 - type: integer 
+	Parameter IN26_WIDTH bound to: 1 - type: integer 
+	Parameter IN27_WIDTH bound to: 1 - type: integer 
+	Parameter IN28_WIDTH bound to: 1 - type: integer 
+	Parameter IN29_WIDTH bound to: 1 - type: integer 
+	Parameter IN30_WIDTH bound to: 1 - type: integer 
+	Parameter IN31_WIDTH bound to: 1 - type: integer 
+	Parameter IN32_WIDTH bound to: 1 - type: integer 
+	Parameter IN33_WIDTH bound to: 1 - type: integer 
+	Parameter IN34_WIDTH bound to: 1 - type: integer 
+	Parameter IN35_WIDTH bound to: 1 - type: integer 
+	Parameter IN36_WIDTH bound to: 1 - type: integer 
+	Parameter IN37_WIDTH bound to: 1 - type: integer 
+	Parameter IN38_WIDTH bound to: 1 - type: integer 
+	Parameter IN39_WIDTH bound to: 1 - type: integer 
+	Parameter IN40_WIDTH bound to: 1 - type: integer 
+	Parameter IN41_WIDTH bound to: 1 - type: integer 
+	Parameter IN42_WIDTH bound to: 1 - type: integer 
+	Parameter IN43_WIDTH bound to: 1 - type: integer 
+	Parameter IN44_WIDTH bound to: 1 - type: integer 
+	Parameter IN45_WIDTH bound to: 1 - type: integer 
+	Parameter IN46_WIDTH bound to: 1 - type: integer 
+	Parameter IN47_WIDTH bound to: 1 - type: integer 
+	Parameter IN48_WIDTH bound to: 1 - type: integer 
+	Parameter IN49_WIDTH bound to: 1 - type: integer 
+	Parameter IN50_WIDTH bound to: 1 - type: integer 
+	Parameter IN51_WIDTH bound to: 1 - type: integer 
+	Parameter IN52_WIDTH bound to: 1 - type: integer 
+	Parameter IN53_WIDTH bound to: 1 - type: integer 
+	Parameter IN54_WIDTH bound to: 1 - type: integer 
+	Parameter IN55_WIDTH bound to: 1 - type: integer 
+	Parameter IN56_WIDTH bound to: 1 - type: integer 
+	Parameter IN57_WIDTH bound to: 1 - type: integer 
+	Parameter IN58_WIDTH bound to: 1 - type: integer 
+	Parameter IN59_WIDTH bound to: 1 - type: integer 
+	Parameter IN60_WIDTH bound to: 1 - type: integer 
+	Parameter IN61_WIDTH bound to: 1 - type: integer 
+	Parameter IN62_WIDTH bound to: 1 - type: integer 
+	Parameter IN63_WIDTH bound to: 1 - type: integer 
+	Parameter IN64_WIDTH bound to: 1 - type: integer 
+	Parameter IN65_WIDTH bound to: 1 - type: integer 
+	Parameter IN66_WIDTH bound to: 1 - type: integer 
+	Parameter IN67_WIDTH bound to: 1 - type: integer 
+	Parameter IN68_WIDTH bound to: 1 - type: integer 
+	Parameter IN69_WIDTH bound to: 1 - type: integer 
+	Parameter IN70_WIDTH bound to: 1 - type: integer 
+	Parameter IN71_WIDTH bound to: 1 - type: integer 
+	Parameter IN72_WIDTH bound to: 1 - type: integer 
+	Parameter IN73_WIDTH bound to: 1 - type: integer 
+	Parameter IN74_WIDTH bound to: 1 - type: integer 
+	Parameter IN75_WIDTH bound to: 1 - type: integer 
+	Parameter IN76_WIDTH bound to: 1 - type: integer 
+	Parameter IN77_WIDTH bound to: 1 - type: integer 
+	Parameter IN78_WIDTH bound to: 1 - type: integer 
+	Parameter IN79_WIDTH bound to: 1 - type: integer 
+	Parameter IN80_WIDTH bound to: 1 - type: integer 
+	Parameter IN81_WIDTH bound to: 1 - type: integer 
+	Parameter IN82_WIDTH bound to: 1 - type: integer 
+	Parameter IN83_WIDTH bound to: 1 - type: integer 
+	Parameter IN84_WIDTH bound to: 1 - type: integer 
+	Parameter IN85_WIDTH bound to: 1 - type: integer 
+	Parameter IN86_WIDTH bound to: 1 - type: integer 
+	Parameter IN87_WIDTH bound to: 1 - type: integer 
+	Parameter IN88_WIDTH bound to: 1 - type: integer 
+	Parameter IN89_WIDTH bound to: 1 - type: integer 
+	Parameter IN90_WIDTH bound to: 1 - type: integer 
+	Parameter IN91_WIDTH bound to: 1 - type: integer 
+	Parameter IN92_WIDTH bound to: 1 - type: integer 
+	Parameter IN93_WIDTH bound to: 1 - type: integer 
+	Parameter IN94_WIDTH bound to: 1 - type: integer 
+	Parameter IN95_WIDTH bound to: 1 - type: integer 
+	Parameter IN96_WIDTH bound to: 1 - type: integer 
+	Parameter IN97_WIDTH bound to: 1 - type: integer 
+	Parameter IN98_WIDTH bound to: 1 - type: integer 
+	Parameter IN99_WIDTH bound to: 1 - type: integer 
+	Parameter IN100_WIDTH bound to: 1 - type: integer 
+	Parameter IN101_WIDTH bound to: 1 - type: integer 
+	Parameter IN102_WIDTH bound to: 1 - type: integer 
+	Parameter IN103_WIDTH bound to: 1 - type: integer 
+	Parameter IN104_WIDTH bound to: 1 - type: integer 
+	Parameter IN105_WIDTH bound to: 1 - type: integer 
+	Parameter IN106_WIDTH bound to: 1 - type: integer 
+	Parameter IN107_WIDTH bound to: 1 - type: integer 
+	Parameter IN108_WIDTH bound to: 1 - type: integer 
+	Parameter IN109_WIDTH bound to: 1 - type: integer 
+	Parameter IN110_WIDTH bound to: 1 - type: integer 
+	Parameter IN111_WIDTH bound to: 1 - type: integer 
+	Parameter IN112_WIDTH bound to: 1 - type: integer 
+	Parameter IN113_WIDTH bound to: 1 - type: integer 
+	Parameter IN114_WIDTH bound to: 1 - type: integer 
+	Parameter IN115_WIDTH bound to: 1 - type: integer 
+	Parameter IN116_WIDTH bound to: 1 - type: integer 
+	Parameter IN117_WIDTH bound to: 1 - type: integer 
+	Parameter IN118_WIDTH bound to: 1 - type: integer 
+	Parameter IN119_WIDTH bound to: 1 - type: integer 
+	Parameter IN120_WIDTH bound to: 1 - type: integer 
+	Parameter IN121_WIDTH bound to: 1 - type: integer 
+	Parameter IN122_WIDTH bound to: 1 - type: integer 
+	Parameter IN123_WIDTH bound to: 1 - type: integer 
+	Parameter IN124_WIDTH bound to: 1 - type: integer 
+	Parameter IN125_WIDTH bound to: 1 - type: integer 
+	Parameter IN126_WIDTH bound to: 1 - type: integer 
+	Parameter IN127_WIDTH bound to: 1 - type: integer 
+	Parameter dout_width bound to: 8 - type: integer 
+	Parameter NUM_PORTS bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_4_xlconcat' (12#1) [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'riscv_xlconcat_0_0' (13#1) [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_xlconcat_0_0/synth/riscv_xlconcat_0_0.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'IO_imp_44488Y' (14#1) [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/synth/riscv.v:423]
+INFO: [Synth 8-6157] synthesizing module 'riscv_RocketChip_0' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.runs/synth_1/.Xil/Vivado-31784-DESKTOP-7ILI8OM/realtime/riscv_RocketChip_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'riscv_RocketChip_0' (15#1) [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.runs/synth_1/.Xil/Vivado-31784-DESKTOP-7ILI8OM/realtime/riscv_RocketChip_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'dma_axi4_bid' of module 'riscv_RocketChip_0' is unconnected for instance 'RocketChip' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/synth/riscv.v:1720]
+WARNING: [Synth 8-7071] port 'dma_axi4_rid' of module 'riscv_RocketChip_0' is unconnected for instance 'RocketChip' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/synth/riscv.v:1720]
+WARNING: [Synth 8-7023] instance 'RocketChip' of module 'riscv_RocketChip_0' has 118 connections declared, but only 116 given [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/synth/riscv.v:1720]
+INFO: [Synth 8-6157] synthesizing module 'riscv_clk_wiz_0_0' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.runs/synth_1/.Xil/Vivado-31784-DESKTOP-7ILI8OM/realtime/riscv_clk_wiz_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'riscv_clk_wiz_0_0' (16#1) [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.runs/synth_1/.Xil/Vivado-31784-DESKTOP-7ILI8OM/realtime/riscv_clk_wiz_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'riscv_util_vector_logic_0_0' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.runs/synth_1/.Xil/Vivado-31784-DESKTOP-7ILI8OM/realtime/riscv_util_vector_logic_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'riscv_util_vector_logic_0_0' (17#1) [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.runs/synth_1/.Xil/Vivado-31784-DESKTOP-7ILI8OM/realtime/riscv_util_vector_logic_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'riscv' (18#1) [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/synth/riscv.v:1314]
+INFO: [Synth 8-6155] done synthesizing module 'riscv_wrapper' (19#1) [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/hdl/riscv_wrapper.v:12]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 2459.469 ; gain = 0.000 ; free physical = 19273 ; free virtual = 28266
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2459.469 ; gain = 0.000 ; free physical = 19317 ; free virtual = 28310
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2459.469 ; gain = 0.000 ; free physical = 19317 ; free virtual = 28310
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2459.469 ; gain = 0.000 ; free physical = 19308 ; free virtual = 28301
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_axi_smc_1_0/riscv_axi_smc_1_0/riscv_axi_smc_1_0_in_context.xdc] for cell 'riscv_i/DDR/axi_smc_1'
+Finished Parsing XDC File [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_axi_smc_1_0/riscv_axi_smc_1_0/riscv_axi_smc_1_0_in_context.xdc] for cell 'riscv_i/DDR/axi_smc_1'
+Parsing XDC File [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mem_reset_control_0_0/riscv_mem_reset_control_0_0/riscv_mem_reset_control_0_0_in_context.xdc] for cell 'riscv_i/DDR/mem_reset_control_0'
+Finished Parsing XDC File [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mem_reset_control_0_0/riscv_mem_reset_control_0_0/riscv_mem_reset_control_0_0_in_context.xdc] for cell 'riscv_i/DDR/mem_reset_control_0'
+Parsing XDC File [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc] for cell 'riscv_i/DDR/mig_7series_0'
+Finished Parsing XDC File [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc] for cell 'riscv_i/DDR/mig_7series_0'
+Parsing XDC File [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_Ethernet_0/riscv_Ethernet_0/riscv_Ethernet_0_in_context.xdc] for cell 'riscv_i/IO/Ethernet'
+Finished Parsing XDC File [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_Ethernet_0/riscv_Ethernet_0/riscv_Ethernet_0_in_context.xdc] for cell 'riscv_i/IO/Ethernet'
+Parsing XDC File [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_SD_0/riscv_SD_0/riscv_SD_0_in_context.xdc] for cell 'riscv_i/IO/SD'
+Finished Parsing XDC File [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_SD_0/riscv_SD_0/riscv_SD_0_in_context.xdc] for cell 'riscv_i/IO/SD'
+Parsing XDC File [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_UART_0/riscv_UART_0/riscv_UART_0_in_context.xdc] for cell 'riscv_i/IO/UART'
+Finished Parsing XDC File [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_UART_0/riscv_UART_0/riscv_UART_0_in_context.xdc] for cell 'riscv_i/IO/UART'
+Parsing XDC File [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_XADC_0/riscv_XADC_0/riscv_XADC_0_in_context.xdc] for cell 'riscv_i/IO/XADC'
+Finished Parsing XDC File [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_XADC_0/riscv_XADC_0/riscv_XADC_0_in_context.xdc] for cell 'riscv_i/IO/XADC'
+Parsing XDC File [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_ethernet_stream_0_0/riscv_ethernet_stream_0_0/riscv_ethernet_stream_0_0_in_context.xdc] for cell 'riscv_i/IO/ethernet_stream_0'
+Finished Parsing XDC File [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_ethernet_stream_0_0/riscv_ethernet_stream_0_0/riscv_ethernet_stream_0_0_in_context.xdc] for cell 'riscv_i/IO/ethernet_stream_0'
+Parsing XDC File [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_m_0/riscv_io_axi_m_0/riscv_io_axi_m_0_in_context.xdc] for cell 'riscv_i/IO/io_axi_m'
+Finished Parsing XDC File [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_m_0/riscv_io_axi_m_0/riscv_io_axi_m_0_in_context.xdc] for cell 'riscv_i/IO/io_axi_m'
+Parsing XDC File [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/riscv_io_axi_s_0/riscv_io_axi_s_0_in_context.xdc] for cell 'riscv_i/IO/io_axi_s'
+Finished Parsing XDC File [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/riscv_io_axi_s_0/riscv_io_axi_s_0_in_context.xdc] for cell 'riscv_i/IO/io_axi_s'
+Parsing XDC File [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_RocketChip_0/riscv_RocketChip_0/riscv_RocketChip_0_in_context.xdc] for cell 'riscv_i/RocketChip'
+Finished Parsing XDC File [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_RocketChip_0/riscv_RocketChip_0/riscv_RocketChip_0_in_context.xdc] for cell 'riscv_i/RocketChip'
+Parsing XDC File [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_clk_wiz_0_0/riscv_clk_wiz_0_0/riscv_clk_wiz_0_0_in_context.xdc] for cell 'riscv_i/clk_wiz_0'
+Finished Parsing XDC File [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_clk_wiz_0_0/riscv_clk_wiz_0_0/riscv_clk_wiz_0_0_in_context.xdc] for cell 'riscv_i/clk_wiz_0'
+Parsing XDC File [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_util_vector_logic_0_0/riscv_util_vector_logic_0_0/riscv_util_vector_logic_0_0_in_context.xdc] for cell 'riscv_i/util_vector_logic_0'
+Finished Parsing XDC File [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_util_vector_logic_0_0/riscv_util_vector_logic_0_0/riscv_util_vector_logic_0_0_in_context.xdc] for cell 'riscv_i/util_vector_logic_0'
+Parsing XDC File [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2459.469 ; gain = 0.000 ; free physical = 19216 ; free virtual = 28209
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2459.469 ; gain = 0.000 ; free physical = 19216 ; free virtual = 28209
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 2459.469 ; gain = 0.000 ; free physical = 19284 ; free virtual = 28277
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 2459.469 ; gain = 0.000 ; free physical = 19284 ; free virtual = 28277
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_sdram_addr[0]. (constraint file  /mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 2).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_sdram_addr[0]. (constraint file  /mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 3).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_sdram_addr[10]. (constraint file  /mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 4).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_sdram_addr[10]. (constraint file  /mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 5).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_sdram_addr[11]. (constraint file  /mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 6).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_sdram_addr[11]. (constraint file  /mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 7).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_sdram_addr[12]. (constraint file  /mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 8).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_sdram_addr[12]. (constraint file  /mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 9).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_sdram_addr[1]. (constraint file  /mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 10).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_sdram_addr[1]. (constraint file  /mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 11).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_sdram_addr[2]. (constraint file  /mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 12).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_sdram_addr[2]. (constraint file  /mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 13).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_sdram_addr[3]. (constraint file  /mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 14).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_sdram_addr[3]. (constraint file  /mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 15).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_sdram_addr[4]. (constraint file  /mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 16).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_sdram_addr[4]. (constraint file  /mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 17).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_sdram_addr[5]. (constraint file  /mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 18).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_sdram_addr[5]. (constraint file  /mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 19).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_sdram_addr[6]. (constraint file  /mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 20).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_sdram_addr[6]. (constraint file  /mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 21).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_sdram_addr[7]. (constraint file  /mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 22).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_sdram_addr[7]. (constraint file  /mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 23).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_sdram_addr[8]. (constraint file  /mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 24).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_sdram_addr[8]. (constraint file  /mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 25).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_sdram_addr[9]. (constraint file  /mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 26).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_sdram_addr[9]. (constraint file  /mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 27).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_sdram_ba[0]. (constraint file  /mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 28).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_sdram_ba[0]. (constraint file  /mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 29).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_sdram_ba[1]. (constraint file  /mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 30).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_sdram_ba[1]. (constraint file  /mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 31).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_sdram_ba[2]. (constraint file  /mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 32).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_sdram_ba[2]. (constraint file  /mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 33).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_sdram_cas_n. (constraint file  /mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 34).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_sdram_cas_n. (constraint file  /mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 35).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_sdram_ck_n[0]. (constraint file  /mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 36).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_sdram_ck_n[0]. (constraint file  /mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 37).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_sdram_ck_p[0]. (constraint file  /mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 38).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_sdram_ck_p[0]. (constraint file  /mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 39).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_sdram_cke[0]. (constraint file  /mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 40).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_sdram_cke[0]. (constraint file  /mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 41).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_sdram_cs_n[0]. (constraint file  /mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 42).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_sdram_cs_n[0]. (constraint file  /mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 43).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_sdram_dm[0]. (constraint file  /mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 44).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_sdram_dm[0]. (constraint file  /mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 45).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_sdram_dm[1]. (constraint file  /mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 46).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_sdram_dm[1]. (constraint file  /mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 47).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_sdram_dq[0]. (constraint file  /mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 48).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_sdram_dq[0]. (constraint file  /mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 49).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_sdram_dq[10]. (constraint file  /mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 50).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_sdram_dq[10]. (constraint file  /mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 51).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_sdram_dq[11]. (constraint file  /mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 52).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_sdram_dq[11]. (constraint file  /mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 53).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_sdram_dq[12]. (constraint file  /mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 54).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_sdram_dq[12]. (constraint file  /mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 55).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_sdram_dq[13]. (constraint file  /mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 56).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_sdram_dq[13]. (constraint file  /mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 57).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_sdram_dq[14]. (constraint file  /mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 58).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_sdram_dq[14]. (constraint file  /mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 59).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_sdram_dq[15]. (constraint file  /mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 60).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_sdram_dq[15]. (constraint file  /mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 61).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_sdram_dq[1]. (constraint file  /mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 62).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_sdram_dq[1]. (constraint file  /mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 63).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_sdram_dq[2]. (constraint file  /mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 64).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_sdram_dq[2]. (constraint file  /mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 65).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_sdram_dq[3]. (constraint file  /mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 66).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_sdram_dq[3]. (constraint file  /mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 67).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_sdram_dq[4]. (constraint file  /mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 68).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_sdram_dq[4]. (constraint file  /mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 69).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_sdram_dq[5]. (constraint file  /mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 70).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_sdram_dq[5]. (constraint file  /mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 71).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_sdram_dq[6]. (constraint file  /mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 72).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_sdram_dq[6]. (constraint file  /mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 73).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_sdram_dq[7]. (constraint file  /mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 74).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_sdram_dq[7]. (constraint file  /mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 75).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_sdram_dq[8]. (constraint file  /mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 76).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_sdram_dq[8]. (constraint file  /mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 77).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_sdram_dq[9]. (constraint file  /mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 78).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_sdram_dq[9]. (constraint file  /mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 79).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_sdram_dqs_n[0]. (constraint file  /mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 80).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_sdram_dqs_n[0]. (constraint file  /mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 81).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_sdram_dqs_n[1]. (constraint file  /mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 82).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_sdram_dqs_n[1]. (constraint file  /mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 83).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_sdram_dqs_p[0]. (constraint file  /mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 84).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_sdram_dqs_p[0]. (constraint file  /mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 85).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_sdram_dqs_p[1]. (constraint file  /mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 86).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_sdram_dqs_p[1]. (constraint file  /mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 87).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_sdram_odt[0]. (constraint file  /mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 88).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_sdram_odt[0]. (constraint file  /mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 89).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_sdram_ras_n. (constraint file  /mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 90).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_sdram_ras_n. (constraint file  /mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 91).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_sdram_we_n. (constraint file  /mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 92).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_sdram_we_n. (constraint file  /mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 93).
+Applied set_property IO_BUFFER_TYPE = NONE for eth_mdio_data. (constraint file  /mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_Ethernet_0/riscv_Ethernet_0/riscv_Ethernet_0_in_context.xdc, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for eth_mdio_data. (constraint file  /mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_Ethernet_0/riscv_Ethernet_0/riscv_Ethernet_0_in_context.xdc, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for sdio_cmd. (constraint file  /mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_SD_0/riscv_SD_0/riscv_SD_0_in_context.xdc, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for sdio_cmd. (constraint file  /mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_SD_0/riscv_SD_0/riscv_SD_0_in_context.xdc, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for sdio_dat[0]. (constraint file  /mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_SD_0/riscv_SD_0/riscv_SD_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for sdio_dat[0]. (constraint file  /mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_SD_0/riscv_SD_0/riscv_SD_0_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for sdio_dat[1]. (constraint file  /mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_SD_0/riscv_SD_0/riscv_SD_0_in_context.xdc, line 5).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for sdio_dat[1]. (constraint file  /mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_SD_0/riscv_SD_0/riscv_SD_0_in_context.xdc, line 6).
+Applied set_property IO_BUFFER_TYPE = NONE for sdio_dat[2]. (constraint file  /mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_SD_0/riscv_SD_0/riscv_SD_0_in_context.xdc, line 7).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for sdio_dat[2]. (constraint file  /mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_SD_0/riscv_SD_0/riscv_SD_0_in_context.xdc, line 8).
+Applied set_property IO_BUFFER_TYPE = NONE for sdio_dat[3]. (constraint file  /mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_SD_0/riscv_SD_0/riscv_SD_0_in_context.xdc, line 9).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for sdio_dat[3]. (constraint file  /mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_SD_0/riscv_SD_0/riscv_SD_0_in_context.xdc, line 10).
+Applied set_property KEEP_HIERARCHY = SOFT for riscv_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for riscv_i/DDR/axi_smc_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for riscv_i/DDR/mem_reset_control_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for riscv_i/DDR/mig_7series_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for riscv_i/IO/Ethernet. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for riscv_i/IO/SD. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for riscv_i/IO/UART. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for riscv_i/IO/XADC. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for riscv_i/IO/ethernet_stream_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for riscv_i/IO/io_axi_m. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for riscv_i/IO/io_axi_s. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for riscv_i/IO/xlconcat_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for riscv_i/RocketChip. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for riscv_i/clk_wiz_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for riscv_i/util_vector_logic_0. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 2459.469 ; gain = 0.000 ; free physical = 19287 ; free virtual = 28280
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 2459.469 ; gain = 0.000 ; free physical = 19286 ; free virtual = 28279
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 2459.469 ; gain = 0.000 ; free physical = 19275 ; free virtual = 28268
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 2459.469 ; gain = 0.000 ; free physical = 19151 ; free virtual = 28144
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 2459.469 ; gain = 0.000 ; free physical = 19151 ; free virtual = 28144
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 2459.469 ; gain = 0.000 ; free physical = 19147 ; free virtual = 28140
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 2459.469 ; gain = 0.000 ; free physical = 19147 ; free virtual = 28140
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 2459.469 ; gain = 0.000 ; free physical = 19147 ; free virtual = 28140
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 2459.469 ; gain = 0.000 ; free physical = 19147 ; free virtual = 28140
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 2459.469 ; gain = 0.000 ; free physical = 19147 ; free virtual = 28140
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 2459.469 ; gain = 0.000 ; free physical = 19147 ; free virtual = 28140
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 2459.469 ; gain = 0.000 ; free physical = 19147 ; free virtual = 28140
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+----------------------------+----------+
+|      |BlackBox name               |Instances |
++------+----------------------------+----------+
+|1     |riscv_RocketChip_0          |         1|
+|2     |riscv_clk_wiz_0_0           |         1|
+|3     |riscv_util_vector_logic_0_0 |         1|
+|4     |riscv_axi_smc_1_0           |         1|
+|5     |riscv_mem_reset_control_0_0 |         1|
+|6     |riscv_mig_7series_0_0       |         1|
+|7     |riscv_Ethernet_0            |         1|
+|8     |riscv_SD_0                  |         1|
+|9     |riscv_UART_0                |         1|
+|10    |riscv_XADC_0                |         1|
+|11    |riscv_ethernet_stream_0_0   |         1|
+|12    |riscv_io_axi_m_0            |         1|
+|13    |riscv_io_axi_s_0            |         1|
++------+----------------------------+----------+
+
+Report Cell Usage: 
++------+--------------------------+------+
+|      |Cell                      |Count |
++------+--------------------------+------+
+|1     |riscv_Ethernet            |     1|
+|2     |riscv_RocketChip          |     1|
+|3     |riscv_SD                  |     1|
+|4     |riscv_UART                |     1|
+|5     |riscv_XADC                |     1|
+|6     |riscv_axi_smc_1           |     1|
+|7     |riscv_clk_wiz_0           |     1|
+|8     |riscv_ethernet_stream_0   |     1|
+|9     |riscv_io_axi_m            |     1|
+|10    |riscv_io_axi_s            |     1|
+|11    |riscv_mem_reset_control_0 |     1|
+|12    |riscv_mig_7series_0       |     1|
+|13    |riscv_util_vector_logic_0 |     1|
+|14    |IBUF                      |    10|
+|15    |OBUF                      |    10|
++------+--------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 2459.469 ; gain = 0.000 ; free physical = 19147 ; free virtual = 28140
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2459.469 ; gain = 0.000 ; free physical = 19183 ; free virtual = 28177
+Synthesis Optimization Complete : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 2459.469 ; gain = 0.000 ; free physical = 19185 ; free virtual = 28178
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2459.469 ; gain = 0.000 ; free physical = 19272 ; free virtual = 28265
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2459.469 ; gain = 0.000 ; free physical = 19215 ; free virtual = 28209
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+53 Infos, 30 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:22 . Memory (MB): peak = 2459.469 ; gain = 0.000 ; free physical = 19261 ; free virtual = 28254
+INFO: [Common 17-600] The following parameters have non-default value.
+general.maxThreads
+INFO: [Common 17-1381] The checkpoint '/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.runs/synth_1/riscv_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file riscv_wrapper_utilization_synth.rpt -pb riscv_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Nov 15 20:13:02 2022...

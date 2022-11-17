@@ -1,0 +1,1911 @@
+
+*** Running vivado
+    with args -log riscv_io_axi_m_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source riscv_io_axi_m_0.tcl
+
+
+****** Vivado v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+INFO: [Common 17-1239] XILINX_LOCAL_USER_DATA is set to 'no'.
+source riscv_io_axi_m_0.tcl -notrace
+Command: synth_design -top riscv_io_axi_m_0 -part xc7a100tcsg324-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 1 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 6929
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 2300.461 ; gain = 0.000 ; free physical = 18870 ; free virtual = 27772
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'riscv_io_axi_m_0' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_m_0/synth/riscv_io_axi_m_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'bd_9c60' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_m_0/bd_0/synth/bd_9c60.v:10]
+INFO: [Synth 8-6157] synthesizing module 'clk_map_imp_ISWRG1' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_m_0/bd_0/synth/bd_9c60.v:1374]
+INFO: [Synth 8-6157] synthesizing module 'bd_9c60_one_0' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_m_0/bd_0/ip/ip_0/synth/bd_9c60_one_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_7_xlconstant' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ipshared/fcfc/hdl/xlconstant_v1_1_vl_rfs.v:23]
+	Parameter CONST_VAL bound to: 1'b1 
+	Parameter CONST_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_7_xlconstant' (1#1) [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ipshared/fcfc/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9c60_one_0' (2#1) [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_m_0/bd_0/ip/ip_0/synth/bd_9c60_one_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'bd_9c60_psr0_0' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_m_0/bd_0/ip/ip_1/synth/bd_9c60_psr0_0.vhd:74]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_EXT_RST_WIDTH bound to: 4 - type: integer 
+	Parameter C_AUX_RST_WIDTH bound to: 1 - type: integer 
+	Parameter C_EXT_RESET_HIGH bound to: 1'b0 
+	Parameter C_AUX_RESET_HIGH bound to: 1'b0 
+	Parameter C_NUM_BUS_RST bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_RST bound to: 1 - type: integer 
+	Parameter C_NUM_INTERCONNECT_ARESETN bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_ARESETN bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'proc_sys_reset' declared at '/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1264' bound to instance 'U0' of component 'proc_sys_reset' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_m_0/bd_0/ip/ip_1/synth/bd_9c60_psr0_0.vhd:129]
+INFO: [Synth 8-638] synthesizing module 'proc_sys_reset' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1323]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_EXT_RST_WIDTH bound to: 4 - type: integer 
+	Parameter C_AUX_RST_WIDTH bound to: 1 - type: integer 
+	Parameter C_EXT_RESET_HIGH bound to: 1'b0 
+	Parameter C_AUX_RESET_HIGH bound to: 1'b0 
+	Parameter C_NUM_BUS_RST bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_RST bound to: 1 - type: integer 
+	Parameter C_NUM_INTERCONNECT_ARESETN bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_ARESETN bound to: 1 - type: integer 
+	Parameter INIT bound to: 1'b1 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDRE_inst' to cell 'FDRE' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1392]
+	Parameter INIT bound to: 1'b1 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDRE_BSR' to cell 'FDRE' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1408]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDRE_BSR_N' to cell 'FDRE' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1434]
+	Parameter INIT bound to: 1'b1 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDRE_PER' to cell 'FDRE' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1457]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDRE_PER_N' to cell 'FDRE' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1481]
+INFO: [Synth 8-638] synthesizing module 'lpf' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:816]
+	Parameter C_EXT_RST_WIDTH bound to: 4 - type: integer 
+	Parameter C_AUX_RST_WIDTH bound to: 1 - type: integer 
+	Parameter C_EXT_RESET_HIGH bound to: 1'b0 
+	Parameter C_AUX_RESET_HIGH bound to: 1'b0 
+INFO: [Synth 8-3491] module 'SRL16' declared at '/opt/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:78018' bound to instance 'POR_SRL_I' of component 'SRL16' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:868]
+INFO: [Synth 8-6157] synthesizing module 'SRL16' [/opt/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:78018]
+	Parameter INIT bound to: 16'b0000000000000000 
+INFO: [Synth 8-6155] done synthesizing module 'SRL16' (3#1) [/opt/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:78018]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
+	Parameter C_CDC_TYPE bound to: 1 - type: integer 
+	Parameter C_RESET_STATE bound to: 0 - type: integer 
+	Parameter C_SINGLE_BIT bound to: 1 - type: integer 
+	Parameter C_FLOP_INPUT bound to: 0 - type: integer 
+	Parameter C_VECTOR_WIDTH bound to: 2 - type: integer 
+	Parameter C_MTBF_STAGES bound to: 4 - type: integer 
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:514]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d2' to cell 'FDR' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:545]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d3' to cell 'FDR' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:554]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4' to cell 'FDR' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:564]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5' to cell 'FDR' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:574]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6' to cell 'FDR' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:584]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync' (4#1) [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'lpf' (5#1) [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:816]
+INFO: [Synth 8-638] synthesizing module 'sequence_psr' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:301]
+INFO: [Synth 8-638] synthesizing module 'upcnt_n' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:125]
+	Parameter C_SIZE bound to: 6 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'upcnt_n' (6#1) [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:125]
+INFO: [Synth 8-256] done synthesizing module 'sequence_psr' (7#1) [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:301]
+INFO: [Synth 8-256] done synthesizing module 'proc_sys_reset' (8#1) [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1323]
+INFO: [Synth 8-256] done synthesizing module 'bd_9c60_psr0_0' (9#1) [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_m_0/bd_0/ip/ip_1/synth/bd_9c60_psr0_0.vhd:74]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'bd_9c60_psr0_0' is unconnected for instance 'psr0' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_m_0/bd_0/synth/bd_9c60.v:1423]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'bd_9c60_psr0_0' is unconnected for instance 'psr0' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_m_0/bd_0/synth/bd_9c60.v:1423]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'bd_9c60_psr0_0' is unconnected for instance 'psr0' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_m_0/bd_0/synth/bd_9c60.v:1423]
+WARNING: [Synth 8-7071] port 'peripheral_aresetn' of module 'bd_9c60_psr0_0' is unconnected for instance 'psr0' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_m_0/bd_0/synth/bd_9c60.v:1423]
+WARNING: [Synth 8-7023] instance 'psr0' of module 'bd_9c60_psr0_0' has 10 connections declared, but only 6 given [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_m_0/bd_0/synth/bd_9c60.v:1423]
+INFO: [Synth 8-638] synthesizing module 'bd_9c60_psr_aclk_0' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_m_0/bd_0/ip/ip_2/synth/bd_9c60_psr_aclk_0.vhd:74]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_EXT_RST_WIDTH bound to: 4 - type: integer 
+	Parameter C_AUX_RST_WIDTH bound to: 1 - type: integer 
+	Parameter C_EXT_RESET_HIGH bound to: 1'b0 
+	Parameter C_AUX_RESET_HIGH bound to: 1'b0 
+	Parameter C_NUM_BUS_RST bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_RST bound to: 1 - type: integer 
+	Parameter C_NUM_INTERCONNECT_ARESETN bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_ARESETN bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'proc_sys_reset' declared at '/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1264' bound to instance 'U0' of component 'proc_sys_reset' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_m_0/bd_0/ip/ip_2/synth/bd_9c60_psr_aclk_0.vhd:129]
+INFO: [Synth 8-256] done synthesizing module 'bd_9c60_psr_aclk_0' (10#1) [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_m_0/bd_0/ip/ip_2/synth/bd_9c60_psr_aclk_0.vhd:74]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'bd_9c60_psr_aclk_0' is unconnected for instance 'psr_aclk' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_m_0/bd_0/synth/bd_9c60.v:1430]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'bd_9c60_psr_aclk_0' is unconnected for instance 'psr_aclk' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_m_0/bd_0/synth/bd_9c60.v:1430]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'bd_9c60_psr_aclk_0' is unconnected for instance 'psr_aclk' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_m_0/bd_0/synth/bd_9c60.v:1430]
+WARNING: [Synth 8-7071] port 'peripheral_aresetn' of module 'bd_9c60_psr_aclk_0' is unconnected for instance 'psr_aclk' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_m_0/bd_0/synth/bd_9c60.v:1430]
+WARNING: [Synth 8-7023] instance 'psr_aclk' of module 'bd_9c60_psr_aclk_0' has 10 connections declared, but only 6 given [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_m_0/bd_0/synth/bd_9c60.v:1430]
+INFO: [Synth 8-638] synthesizing module 'bd_9c60_psr_aclk1_0' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_m_0/bd_0/ip/ip_3/synth/bd_9c60_psr_aclk1_0.vhd:74]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_EXT_RST_WIDTH bound to: 4 - type: integer 
+	Parameter C_AUX_RST_WIDTH bound to: 1 - type: integer 
+	Parameter C_EXT_RESET_HIGH bound to: 1'b0 
+	Parameter C_AUX_RESET_HIGH bound to: 1'b0 
+	Parameter C_NUM_BUS_RST bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_RST bound to: 1 - type: integer 
+	Parameter C_NUM_INTERCONNECT_ARESETN bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_ARESETN bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'proc_sys_reset' declared at '/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1264' bound to instance 'U0' of component 'proc_sys_reset' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_m_0/bd_0/ip/ip_3/synth/bd_9c60_psr_aclk1_0.vhd:129]
+INFO: [Synth 8-256] done synthesizing module 'bd_9c60_psr_aclk1_0' (11#1) [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_m_0/bd_0/ip/ip_3/synth/bd_9c60_psr_aclk1_0.vhd:74]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'bd_9c60_psr_aclk1_0' is unconnected for instance 'psr_aclk1' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_m_0/bd_0/synth/bd_9c60.v:1437]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'bd_9c60_psr_aclk1_0' is unconnected for instance 'psr_aclk1' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_m_0/bd_0/synth/bd_9c60.v:1437]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'bd_9c60_psr_aclk1_0' is unconnected for instance 'psr_aclk1' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_m_0/bd_0/synth/bd_9c60.v:1437]
+WARNING: [Synth 8-7071] port 'peripheral_aresetn' of module 'bd_9c60_psr_aclk1_0' is unconnected for instance 'psr_aclk1' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_m_0/bd_0/synth/bd_9c60.v:1437]
+WARNING: [Synth 8-7023] instance 'psr_aclk1' of module 'bd_9c60_psr_aclk1_0' has 10 connections declared, but only 6 given [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_m_0/bd_0/synth/bd_9c60.v:1437]
+INFO: [Synth 8-6155] done synthesizing module 'clk_map_imp_ISWRG1' (12#1) [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_m_0/bd_0/synth/bd_9c60.v:1374]
+INFO: [Synth 8-6157] synthesizing module 'm00_exit_pipeline_imp_1G02VQI' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_m_0/bd_0/synth/bd_9c60.v:1446]
+INFO: [Synth 8-6157] synthesizing module 'bd_9c60_m00e_0' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_m_0/bd_0/ip/ip_33/synth/bd_9c60_m00e_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_async_rst' [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1175]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_async_rst' (13#1) [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1175]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9c60_m00e_0' (22#1) [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_m_0/bd_0/ip/ip_33/synth/bd_9c60_m00e_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'm00_exit_pipeline_imp_1G02VQI' (23#1) [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_m_0/bd_0/synth/bd_9c60.v:1446]
+INFO: [Synth 8-6157] synthesizing module 'm00_nodes_imp_1TB0XDY' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_m_0/bd_0/synth/bd_9c60.v:1817]
+INFO: [Synth 8-6157] synthesizing module 'bd_9c60_m00arn_0' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_m_0/bd_0/ip/ip_28/synth/bd_9c60_m00arn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_sdpram' [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8404]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base' [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+	Parameter MEMORY_TYPE bound to: 1 - type: integer 
+	Parameter MEMORY_SIZE bound to: 32 - type: integer 
+	Parameter MEMORY_PRIMITIVE bound to: 1 - type: integer 
+	Parameter CLOCKING_MODE bound to: 0 - type: integer 
+	Parameter ECC_MODE bound to: 0 - type: integer 
+	Parameter MEMORY_INIT_FILE bound to: none - type: string 
+	Parameter MEMORY_INIT_PARAM bound to: (null) - type: string 
+	Parameter USE_MEM_INIT_MMI bound to: 0 - type: integer 
+	Parameter USE_MEM_INIT bound to: 0 - type: integer 
+	Parameter MEMORY_OPTIMIZATION bound to: true - type: string 
+	Parameter WAKEUP_TIME bound to: 0 - type: integer 
+	Parameter AUTO_SLEEP_TIME bound to: 0 - type: integer 
+	Parameter MESSAGE_CONTROL bound to: 0 - type: integer 
+	Parameter VERSION bound to: 0 - type: integer 
+	Parameter USE_EMBEDDED_CONSTRAINT bound to: 0 - type: integer 
+	Parameter CASCADE_HEIGHT bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter WRITE_PROTECT bound to: 1 - type: integer 
+	Parameter WRITE_DATA_WIDTH_A bound to: 1 - type: integer 
+	Parameter READ_DATA_WIDTH_A bound to: 1 - type: integer 
+	Parameter BYTE_WRITE_WIDTH_A bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH_A bound to: 5 - type: integer 
+	Parameter READ_RESET_VALUE_A bound to: 0 - type: string 
+	Parameter READ_LATENCY_A bound to: 2 - type: integer 
+	Parameter WRITE_MODE_A bound to: 1 - type: integer 
+	Parameter RST_MODE_A bound to: SYNC - type: string 
+	Parameter WRITE_DATA_WIDTH_B bound to: 1 - type: integer 
+	Parameter READ_DATA_WIDTH_B bound to: 1 - type: integer 
+	Parameter BYTE_WRITE_WIDTH_B bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH_B bound to: 5 - type: integer 
+	Parameter READ_RESET_VALUE_B bound to: 0 - type: string 
+	Parameter READ_LATENCY_B bound to: 1 - type: integer 
+	Parameter WRITE_MODE_B bound to: 1 - type: integer 
+	Parameter RST_MODE_B bound to: SYNC - type: string 
+	Parameter P_MEMORY_PRIMITIVE bound to: distributed - type: string 
+	Parameter P_MIN_WIDTH_DATA_A bound to: 1 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_B bound to: 1 - type: integer 
+	Parameter P_MIN_WIDTH_DATA bound to: 1 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_ECC bound to: 1 - type: integer 
+	Parameter P_MAX_DEPTH_DATA bound to: 32 - type: integer 
+	Parameter P_ECC_MODE bound to: no_ecc - type: string 
+	Parameter P_MEMORY_OPT bound to: yes - type: string 
+	Parameter P_WIDTH_COL_WRITE_A bound to: 1 - type: integer 
+	Parameter P_WIDTH_COL_WRITE_B bound to: 1 - type: integer 
+	Parameter P_NUM_COLS_WRITE_A bound to: 1 - type: integer 
+	Parameter P_NUM_COLS_WRITE_B bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_WRITE_A bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_WRITE_B bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_READ_A bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_READ_B bound to: 1 - type: integer 
+	Parameter P_WIDTH_ADDR_WRITE_A bound to: 5 - type: integer 
+	Parameter P_WIDTH_ADDR_WRITE_B bound to: 5 - type: integer 
+	Parameter P_WIDTH_ADDR_READ_A bound to: 5 - type: integer 
+	Parameter P_WIDTH_ADDR_READ_B bound to: 5 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_WRITE_A bound to: 0 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_WRITE_B bound to: 0 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_READ_A bound to: 0 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_READ_B bound to: 0 - type: integer 
+	Parameter P_ENABLE_BYTE_WRITE_A bound to: 0 - type: integer 
+	Parameter P_ENABLE_BYTE_WRITE_B bound to: 0 - type: integer 
+	Parameter P_SDP_WRITE_MODE bound to: yes - type: string 
+	Parameter rsta_loop_iter bound to: 4 - type: integer 
+	Parameter rstb_loop_iter bound to: 4 - type: integer 
+	Parameter NUM_CHAR_LOC bound to: 0 - type: integer 
+	Parameter MAX_NUM_CHAR bound to: 0 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_SHFT bound to: 5 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_LDW bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base' (29#1) [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_sdpram' (30#1) [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8404]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_sdpram__parameterized0' [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8404]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized0' [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+	Parameter MEMORY_TYPE bound to: 1 - type: integer 
+	Parameter MEMORY_SIZE bound to: 5120 - type: integer 
+	Parameter MEMORY_PRIMITIVE bound to: 1 - type: integer 
+	Parameter CLOCKING_MODE bound to: 0 - type: integer 
+	Parameter ECC_MODE bound to: 0 - type: integer 
+	Parameter MEMORY_INIT_FILE bound to: none - type: string 
+	Parameter MEMORY_INIT_PARAM bound to: (null) - type: string 
+	Parameter USE_MEM_INIT_MMI bound to: 0 - type: integer 
+	Parameter USE_MEM_INIT bound to: 0 - type: integer 
+	Parameter MEMORY_OPTIMIZATION bound to: true - type: string 
+	Parameter WAKEUP_TIME bound to: 0 - type: integer 
+	Parameter AUTO_SLEEP_TIME bound to: 0 - type: integer 
+	Parameter MESSAGE_CONTROL bound to: 0 - type: integer 
+	Parameter VERSION bound to: 0 - type: integer 
+	Parameter USE_EMBEDDED_CONSTRAINT bound to: 0 - type: integer 
+	Parameter CASCADE_HEIGHT bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter WRITE_PROTECT bound to: 1 - type: integer 
+	Parameter WRITE_DATA_WIDTH_A bound to: 160 - type: integer 
+	Parameter READ_DATA_WIDTH_A bound to: 160 - type: integer 
+	Parameter BYTE_WRITE_WIDTH_A bound to: 160 - type: integer 
+	Parameter ADDR_WIDTH_A bound to: 5 - type: integer 
+	Parameter READ_RESET_VALUE_A bound to: 0 - type: string 
+	Parameter READ_LATENCY_A bound to: 2 - type: integer 
+	Parameter WRITE_MODE_A bound to: 1 - type: integer 
+	Parameter RST_MODE_A bound to: SYNC - type: string 
+	Parameter WRITE_DATA_WIDTH_B bound to: 160 - type: integer 
+	Parameter READ_DATA_WIDTH_B bound to: 160 - type: integer 
+	Parameter BYTE_WRITE_WIDTH_B bound to: 160 - type: integer 
+	Parameter ADDR_WIDTH_B bound to: 5 - type: integer 
+	Parameter READ_RESET_VALUE_B bound to: 0 - type: string 
+	Parameter READ_LATENCY_B bound to: 1 - type: integer 
+	Parameter WRITE_MODE_B bound to: 1 - type: integer 
+	Parameter RST_MODE_B bound to: SYNC - type: string 
+	Parameter P_MEMORY_PRIMITIVE bound to: distributed - type: string 
+	Parameter P_MIN_WIDTH_DATA_A bound to: 160 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_B bound to: 160 - type: integer 
+	Parameter P_MIN_WIDTH_DATA bound to: 160 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_ECC bound to: 160 - type: integer 
+	Parameter P_MAX_DEPTH_DATA bound to: 32 - type: integer 
+	Parameter P_ECC_MODE bound to: no_ecc - type: string 
+	Parameter P_MEMORY_OPT bound to: yes - type: string 
+	Parameter P_WIDTH_COL_WRITE_A bound to: 160 - type: integer 
+	Parameter P_WIDTH_COL_WRITE_B bound to: 160 - type: integer 
+	Parameter P_NUM_COLS_WRITE_A bound to: 1 - type: integer 
+	Parameter P_NUM_COLS_WRITE_B bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_WRITE_A bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_WRITE_B bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_READ_A bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_READ_B bound to: 1 - type: integer 
+	Parameter P_WIDTH_ADDR_WRITE_A bound to: 5 - type: integer 
+	Parameter P_WIDTH_ADDR_WRITE_B bound to: 5 - type: integer 
+	Parameter P_WIDTH_ADDR_READ_A bound to: 5 - type: integer 
+	Parameter P_WIDTH_ADDR_READ_B bound to: 5 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_WRITE_A bound to: 0 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_WRITE_B bound to: 0 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_READ_A bound to: 0 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_READ_B bound to: 0 - type: integer 
+	Parameter P_ENABLE_BYTE_WRITE_A bound to: 0 - type: integer 
+	Parameter P_ENABLE_BYTE_WRITE_B bound to: 0 - type: integer 
+	Parameter P_SDP_WRITE_MODE bound to: yes - type: string 
+	Parameter rsta_loop_iter bound to: 160 - type: integer 
+	Parameter rstb_loop_iter bound to: 160 - type: integer 
+	Parameter NUM_CHAR_LOC bound to: 0 - type: integer 
+	Parameter MAX_NUM_CHAR bound to: 0 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_SHFT bound to: 160 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_LDW bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base__parameterized0' (33#1) [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_sdpram__parameterized0' (33#1) [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8404]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9c60_m00arn_0' (39#1) [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_m_0/bd_0/ip/ip_28/synth/bd_9c60_m00arn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_9c60_m00awn_0' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_m_0/bd_0/ip/ip_30/synth/bd_9c60_m00awn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9c60_m00awn_0' (40#1) [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_m_0/bd_0/ip/ip_30/synth/bd_9c60_m00awn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_9c60_m00bn_0' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_m_0/bd_0/ip/ip_32/synth/bd_9c60_m00bn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_sdpram__parameterized1' [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8404]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized1' [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+	Parameter MEMORY_TYPE bound to: 1 - type: integer 
+	Parameter MEMORY_SIZE bound to: 608 - type: integer 
+	Parameter MEMORY_PRIMITIVE bound to: 1 - type: integer 
+	Parameter CLOCKING_MODE bound to: 0 - type: integer 
+	Parameter ECC_MODE bound to: 0 - type: integer 
+	Parameter MEMORY_INIT_FILE bound to: none - type: string 
+	Parameter MEMORY_INIT_PARAM bound to: (null) - type: string 
+	Parameter USE_MEM_INIT_MMI bound to: 0 - type: integer 
+	Parameter USE_MEM_INIT bound to: 0 - type: integer 
+	Parameter MEMORY_OPTIMIZATION bound to: true - type: string 
+	Parameter WAKEUP_TIME bound to: 0 - type: integer 
+	Parameter AUTO_SLEEP_TIME bound to: 0 - type: integer 
+	Parameter MESSAGE_CONTROL bound to: 0 - type: integer 
+	Parameter VERSION bound to: 0 - type: integer 
+	Parameter USE_EMBEDDED_CONSTRAINT bound to: 0 - type: integer 
+	Parameter CASCADE_HEIGHT bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter WRITE_PROTECT bound to: 1 - type: integer 
+	Parameter WRITE_DATA_WIDTH_A bound to: 19 - type: integer 
+	Parameter READ_DATA_WIDTH_A bound to: 19 - type: integer 
+	Parameter BYTE_WRITE_WIDTH_A bound to: 19 - type: integer 
+	Parameter ADDR_WIDTH_A bound to: 5 - type: integer 
+	Parameter READ_RESET_VALUE_A bound to: 0 - type: string 
+	Parameter READ_LATENCY_A bound to: 2 - type: integer 
+	Parameter WRITE_MODE_A bound to: 1 - type: integer 
+	Parameter RST_MODE_A bound to: SYNC - type: string 
+	Parameter WRITE_DATA_WIDTH_B bound to: 19 - type: integer 
+	Parameter READ_DATA_WIDTH_B bound to: 19 - type: integer 
+	Parameter BYTE_WRITE_WIDTH_B bound to: 19 - type: integer 
+	Parameter ADDR_WIDTH_B bound to: 5 - type: integer 
+	Parameter READ_RESET_VALUE_B bound to: 0 - type: string 
+	Parameter READ_LATENCY_B bound to: 1 - type: integer 
+	Parameter WRITE_MODE_B bound to: 1 - type: integer 
+	Parameter RST_MODE_B bound to: SYNC - type: string 
+	Parameter P_MEMORY_PRIMITIVE bound to: distributed - type: string 
+	Parameter P_MIN_WIDTH_DATA_A bound to: 19 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_B bound to: 19 - type: integer 
+	Parameter P_MIN_WIDTH_DATA bound to: 19 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_ECC bound to: 19 - type: integer 
+	Parameter P_MAX_DEPTH_DATA bound to: 32 - type: integer 
+	Parameter P_ECC_MODE bound to: no_ecc - type: string 
+	Parameter P_MEMORY_OPT bound to: yes - type: string 
+	Parameter P_WIDTH_COL_WRITE_A bound to: 19 - type: integer 
+	Parameter P_WIDTH_COL_WRITE_B bound to: 19 - type: integer 
+	Parameter P_NUM_COLS_WRITE_A bound to: 1 - type: integer 
+	Parameter P_NUM_COLS_WRITE_B bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_WRITE_A bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_WRITE_B bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_READ_A bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_READ_B bound to: 1 - type: integer 
+	Parameter P_WIDTH_ADDR_WRITE_A bound to: 5 - type: integer 
+	Parameter P_WIDTH_ADDR_WRITE_B bound to: 5 - type: integer 
+	Parameter P_WIDTH_ADDR_READ_A bound to: 5 - type: integer 
+	Parameter P_WIDTH_ADDR_READ_B bound to: 5 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_WRITE_A bound to: 0 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_WRITE_B bound to: 0 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_READ_A bound to: 0 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_READ_B bound to: 0 - type: integer 
+	Parameter P_ENABLE_BYTE_WRITE_A bound to: 0 - type: integer 
+	Parameter P_ENABLE_BYTE_WRITE_B bound to: 0 - type: integer 
+	Parameter P_SDP_WRITE_MODE bound to: yes - type: string 
+	Parameter rsta_loop_iter bound to: 20 - type: integer 
+	Parameter rstb_loop_iter bound to: 20 - type: integer 
+	Parameter NUM_CHAR_LOC bound to: 0 - type: integer 
+	Parameter MAX_NUM_CHAR bound to: 0 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_SHFT bound to: 19 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_LDW bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base__parameterized1' (40#1) [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_sdpram__parameterized1' (40#1) [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8404]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_sdpram__parameterized2' [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8404]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized2' [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+	Parameter MEMORY_TYPE bound to: 1 - type: integer 
+	Parameter MEMORY_SIZE bound to: 256 - type: integer 
+	Parameter MEMORY_PRIMITIVE bound to: 1 - type: integer 
+	Parameter CLOCKING_MODE bound to: 0 - type: integer 
+	Parameter ECC_MODE bound to: 0 - type: integer 
+	Parameter MEMORY_INIT_FILE bound to: none - type: string 
+	Parameter MEMORY_INIT_PARAM bound to: (null) - type: string 
+	Parameter USE_MEM_INIT_MMI bound to: 0 - type: integer 
+	Parameter USE_MEM_INIT bound to: 0 - type: integer 
+	Parameter MEMORY_OPTIMIZATION bound to: true - type: string 
+	Parameter WAKEUP_TIME bound to: 0 - type: integer 
+	Parameter AUTO_SLEEP_TIME bound to: 0 - type: integer 
+	Parameter MESSAGE_CONTROL bound to: 0 - type: integer 
+	Parameter VERSION bound to: 0 - type: integer 
+	Parameter USE_EMBEDDED_CONSTRAINT bound to: 0 - type: integer 
+	Parameter CASCADE_HEIGHT bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter WRITE_PROTECT bound to: 1 - type: integer 
+	Parameter WRITE_DATA_WIDTH_A bound to: 8 - type: integer 
+	Parameter READ_DATA_WIDTH_A bound to: 8 - type: integer 
+	Parameter BYTE_WRITE_WIDTH_A bound to: 8 - type: integer 
+	Parameter ADDR_WIDTH_A bound to: 5 - type: integer 
+	Parameter READ_RESET_VALUE_A bound to: 0 - type: string 
+	Parameter READ_LATENCY_A bound to: 2 - type: integer 
+	Parameter WRITE_MODE_A bound to: 1 - type: integer 
+	Parameter RST_MODE_A bound to: SYNC - type: string 
+	Parameter WRITE_DATA_WIDTH_B bound to: 8 - type: integer 
+	Parameter READ_DATA_WIDTH_B bound to: 8 - type: integer 
+	Parameter BYTE_WRITE_WIDTH_B bound to: 8 - type: integer 
+	Parameter ADDR_WIDTH_B bound to: 5 - type: integer 
+	Parameter READ_RESET_VALUE_B bound to: 0 - type: string 
+	Parameter READ_LATENCY_B bound to: 1 - type: integer 
+	Parameter WRITE_MODE_B bound to: 1 - type: integer 
+	Parameter RST_MODE_B bound to: SYNC - type: string 
+	Parameter P_MEMORY_PRIMITIVE bound to: distributed - type: string 
+	Parameter P_MIN_WIDTH_DATA_A bound to: 8 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_B bound to: 8 - type: integer 
+	Parameter P_MIN_WIDTH_DATA bound to: 8 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_ECC bound to: 8 - type: integer 
+	Parameter P_MAX_DEPTH_DATA bound to: 32 - type: integer 
+	Parameter P_ECC_MODE bound to: no_ecc - type: string 
+	Parameter P_MEMORY_OPT bound to: yes - type: string 
+	Parameter P_WIDTH_COL_WRITE_A bound to: 8 - type: integer 
+	Parameter P_WIDTH_COL_WRITE_B bound to: 8 - type: integer 
+	Parameter P_NUM_COLS_WRITE_A bound to: 1 - type: integer 
+	Parameter P_NUM_COLS_WRITE_B bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_WRITE_A bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_WRITE_B bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_READ_A bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_READ_B bound to: 1 - type: integer 
+	Parameter P_WIDTH_ADDR_WRITE_A bound to: 5 - type: integer 
+	Parameter P_WIDTH_ADDR_WRITE_B bound to: 5 - type: integer 
+	Parameter P_WIDTH_ADDR_READ_A bound to: 5 - type: integer 
+	Parameter P_WIDTH_ADDR_READ_B bound to: 5 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_WRITE_A bound to: 0 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_WRITE_B bound to: 0 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_READ_A bound to: 0 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_READ_B bound to: 0 - type: integer 
+	Parameter P_ENABLE_BYTE_WRITE_A bound to: 0 - type: integer 
+	Parameter P_ENABLE_BYTE_WRITE_B bound to: 0 - type: integer 
+	Parameter P_SDP_WRITE_MODE bound to: yes - type: string 
+	Parameter rsta_loop_iter bound to: 8 - type: integer 
+	Parameter rstb_loop_iter bound to: 8 - type: integer 
+	Parameter NUM_CHAR_LOC bound to: 0 - type: integer 
+	Parameter MAX_NUM_CHAR bound to: 0 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_SHFT bound to: 8 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_LDW bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base__parameterized2' (40#1) [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_sdpram__parameterized2' (40#1) [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8404]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9c60_m00bn_0' (41#1) [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_m_0/bd_0/ip/ip_32/synth/bd_9c60_m00bn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_9c60_m00rn_0' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_m_0/bd_0/ip/ip_29/synth/bd_9c60_m00rn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_sdpram__parameterized3' [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8404]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized3' [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+	Parameter MEMORY_TYPE bound to: 1 - type: integer 
+	Parameter MEMORY_SIZE bound to: 2752 - type: integer 
+	Parameter MEMORY_PRIMITIVE bound to: 1 - type: integer 
+	Parameter CLOCKING_MODE bound to: 0 - type: integer 
+	Parameter ECC_MODE bound to: 0 - type: integer 
+	Parameter MEMORY_INIT_FILE bound to: none - type: string 
+	Parameter MEMORY_INIT_PARAM bound to: (null) - type: string 
+	Parameter USE_MEM_INIT_MMI bound to: 0 - type: integer 
+	Parameter USE_MEM_INIT bound to: 0 - type: integer 
+	Parameter MEMORY_OPTIMIZATION bound to: true - type: string 
+	Parameter WAKEUP_TIME bound to: 0 - type: integer 
+	Parameter AUTO_SLEEP_TIME bound to: 0 - type: integer 
+	Parameter MESSAGE_CONTROL bound to: 0 - type: integer 
+	Parameter VERSION bound to: 0 - type: integer 
+	Parameter USE_EMBEDDED_CONSTRAINT bound to: 0 - type: integer 
+	Parameter CASCADE_HEIGHT bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter WRITE_PROTECT bound to: 1 - type: integer 
+	Parameter WRITE_DATA_WIDTH_A bound to: 86 - type: integer 
+	Parameter READ_DATA_WIDTH_A bound to: 86 - type: integer 
+	Parameter BYTE_WRITE_WIDTH_A bound to: 86 - type: integer 
+	Parameter ADDR_WIDTH_A bound to: 5 - type: integer 
+	Parameter READ_RESET_VALUE_A bound to: 0 - type: string 
+	Parameter READ_LATENCY_A bound to: 2 - type: integer 
+	Parameter WRITE_MODE_A bound to: 1 - type: integer 
+	Parameter RST_MODE_A bound to: SYNC - type: string 
+	Parameter WRITE_DATA_WIDTH_B bound to: 86 - type: integer 
+	Parameter READ_DATA_WIDTH_B bound to: 86 - type: integer 
+	Parameter BYTE_WRITE_WIDTH_B bound to: 86 - type: integer 
+	Parameter ADDR_WIDTH_B bound to: 5 - type: integer 
+	Parameter READ_RESET_VALUE_B bound to: 0 - type: string 
+	Parameter READ_LATENCY_B bound to: 1 - type: integer 
+	Parameter WRITE_MODE_B bound to: 1 - type: integer 
+	Parameter RST_MODE_B bound to: SYNC - type: string 
+	Parameter P_MEMORY_PRIMITIVE bound to: distributed - type: string 
+	Parameter P_MIN_WIDTH_DATA_A bound to: 86 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_B bound to: 86 - type: integer 
+	Parameter P_MIN_WIDTH_DATA bound to: 86 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_ECC bound to: 86 - type: integer 
+	Parameter P_MAX_DEPTH_DATA bound to: 32 - type: integer 
+	Parameter P_ECC_MODE bound to: no_ecc - type: string 
+	Parameter P_MEMORY_OPT bound to: yes - type: string 
+	Parameter P_WIDTH_COL_WRITE_A bound to: 86 - type: integer 
+	Parameter P_WIDTH_COL_WRITE_B bound to: 86 - type: integer 
+	Parameter P_NUM_COLS_WRITE_A bound to: 1 - type: integer 
+	Parameter P_NUM_COLS_WRITE_B bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_WRITE_A bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_WRITE_B bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_READ_A bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_READ_B bound to: 1 - type: integer 
+	Parameter P_WIDTH_ADDR_WRITE_A bound to: 5 - type: integer 
+	Parameter P_WIDTH_ADDR_WRITE_B bound to: 5 - type: integer 
+	Parameter P_WIDTH_ADDR_READ_A bound to: 5 - type: integer 
+	Parameter P_WIDTH_ADDR_READ_B bound to: 5 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_WRITE_A bound to: 0 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_WRITE_B bound to: 0 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_READ_A bound to: 0 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_READ_B bound to: 0 - type: integer 
+	Parameter P_ENABLE_BYTE_WRITE_A bound to: 0 - type: integer 
+	Parameter P_ENABLE_BYTE_WRITE_B bound to: 0 - type: integer 
+	Parameter P_SDP_WRITE_MODE bound to: yes - type: string 
+	Parameter rsta_loop_iter bound to: 88 - type: integer 
+	Parameter rstb_loop_iter bound to: 88 - type: integer 
+	Parameter NUM_CHAR_LOC bound to: 0 - type: integer 
+	Parameter MAX_NUM_CHAR bound to: 0 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_SHFT bound to: 86 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_LDW bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base__parameterized3' (41#1) [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_sdpram__parameterized3' (41#1) [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8404]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9c60_m00rn_0' (42#1) [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_m_0/bd_0/ip/ip_29/synth/bd_9c60_m00rn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_9c60_m00wn_0' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_m_0/bd_0/ip/ip_31/synth/bd_9c60_m00wn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_sdpram__parameterized4' [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8404]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized4' [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+	Parameter MEMORY_TYPE bound to: 1 - type: integer 
+	Parameter MEMORY_SIZE bound to: 4 - type: integer 
+	Parameter MEMORY_PRIMITIVE bound to: 1 - type: integer 
+	Parameter CLOCKING_MODE bound to: 0 - type: integer 
+	Parameter ECC_MODE bound to: 0 - type: integer 
+	Parameter MEMORY_INIT_FILE bound to: none - type: string 
+	Parameter MEMORY_INIT_PARAM bound to: (null) - type: string 
+	Parameter USE_MEM_INIT_MMI bound to: 0 - type: integer 
+	Parameter USE_MEM_INIT bound to: 0 - type: integer 
+	Parameter MEMORY_OPTIMIZATION bound to: true - type: string 
+	Parameter WAKEUP_TIME bound to: 0 - type: integer 
+	Parameter AUTO_SLEEP_TIME bound to: 0 - type: integer 
+	Parameter MESSAGE_CONTROL bound to: 0 - type: integer 
+	Parameter VERSION bound to: 0 - type: integer 
+	Parameter USE_EMBEDDED_CONSTRAINT bound to: 0 - type: integer 
+	Parameter CASCADE_HEIGHT bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter WRITE_PROTECT bound to: 1 - type: integer 
+	Parameter WRITE_DATA_WIDTH_A bound to: 1 - type: integer 
+	Parameter READ_DATA_WIDTH_A bound to: 1 - type: integer 
+	Parameter BYTE_WRITE_WIDTH_A bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH_A bound to: 2 - type: integer 
+	Parameter READ_RESET_VALUE_A bound to: 0 - type: string 
+	Parameter READ_LATENCY_A bound to: 2 - type: integer 
+	Parameter WRITE_MODE_A bound to: 1 - type: integer 
+	Parameter RST_MODE_A bound to: SYNC - type: string 
+	Parameter WRITE_DATA_WIDTH_B bound to: 1 - type: integer 
+	Parameter READ_DATA_WIDTH_B bound to: 1 - type: integer 
+	Parameter BYTE_WRITE_WIDTH_B bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH_B bound to: 2 - type: integer 
+	Parameter READ_RESET_VALUE_B bound to: 0 - type: string 
+	Parameter READ_LATENCY_B bound to: 0 - type: integer 
+	Parameter WRITE_MODE_B bound to: 1 - type: integer 
+	Parameter RST_MODE_B bound to: SYNC - type: string 
+	Parameter P_MEMORY_PRIMITIVE bound to: distributed - type: string 
+	Parameter P_MIN_WIDTH_DATA_A bound to: 1 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_B bound to: 1 - type: integer 
+	Parameter P_MIN_WIDTH_DATA bound to: 1 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_ECC bound to: 1 - type: integer 
+	Parameter P_MAX_DEPTH_DATA bound to: 4 - type: integer 
+	Parameter P_ECC_MODE bound to: no_ecc - type: string 
+	Parameter P_MEMORY_OPT bound to: yes - type: string 
+	Parameter P_WIDTH_COL_WRITE_A bound to: 1 - type: integer 
+	Parameter P_WIDTH_COL_WRITE_B bound to: 1 - type: integer 
+	Parameter P_NUM_COLS_WRITE_A bound to: 1 - type: integer 
+	Parameter P_NUM_COLS_WRITE_B bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_WRITE_A bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_WRITE_B bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_READ_A bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_READ_B bound to: 1 - type: integer 
+	Parameter P_WIDTH_ADDR_WRITE_A bound to: 2 - type: integer 
+	Parameter P_WIDTH_ADDR_WRITE_B bound to: 2 - type: integer 
+	Parameter P_WIDTH_ADDR_READ_A bound to: 2 - type: integer 
+	Parameter P_WIDTH_ADDR_READ_B bound to: 2 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_WRITE_A bound to: 0 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_WRITE_B bound to: 0 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_READ_A bound to: 0 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_READ_B bound to: 0 - type: integer 
+	Parameter P_ENABLE_BYTE_WRITE_A bound to: 0 - type: integer 
+	Parameter P_ENABLE_BYTE_WRITE_B bound to: 0 - type: integer 
+	Parameter P_SDP_WRITE_MODE bound to: yes - type: string 
+	Parameter rsta_loop_iter bound to: 4 - type: integer 
+	Parameter rstb_loop_iter bound to: 4 - type: integer 
+	Parameter NUM_CHAR_LOC bound to: 0 - type: integer 
+	Parameter MAX_NUM_CHAR bound to: 0 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_SHFT bound to: 5 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_LDW bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base__parameterized4' (42#1) [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_sdpram__parameterized4' (42#1) [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8404]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_sdpram__parameterized5' [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8404]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized5' [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+	Parameter MEMORY_TYPE bound to: 1 - type: integer 
+	Parameter MEMORY_SIZE bound to: 3392 - type: integer 
+	Parameter MEMORY_PRIMITIVE bound to: 1 - type: integer 
+	Parameter CLOCKING_MODE bound to: 0 - type: integer 
+	Parameter ECC_MODE bound to: 0 - type: integer 
+	Parameter MEMORY_INIT_FILE bound to: none - type: string 
+	Parameter MEMORY_INIT_PARAM bound to: (null) - type: string 
+	Parameter USE_MEM_INIT_MMI bound to: 0 - type: integer 
+	Parameter USE_MEM_INIT bound to: 0 - type: integer 
+	Parameter MEMORY_OPTIMIZATION bound to: true - type: string 
+	Parameter WAKEUP_TIME bound to: 0 - type: integer 
+	Parameter AUTO_SLEEP_TIME bound to: 0 - type: integer 
+	Parameter MESSAGE_CONTROL bound to: 0 - type: integer 
+	Parameter VERSION bound to: 0 - type: integer 
+	Parameter USE_EMBEDDED_CONSTRAINT bound to: 0 - type: integer 
+	Parameter CASCADE_HEIGHT bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter WRITE_PROTECT bound to: 1 - type: integer 
+	Parameter WRITE_DATA_WIDTH_A bound to: 106 - type: integer 
+	Parameter READ_DATA_WIDTH_A bound to: 106 - type: integer 
+	Parameter BYTE_WRITE_WIDTH_A bound to: 106 - type: integer 
+	Parameter ADDR_WIDTH_A bound to: 5 - type: integer 
+	Parameter READ_RESET_VALUE_A bound to: 0 - type: string 
+	Parameter READ_LATENCY_A bound to: 2 - type: integer 
+	Parameter WRITE_MODE_A bound to: 1 - type: integer 
+	Parameter RST_MODE_A bound to: SYNC - type: string 
+	Parameter WRITE_DATA_WIDTH_B bound to: 106 - type: integer 
+	Parameter READ_DATA_WIDTH_B bound to: 106 - type: integer 
+	Parameter BYTE_WRITE_WIDTH_B bound to: 106 - type: integer 
+	Parameter ADDR_WIDTH_B bound to: 5 - type: integer 
+	Parameter READ_RESET_VALUE_B bound to: 0 - type: string 
+	Parameter READ_LATENCY_B bound to: 1 - type: integer 
+	Parameter WRITE_MODE_B bound to: 1 - type: integer 
+	Parameter RST_MODE_B bound to: SYNC - type: string 
+	Parameter P_MEMORY_PRIMITIVE bound to: distributed - type: string 
+	Parameter P_MIN_WIDTH_DATA_A bound to: 106 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_B bound to: 106 - type: integer 
+	Parameter P_MIN_WIDTH_DATA bound to: 106 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_ECC bound to: 106 - type: integer 
+	Parameter P_MAX_DEPTH_DATA bound to: 32 - type: integer 
+	Parameter P_ECC_MODE bound to: no_ecc - type: string 
+	Parameter P_MEMORY_OPT bound to: yes - type: string 
+	Parameter P_WIDTH_COL_WRITE_A bound to: 106 - type: integer 
+	Parameter P_WIDTH_COL_WRITE_B bound to: 106 - type: integer 
+	Parameter P_NUM_COLS_WRITE_A bound to: 1 - type: integer 
+	Parameter P_NUM_COLS_WRITE_B bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_WRITE_A bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_WRITE_B bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_READ_A bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_READ_B bound to: 1 - type: integer 
+	Parameter P_WIDTH_ADDR_WRITE_A bound to: 5 - type: integer 
+	Parameter P_WIDTH_ADDR_WRITE_B bound to: 5 - type: integer 
+	Parameter P_WIDTH_ADDR_READ_A bound to: 5 - type: integer 
+	Parameter P_WIDTH_ADDR_READ_B bound to: 5 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_WRITE_A bound to: 0 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_WRITE_B bound to: 0 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_READ_A bound to: 0 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_READ_B bound to: 0 - type: integer 
+	Parameter P_ENABLE_BYTE_WRITE_A bound to: 0 - type: integer 
+	Parameter P_ENABLE_BYTE_WRITE_B bound to: 0 - type: integer 
+	Parameter P_SDP_WRITE_MODE bound to: yes - type: string 
+	Parameter rsta_loop_iter bound to: 108 - type: integer 
+	Parameter rstb_loop_iter bound to: 108 - type: integer 
+	Parameter NUM_CHAR_LOC bound to: 0 - type: integer 
+	Parameter MAX_NUM_CHAR bound to: 0 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_SHFT bound to: 106 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_LDW bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base__parameterized5' (42#1) [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_sdpram__parameterized5' (42#1) [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8404]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9c60_m00wn_0' (43#1) [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_m_0/bd_0/ip/ip_31/synth/bd_9c60_m00wn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'm00_nodes_imp_1TB0XDY' (44#1) [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_m_0/bd_0/synth/bd_9c60.v:1817]
+INFO: [Synth 8-6157] synthesizing module 'bd_9c60_m00s2a_0' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_m_0/bd_0/ip/ip_27/synth/bd_9c60_m00s2a_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9c60_m00s2a_0' (46#1) [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_m_0/bd_0/ip/ip_27/synth/bd_9c60_m00s2a_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_9c60_s00a2s_0' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_m_0/bd_0/ip/ip_12/synth/bd_9c60_s00a2s_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9c60_s00a2s_0' (48#1) [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_m_0/bd_0/ip/ip_12/synth/bd_9c60_s00a2s_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 's00_entry_pipeline_imp_FLZ0A1' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_m_0/bd_0/synth/bd_9c60.v:2122]
+INFO: [Synth 8-6157] synthesizing module 'bd_9c60_s00mmu_0' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_m_0/bd_0/ip/ip_9/synth/bd_9c60_s00mmu_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9c60_s00mmu_0' (51#1) [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_m_0/bd_0/ip/ip_9/synth/bd_9c60_s00mmu_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_9c60_s00sic_0' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_m_0/bd_0/ip/ip_11/synth/bd_9c60_s00sic_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9c60_s00sic_0' (54#1) [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_m_0/bd_0/ip/ip_11/synth/bd_9c60_s00sic_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_9c60_s00tr_0' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_m_0/bd_0/ip/ip_10/synth/bd_9c60_s00tr_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9c60_s00tr_0' (57#1) [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_m_0/bd_0/ip/ip_10/synth/bd_9c60_s00tr_0.sv:58]
+WARNING: [Synth 8-7071] port 'm_axi_awburst' of module 'bd_9c60_s00tr_0' is unconnected for instance 's00_transaction_regulator' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_m_0/bd_0/synth/bd_9c60.v:2650]
+WARNING: [Synth 8-7071] port 'm_axi_arburst' of module 'bd_9c60_s00tr_0' is unconnected for instance 's00_transaction_regulator' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_m_0/bd_0/synth/bd_9c60.v:2650]
+WARNING: [Synth 8-7023] instance 's00_transaction_regulator' of module 'bd_9c60_s00tr_0' has 82 connections declared, but only 80 given [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_m_0/bd_0/synth/bd_9c60.v:2650]
+INFO: [Synth 8-6155] done synthesizing module 's00_entry_pipeline_imp_FLZ0A1' (58#1) [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_m_0/bd_0/synth/bd_9c60.v:2122]
+INFO: [Synth 8-6157] synthesizing module 's00_nodes_imp_CRBM7N' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_m_0/bd_0/synth/bd_9c60.v:2733]
+INFO: [Synth 8-6157] synthesizing module 'bd_9c60_sarn_0' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_m_0/bd_0/ip/ip_13/synth/bd_9c60_sarn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_sdpram__parameterized6' [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8404]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized6' [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+	Parameter MEMORY_TYPE bound to: 1 - type: integer 
+	Parameter MEMORY_SIZE bound to: 576 - type: integer 
+	Parameter MEMORY_PRIMITIVE bound to: 1 - type: integer 
+	Parameter CLOCKING_MODE bound to: 1 - type: integer 
+	Parameter ECC_MODE bound to: 0 - type: integer 
+	Parameter MEMORY_INIT_FILE bound to: none - type: string 
+	Parameter MEMORY_INIT_PARAM bound to: (null) - type: string 
+	Parameter USE_MEM_INIT_MMI bound to: 0 - type: integer 
+	Parameter USE_MEM_INIT bound to: 0 - type: integer 
+	Parameter MEMORY_OPTIMIZATION bound to: true - type: string 
+	Parameter WAKEUP_TIME bound to: 0 - type: integer 
+	Parameter AUTO_SLEEP_TIME bound to: 0 - type: integer 
+	Parameter MESSAGE_CONTROL bound to: 0 - type: integer 
+	Parameter VERSION bound to: 0 - type: integer 
+	Parameter USE_EMBEDDED_CONSTRAINT bound to: 0 - type: integer 
+	Parameter CASCADE_HEIGHT bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter WRITE_PROTECT bound to: 1 - type: integer 
+	Parameter WRITE_DATA_WIDTH_A bound to: 18 - type: integer 
+	Parameter READ_DATA_WIDTH_A bound to: 18 - type: integer 
+	Parameter BYTE_WRITE_WIDTH_A bound to: 18 - type: integer 
+	Parameter ADDR_WIDTH_A bound to: 5 - type: integer 
+	Parameter READ_RESET_VALUE_A bound to: 0 - type: string 
+	Parameter READ_LATENCY_A bound to: 2 - type: integer 
+	Parameter WRITE_MODE_A bound to: 1 - type: integer 
+	Parameter RST_MODE_A bound to: SYNC - type: string 
+	Parameter WRITE_DATA_WIDTH_B bound to: 18 - type: integer 
+	Parameter READ_DATA_WIDTH_B bound to: 18 - type: integer 
+	Parameter BYTE_WRITE_WIDTH_B bound to: 18 - type: integer 
+	Parameter ADDR_WIDTH_B bound to: 5 - type: integer 
+	Parameter READ_RESET_VALUE_B bound to: 0 - type: string 
+	Parameter READ_LATENCY_B bound to: 1 - type: integer 
+	Parameter WRITE_MODE_B bound to: 1 - type: integer 
+	Parameter RST_MODE_B bound to: SYNC - type: string 
+	Parameter P_MEMORY_PRIMITIVE bound to: distributed - type: string 
+	Parameter P_MIN_WIDTH_DATA_A bound to: 18 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_B bound to: 18 - type: integer 
+	Parameter P_MIN_WIDTH_DATA bound to: 18 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_ECC bound to: 18 - type: integer 
+	Parameter P_MAX_DEPTH_DATA bound to: 32 - type: integer 
+	Parameter P_ECC_MODE bound to: no_ecc - type: string 
+	Parameter P_MEMORY_OPT bound to: yes - type: string 
+	Parameter P_WIDTH_COL_WRITE_A bound to: 18 - type: integer 
+	Parameter P_WIDTH_COL_WRITE_B bound to: 18 - type: integer 
+	Parameter P_NUM_COLS_WRITE_A bound to: 1 - type: integer 
+	Parameter P_NUM_COLS_WRITE_B bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_WRITE_A bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_WRITE_B bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_READ_A bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_READ_B bound to: 1 - type: integer 
+	Parameter P_WIDTH_ADDR_WRITE_A bound to: 5 - type: integer 
+	Parameter P_WIDTH_ADDR_WRITE_B bound to: 5 - type: integer 
+	Parameter P_WIDTH_ADDR_READ_A bound to: 5 - type: integer 
+	Parameter P_WIDTH_ADDR_READ_B bound to: 5 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_WRITE_A bound to: 0 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_WRITE_B bound to: 0 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_READ_A bound to: 0 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_READ_B bound to: 0 - type: integer 
+	Parameter P_ENABLE_BYTE_WRITE_A bound to: 0 - type: integer 
+	Parameter P_ENABLE_BYTE_WRITE_B bound to: 0 - type: integer 
+	Parameter P_SDP_WRITE_MODE bound to: yes - type: string 
+	Parameter rsta_loop_iter bound to: 20 - type: integer 
+	Parameter rstb_loop_iter bound to: 20 - type: integer 
+	Parameter NUM_CHAR_LOC bound to: 0 - type: integer 
+	Parameter MAX_NUM_CHAR bound to: 0 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_SHFT bound to: 18 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_LDW bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base__parameterized6' (58#1) [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_sdpram__parameterized6' (58#1) [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8404]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_sdpram__parameterized7' [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8404]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized7' [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+	Parameter MEMORY_TYPE bound to: 1 - type: integer 
+	Parameter MEMORY_SIZE bound to: 4544 - type: integer 
+	Parameter MEMORY_PRIMITIVE bound to: 1 - type: integer 
+	Parameter CLOCKING_MODE bound to: 1 - type: integer 
+	Parameter ECC_MODE bound to: 0 - type: integer 
+	Parameter MEMORY_INIT_FILE bound to: none - type: string 
+	Parameter MEMORY_INIT_PARAM bound to: (null) - type: string 
+	Parameter USE_MEM_INIT_MMI bound to: 0 - type: integer 
+	Parameter USE_MEM_INIT bound to: 0 - type: integer 
+	Parameter MEMORY_OPTIMIZATION bound to: true - type: string 
+	Parameter WAKEUP_TIME bound to: 0 - type: integer 
+	Parameter AUTO_SLEEP_TIME bound to: 0 - type: integer 
+	Parameter MESSAGE_CONTROL bound to: 0 - type: integer 
+	Parameter VERSION bound to: 0 - type: integer 
+	Parameter USE_EMBEDDED_CONSTRAINT bound to: 0 - type: integer 
+	Parameter CASCADE_HEIGHT bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter WRITE_PROTECT bound to: 1 - type: integer 
+	Parameter WRITE_DATA_WIDTH_A bound to: 142 - type: integer 
+	Parameter READ_DATA_WIDTH_A bound to: 142 - type: integer 
+	Parameter BYTE_WRITE_WIDTH_A bound to: 142 - type: integer 
+	Parameter ADDR_WIDTH_A bound to: 5 - type: integer 
+	Parameter READ_RESET_VALUE_A bound to: 0 - type: string 
+	Parameter READ_LATENCY_A bound to: 2 - type: integer 
+	Parameter WRITE_MODE_A bound to: 1 - type: integer 
+	Parameter RST_MODE_A bound to: SYNC - type: string 
+	Parameter WRITE_DATA_WIDTH_B bound to: 142 - type: integer 
+	Parameter READ_DATA_WIDTH_B bound to: 142 - type: integer 
+	Parameter BYTE_WRITE_WIDTH_B bound to: 142 - type: integer 
+	Parameter ADDR_WIDTH_B bound to: 5 - type: integer 
+	Parameter READ_RESET_VALUE_B bound to: 0 - type: string 
+	Parameter READ_LATENCY_B bound to: 1 - type: integer 
+	Parameter WRITE_MODE_B bound to: 1 - type: integer 
+	Parameter RST_MODE_B bound to: SYNC - type: string 
+	Parameter P_MEMORY_PRIMITIVE bound to: distributed - type: string 
+	Parameter P_MIN_WIDTH_DATA_A bound to: 142 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_B bound to: 142 - type: integer 
+	Parameter P_MIN_WIDTH_DATA bound to: 142 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_ECC bound to: 142 - type: integer 
+	Parameter P_MAX_DEPTH_DATA bound to: 32 - type: integer 
+	Parameter P_ECC_MODE bound to: no_ecc - type: string 
+	Parameter P_MEMORY_OPT bound to: yes - type: string 
+	Parameter P_WIDTH_COL_WRITE_A bound to: 142 - type: integer 
+	Parameter P_WIDTH_COL_WRITE_B bound to: 142 - type: integer 
+	Parameter P_NUM_COLS_WRITE_A bound to: 1 - type: integer 
+	Parameter P_NUM_COLS_WRITE_B bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_WRITE_A bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_WRITE_B bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_READ_A bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_READ_B bound to: 1 - type: integer 
+	Parameter P_WIDTH_ADDR_WRITE_A bound to: 5 - type: integer 
+	Parameter P_WIDTH_ADDR_WRITE_B bound to: 5 - type: integer 
+	Parameter P_WIDTH_ADDR_READ_A bound to: 5 - type: integer 
+	Parameter P_WIDTH_ADDR_READ_B bound to: 5 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_WRITE_A bound to: 0 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_WRITE_B bound to: 0 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_READ_A bound to: 0 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_READ_B bound to: 0 - type: integer 
+	Parameter P_ENABLE_BYTE_WRITE_A bound to: 0 - type: integer 
+	Parameter P_ENABLE_BYTE_WRITE_B bound to: 0 - type: integer 
+	Parameter P_SDP_WRITE_MODE bound to: yes - type: string 
+	Parameter rsta_loop_iter bound to: 144 - type: integer 
+	Parameter rstb_loop_iter bound to: 144 - type: integer 
+	Parameter NUM_CHAR_LOC bound to: 0 - type: integer 
+	Parameter MAX_NUM_CHAR bound to: 0 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_SHFT bound to: 142 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_LDW bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base__parameterized7' (58#1) [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_sdpram__parameterized7' (58#1) [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8404]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9c60_sarn_0' (59#1) [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_m_0/bd_0/ip/ip_13/synth/bd_9c60_sarn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_9c60_sawn_0' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_m_0/bd_0/ip/ip_15/synth/bd_9c60_sawn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9c60_sawn_0' (60#1) [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_m_0/bd_0/ip/ip_15/synth/bd_9c60_sawn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_9c60_sbn_0' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_m_0/bd_0/ip/ip_17/synth/bd_9c60_sbn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_sdpram__parameterized8' [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8404]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized8' [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+	Parameter MEMORY_TYPE bound to: 1 - type: integer 
+	Parameter MEMORY_SIZE bound to: 832 - type: integer 
+	Parameter MEMORY_PRIMITIVE bound to: 1 - type: integer 
+	Parameter CLOCKING_MODE bound to: 1 - type: integer 
+	Parameter ECC_MODE bound to: 0 - type: integer 
+	Parameter MEMORY_INIT_FILE bound to: none - type: string 
+	Parameter MEMORY_INIT_PARAM bound to: (null) - type: string 
+	Parameter USE_MEM_INIT_MMI bound to: 0 - type: integer 
+	Parameter USE_MEM_INIT bound to: 0 - type: integer 
+	Parameter MEMORY_OPTIMIZATION bound to: true - type: string 
+	Parameter WAKEUP_TIME bound to: 0 - type: integer 
+	Parameter AUTO_SLEEP_TIME bound to: 0 - type: integer 
+	Parameter MESSAGE_CONTROL bound to: 0 - type: integer 
+	Parameter VERSION bound to: 0 - type: integer 
+	Parameter USE_EMBEDDED_CONSTRAINT bound to: 0 - type: integer 
+	Parameter CASCADE_HEIGHT bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter WRITE_PROTECT bound to: 1 - type: integer 
+	Parameter WRITE_DATA_WIDTH_A bound to: 26 - type: integer 
+	Parameter READ_DATA_WIDTH_A bound to: 26 - type: integer 
+	Parameter BYTE_WRITE_WIDTH_A bound to: 26 - type: integer 
+	Parameter ADDR_WIDTH_A bound to: 5 - type: integer 
+	Parameter READ_RESET_VALUE_A bound to: 0 - type: string 
+	Parameter READ_LATENCY_A bound to: 2 - type: integer 
+	Parameter WRITE_MODE_A bound to: 1 - type: integer 
+	Parameter RST_MODE_A bound to: SYNC - type: string 
+	Parameter WRITE_DATA_WIDTH_B bound to: 26 - type: integer 
+	Parameter READ_DATA_WIDTH_B bound to: 26 - type: integer 
+	Parameter BYTE_WRITE_WIDTH_B bound to: 26 - type: integer 
+	Parameter ADDR_WIDTH_B bound to: 5 - type: integer 
+	Parameter READ_RESET_VALUE_B bound to: 0 - type: string 
+	Parameter READ_LATENCY_B bound to: 1 - type: integer 
+	Parameter WRITE_MODE_B bound to: 1 - type: integer 
+	Parameter RST_MODE_B bound to: SYNC - type: string 
+	Parameter P_MEMORY_PRIMITIVE bound to: distributed - type: string 
+	Parameter P_MIN_WIDTH_DATA_A bound to: 26 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_B bound to: 26 - type: integer 
+	Parameter P_MIN_WIDTH_DATA bound to: 26 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_ECC bound to: 26 - type: integer 
+	Parameter P_MAX_DEPTH_DATA bound to: 32 - type: integer 
+	Parameter P_ECC_MODE bound to: no_ecc - type: string 
+	Parameter P_MEMORY_OPT bound to: yes - type: string 
+	Parameter P_WIDTH_COL_WRITE_A bound to: 26 - type: integer 
+	Parameter P_WIDTH_COL_WRITE_B bound to: 26 - type: integer 
+	Parameter P_NUM_COLS_WRITE_A bound to: 1 - type: integer 
+	Parameter P_NUM_COLS_WRITE_B bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_WRITE_A bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_WRITE_B bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_READ_A bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_READ_B bound to: 1 - type: integer 
+	Parameter P_WIDTH_ADDR_WRITE_A bound to: 5 - type: integer 
+	Parameter P_WIDTH_ADDR_WRITE_B bound to: 5 - type: integer 
+	Parameter P_WIDTH_ADDR_READ_A bound to: 5 - type: integer 
+	Parameter P_WIDTH_ADDR_READ_B bound to: 5 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_WRITE_A bound to: 0 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_WRITE_B bound to: 0 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_READ_A bound to: 0 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_READ_B bound to: 0 - type: integer 
+	Parameter P_ENABLE_BYTE_WRITE_A bound to: 0 - type: integer 
+	Parameter P_ENABLE_BYTE_WRITE_B bound to: 0 - type: integer 
+	Parameter P_SDP_WRITE_MODE bound to: yes - type: string 
+	Parameter rsta_loop_iter bound to: 28 - type: integer 
+	Parameter rstb_loop_iter bound to: 28 - type: integer 
+	Parameter NUM_CHAR_LOC bound to: 0 - type: integer 
+	Parameter MAX_NUM_CHAR bound to: 0 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_SHFT bound to: 26 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_LDW bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base__parameterized8' (61#1) [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_sdpram__parameterized8' (61#1) [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8404]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9c60_sbn_0' (62#1) [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_m_0/bd_0/ip/ip_17/synth/bd_9c60_sbn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_9c60_srn_0' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_m_0/bd_0/ip/ip_14/synth/bd_9c60_srn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_sdpram__parameterized9' [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8404]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized9' [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+	Parameter MEMORY_TYPE bound to: 1 - type: integer 
+	Parameter MEMORY_SIZE bound to: 3328 - type: integer 
+	Parameter MEMORY_PRIMITIVE bound to: 1 - type: integer 
+	Parameter CLOCKING_MODE bound to: 1 - type: integer 
+	Parameter ECC_MODE bound to: 0 - type: integer 
+	Parameter MEMORY_INIT_FILE bound to: none - type: string 
+	Parameter MEMORY_INIT_PARAM bound to: (null) - type: string 
+	Parameter USE_MEM_INIT_MMI bound to: 0 - type: integer 
+	Parameter USE_MEM_INIT bound to: 0 - type: integer 
+	Parameter MEMORY_OPTIMIZATION bound to: true - type: string 
+	Parameter WAKEUP_TIME bound to: 0 - type: integer 
+	Parameter AUTO_SLEEP_TIME bound to: 0 - type: integer 
+	Parameter MESSAGE_CONTROL bound to: 0 - type: integer 
+	Parameter VERSION bound to: 0 - type: integer 
+	Parameter USE_EMBEDDED_CONSTRAINT bound to: 0 - type: integer 
+	Parameter CASCADE_HEIGHT bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter WRITE_PROTECT bound to: 1 - type: integer 
+	Parameter WRITE_DATA_WIDTH_A bound to: 104 - type: integer 
+	Parameter READ_DATA_WIDTH_A bound to: 104 - type: integer 
+	Parameter BYTE_WRITE_WIDTH_A bound to: 104 - type: integer 
+	Parameter ADDR_WIDTH_A bound to: 5 - type: integer 
+	Parameter READ_RESET_VALUE_A bound to: 0 - type: string 
+	Parameter READ_LATENCY_A bound to: 2 - type: integer 
+	Parameter WRITE_MODE_A bound to: 1 - type: integer 
+	Parameter RST_MODE_A bound to: SYNC - type: string 
+	Parameter WRITE_DATA_WIDTH_B bound to: 104 - type: integer 
+	Parameter READ_DATA_WIDTH_B bound to: 104 - type: integer 
+	Parameter BYTE_WRITE_WIDTH_B bound to: 104 - type: integer 
+	Parameter ADDR_WIDTH_B bound to: 5 - type: integer 
+	Parameter READ_RESET_VALUE_B bound to: 0 - type: string 
+	Parameter READ_LATENCY_B bound to: 1 - type: integer 
+	Parameter WRITE_MODE_B bound to: 1 - type: integer 
+	Parameter RST_MODE_B bound to: SYNC - type: string 
+	Parameter P_MEMORY_PRIMITIVE bound to: distributed - type: string 
+	Parameter P_MIN_WIDTH_DATA_A bound to: 104 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_B bound to: 104 - type: integer 
+	Parameter P_MIN_WIDTH_DATA bound to: 104 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_ECC bound to: 104 - type: integer 
+	Parameter P_MAX_DEPTH_DATA bound to: 32 - type: integer 
+	Parameter P_ECC_MODE bound to: no_ecc - type: string 
+	Parameter P_MEMORY_OPT bound to: yes - type: string 
+	Parameter P_WIDTH_COL_WRITE_A bound to: 104 - type: integer 
+	Parameter P_WIDTH_COL_WRITE_B bound to: 104 - type: integer 
+	Parameter P_NUM_COLS_WRITE_A bound to: 1 - type: integer 
+	Parameter P_NUM_COLS_WRITE_B bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_WRITE_A bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_WRITE_B bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_READ_A bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_READ_B bound to: 1 - type: integer 
+	Parameter P_WIDTH_ADDR_WRITE_A bound to: 5 - type: integer 
+	Parameter P_WIDTH_ADDR_WRITE_B bound to: 5 - type: integer 
+	Parameter P_WIDTH_ADDR_READ_A bound to: 5 - type: integer 
+	Parameter P_WIDTH_ADDR_READ_B bound to: 5 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_WRITE_A bound to: 0 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_WRITE_B bound to: 0 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_READ_A bound to: 0 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_READ_B bound to: 0 - type: integer 
+	Parameter P_ENABLE_BYTE_WRITE_A bound to: 0 - type: integer 
+	Parameter P_ENABLE_BYTE_WRITE_B bound to: 0 - type: integer 
+	Parameter P_SDP_WRITE_MODE bound to: yes - type: string 
+	Parameter rsta_loop_iter bound to: 104 - type: integer 
+	Parameter rstb_loop_iter bound to: 104 - type: integer 
+	Parameter NUM_CHAR_LOC bound to: 0 - type: integer 
+	Parameter MAX_NUM_CHAR bound to: 0 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_SHFT bound to: 104 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_LDW bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base__parameterized9' (63#1) [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_sdpram__parameterized9' (63#1) [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8404]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9c60_srn_0' (64#1) [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_m_0/bd_0/ip/ip_14/synth/bd_9c60_srn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_9c60_swn_0' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_m_0/bd_0/ip/ip_16/synth/bd_9c60_swn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_sdpram__parameterized10' [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8404]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized10' [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+	Parameter MEMORY_TYPE bound to: 1 - type: integer 
+	Parameter MEMORY_SIZE bound to: 2816 - type: integer 
+	Parameter MEMORY_PRIMITIVE bound to: 1 - type: integer 
+	Parameter CLOCKING_MODE bound to: 1 - type: integer 
+	Parameter ECC_MODE bound to: 0 - type: integer 
+	Parameter MEMORY_INIT_FILE bound to: none - type: string 
+	Parameter MEMORY_INIT_PARAM bound to: (null) - type: string 
+	Parameter USE_MEM_INIT_MMI bound to: 0 - type: integer 
+	Parameter USE_MEM_INIT bound to: 0 - type: integer 
+	Parameter MEMORY_OPTIMIZATION bound to: true - type: string 
+	Parameter WAKEUP_TIME bound to: 0 - type: integer 
+	Parameter AUTO_SLEEP_TIME bound to: 0 - type: integer 
+	Parameter MESSAGE_CONTROL bound to: 0 - type: integer 
+	Parameter VERSION bound to: 0 - type: integer 
+	Parameter USE_EMBEDDED_CONSTRAINT bound to: 0 - type: integer 
+	Parameter CASCADE_HEIGHT bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter WRITE_PROTECT bound to: 1 - type: integer 
+	Parameter WRITE_DATA_WIDTH_A bound to: 88 - type: integer 
+	Parameter READ_DATA_WIDTH_A bound to: 88 - type: integer 
+	Parameter BYTE_WRITE_WIDTH_A bound to: 88 - type: integer 
+	Parameter ADDR_WIDTH_A bound to: 5 - type: integer 
+	Parameter READ_RESET_VALUE_A bound to: 0 - type: string 
+	Parameter READ_LATENCY_A bound to: 2 - type: integer 
+	Parameter WRITE_MODE_A bound to: 1 - type: integer 
+	Parameter RST_MODE_A bound to: SYNC - type: string 
+	Parameter WRITE_DATA_WIDTH_B bound to: 88 - type: integer 
+	Parameter READ_DATA_WIDTH_B bound to: 88 - type: integer 
+	Parameter BYTE_WRITE_WIDTH_B bound to: 88 - type: integer 
+	Parameter ADDR_WIDTH_B bound to: 5 - type: integer 
+	Parameter READ_RESET_VALUE_B bound to: 0 - type: string 
+	Parameter READ_LATENCY_B bound to: 1 - type: integer 
+	Parameter WRITE_MODE_B bound to: 1 - type: integer 
+	Parameter RST_MODE_B bound to: SYNC - type: string 
+	Parameter P_MEMORY_PRIMITIVE bound to: distributed - type: string 
+	Parameter P_MIN_WIDTH_DATA_A bound to: 88 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_B bound to: 88 - type: integer 
+	Parameter P_MIN_WIDTH_DATA bound to: 88 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_ECC bound to: 88 - type: integer 
+	Parameter P_MAX_DEPTH_DATA bound to: 32 - type: integer 
+	Parameter P_ECC_MODE bound to: no_ecc - type: string 
+	Parameter P_MEMORY_OPT bound to: yes - type: string 
+	Parameter P_WIDTH_COL_WRITE_A bound to: 88 - type: integer 
+	Parameter P_WIDTH_COL_WRITE_B bound to: 88 - type: integer 
+	Parameter P_NUM_COLS_WRITE_A bound to: 1 - type: integer 
+	Parameter P_NUM_COLS_WRITE_B bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_WRITE_A bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_WRITE_B bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_READ_A bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_READ_B bound to: 1 - type: integer 
+	Parameter P_WIDTH_ADDR_WRITE_A bound to: 5 - type: integer 
+	Parameter P_WIDTH_ADDR_WRITE_B bound to: 5 - type: integer 
+	Parameter P_WIDTH_ADDR_READ_A bound to: 5 - type: integer 
+	Parameter P_WIDTH_ADDR_READ_B bound to: 5 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_WRITE_A bound to: 0 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_WRITE_B bound to: 0 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_READ_A bound to: 0 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_READ_B bound to: 0 - type: integer 
+	Parameter P_ENABLE_BYTE_WRITE_A bound to: 0 - type: integer 
+	Parameter P_ENABLE_BYTE_WRITE_B bound to: 0 - type: integer 
+	Parameter P_SDP_WRITE_MODE bound to: yes - type: string 
+	Parameter rsta_loop_iter bound to: 88 - type: integer 
+	Parameter rstb_loop_iter bound to: 88 - type: integer 
+	Parameter NUM_CHAR_LOC bound to: 0 - type: integer 
+	Parameter MAX_NUM_CHAR bound to: 0 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_SHFT bound to: 88 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_LDW bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base__parameterized10' (65#1) [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_sdpram__parameterized10' (65#1) [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8404]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9c60_swn_0' (66#1) [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_m_0/bd_0/ip/ip_16/synth/bd_9c60_swn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 's00_nodes_imp_CRBM7N' (67#1) [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_m_0/bd_0/synth/bd_9c60.v:2733]
+INFO: [Synth 8-6157] synthesizing module 'bd_9c60_s01a2s_0' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_m_0/bd_0/ip/ip_21/synth/bd_9c60_s01a2s_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9c60_s01a2s_0' (68#1) [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_m_0/bd_0/ip/ip_21/synth/bd_9c60_s01a2s_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 's01_entry_pipeline_imp_19A34L9' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_m_0/bd_0/synth/bd_9c60.v:3029]
+INFO: [Synth 8-6157] synthesizing module 'bd_9c60_s01mmu_0' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_m_0/bd_0/ip/ip_18/synth/bd_9c60_s01mmu_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9c60_s01mmu_0' (69#1) [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_m_0/bd_0/ip/ip_18/synth/bd_9c60_s01mmu_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_9c60_s01sic_0' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_m_0/bd_0/ip/ip_20/synth/bd_9c60_s01sic_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9c60_s01sic_0' (70#1) [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_m_0/bd_0/ip/ip_20/synth/bd_9c60_s01sic_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_9c60_s01tr_0' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_m_0/bd_0/ip/ip_19/synth/bd_9c60_s01tr_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9c60_s01tr_0' (71#1) [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_m_0/bd_0/ip/ip_19/synth/bd_9c60_s01tr_0.sv:58]
+WARNING: [Synth 8-7071] port 'm_axi_awburst' of module 'bd_9c60_s01tr_0' is unconnected for instance 's01_transaction_regulator' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_m_0/bd_0/synth/bd_9c60.v:3557]
+WARNING: [Synth 8-7071] port 'm_axi_arburst' of module 'bd_9c60_s01tr_0' is unconnected for instance 's01_transaction_regulator' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_m_0/bd_0/synth/bd_9c60.v:3557]
+WARNING: [Synth 8-7023] instance 's01_transaction_regulator' of module 'bd_9c60_s01tr_0' has 82 connections declared, but only 80 given [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_m_0/bd_0/synth/bd_9c60.v:3557]
+INFO: [Synth 8-6155] done synthesizing module 's01_entry_pipeline_imp_19A34L9' (72#1) [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_m_0/bd_0/synth/bd_9c60.v:3029]
+INFO: [Synth 8-6157] synthesizing module 's01_nodes_imp_1D3JDC5' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_m_0/bd_0/synth/bd_9c60.v:3640]
+INFO: [Synth 8-6157] synthesizing module 'bd_9c60_sarn_1' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_m_0/bd_0/ip/ip_22/synth/bd_9c60_sarn_1.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_sdpram__parameterized11' [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8404]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized11' [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+	Parameter MEMORY_TYPE bound to: 1 - type: integer 
+	Parameter MEMORY_SIZE bound to: 576 - type: integer 
+	Parameter MEMORY_PRIMITIVE bound to: 1 - type: integer 
+	Parameter CLOCKING_MODE bound to: 0 - type: integer 
+	Parameter ECC_MODE bound to: 0 - type: integer 
+	Parameter MEMORY_INIT_FILE bound to: none - type: string 
+	Parameter MEMORY_INIT_PARAM bound to: (null) - type: string 
+	Parameter USE_MEM_INIT_MMI bound to: 0 - type: integer 
+	Parameter USE_MEM_INIT bound to: 0 - type: integer 
+	Parameter MEMORY_OPTIMIZATION bound to: true - type: string 
+	Parameter WAKEUP_TIME bound to: 0 - type: integer 
+	Parameter AUTO_SLEEP_TIME bound to: 0 - type: integer 
+	Parameter MESSAGE_CONTROL bound to: 0 - type: integer 
+	Parameter VERSION bound to: 0 - type: integer 
+	Parameter USE_EMBEDDED_CONSTRAINT bound to: 0 - type: integer 
+	Parameter CASCADE_HEIGHT bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter WRITE_PROTECT bound to: 1 - type: integer 
+	Parameter WRITE_DATA_WIDTH_A bound to: 18 - type: integer 
+	Parameter READ_DATA_WIDTH_A bound to: 18 - type: integer 
+	Parameter BYTE_WRITE_WIDTH_A bound to: 18 - type: integer 
+	Parameter ADDR_WIDTH_A bound to: 5 - type: integer 
+	Parameter READ_RESET_VALUE_A bound to: 0 - type: string 
+	Parameter READ_LATENCY_A bound to: 2 - type: integer 
+	Parameter WRITE_MODE_A bound to: 1 - type: integer 
+	Parameter RST_MODE_A bound to: SYNC - type: string 
+	Parameter WRITE_DATA_WIDTH_B bound to: 18 - type: integer 
+	Parameter READ_DATA_WIDTH_B bound to: 18 - type: integer 
+	Parameter BYTE_WRITE_WIDTH_B bound to: 18 - type: integer 
+	Parameter ADDR_WIDTH_B bound to: 5 - type: integer 
+	Parameter READ_RESET_VALUE_B bound to: 0 - type: string 
+	Parameter READ_LATENCY_B bound to: 1 - type: integer 
+	Parameter WRITE_MODE_B bound to: 1 - type: integer 
+	Parameter RST_MODE_B bound to: SYNC - type: string 
+	Parameter P_MEMORY_PRIMITIVE bound to: distributed - type: string 
+	Parameter P_MIN_WIDTH_DATA_A bound to: 18 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_B bound to: 18 - type: integer 
+	Parameter P_MIN_WIDTH_DATA bound to: 18 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_ECC bound to: 18 - type: integer 
+	Parameter P_MAX_DEPTH_DATA bound to: 32 - type: integer 
+	Parameter P_ECC_MODE bound to: no_ecc - type: string 
+	Parameter P_MEMORY_OPT bound to: yes - type: string 
+	Parameter P_WIDTH_COL_WRITE_A bound to: 18 - type: integer 
+	Parameter P_WIDTH_COL_WRITE_B bound to: 18 - type: integer 
+	Parameter P_NUM_COLS_WRITE_A bound to: 1 - type: integer 
+	Parameter P_NUM_COLS_WRITE_B bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_WRITE_A bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_WRITE_B bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_READ_A bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_READ_B bound to: 1 - type: integer 
+	Parameter P_WIDTH_ADDR_WRITE_A bound to: 5 - type: integer 
+	Parameter P_WIDTH_ADDR_WRITE_B bound to: 5 - type: integer 
+	Parameter P_WIDTH_ADDR_READ_A bound to: 5 - type: integer 
+	Parameter P_WIDTH_ADDR_READ_B bound to: 5 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_WRITE_A bound to: 0 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_WRITE_B bound to: 0 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_READ_A bound to: 0 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_READ_B bound to: 0 - type: integer 
+	Parameter P_ENABLE_BYTE_WRITE_A bound to: 0 - type: integer 
+	Parameter P_ENABLE_BYTE_WRITE_B bound to: 0 - type: integer 
+	Parameter P_SDP_WRITE_MODE bound to: yes - type: string 
+	Parameter rsta_loop_iter bound to: 20 - type: integer 
+	Parameter rstb_loop_iter bound to: 20 - type: integer 
+	Parameter NUM_CHAR_LOC bound to: 0 - type: integer 
+	Parameter MAX_NUM_CHAR bound to: 0 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_SHFT bound to: 18 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_LDW bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base__parameterized11' (72#1) [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_sdpram__parameterized11' (72#1) [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8404]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_sdpram__parameterized12' [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8404]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized12' [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+	Parameter MEMORY_TYPE bound to: 1 - type: integer 
+	Parameter MEMORY_SIZE bound to: 4544 - type: integer 
+	Parameter MEMORY_PRIMITIVE bound to: 1 - type: integer 
+	Parameter CLOCKING_MODE bound to: 0 - type: integer 
+	Parameter ECC_MODE bound to: 0 - type: integer 
+	Parameter MEMORY_INIT_FILE bound to: none - type: string 
+	Parameter MEMORY_INIT_PARAM bound to: (null) - type: string 
+	Parameter USE_MEM_INIT_MMI bound to: 0 - type: integer 
+	Parameter USE_MEM_INIT bound to: 0 - type: integer 
+	Parameter MEMORY_OPTIMIZATION bound to: true - type: string 
+	Parameter WAKEUP_TIME bound to: 0 - type: integer 
+	Parameter AUTO_SLEEP_TIME bound to: 0 - type: integer 
+	Parameter MESSAGE_CONTROL bound to: 0 - type: integer 
+	Parameter VERSION bound to: 0 - type: integer 
+	Parameter USE_EMBEDDED_CONSTRAINT bound to: 0 - type: integer 
+	Parameter CASCADE_HEIGHT bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter WRITE_PROTECT bound to: 1 - type: integer 
+	Parameter WRITE_DATA_WIDTH_A bound to: 142 - type: integer 
+	Parameter READ_DATA_WIDTH_A bound to: 142 - type: integer 
+	Parameter BYTE_WRITE_WIDTH_A bound to: 142 - type: integer 
+	Parameter ADDR_WIDTH_A bound to: 5 - type: integer 
+	Parameter READ_RESET_VALUE_A bound to: 0 - type: string 
+	Parameter READ_LATENCY_A bound to: 2 - type: integer 
+	Parameter WRITE_MODE_A bound to: 1 - type: integer 
+	Parameter RST_MODE_A bound to: SYNC - type: string 
+	Parameter WRITE_DATA_WIDTH_B bound to: 142 - type: integer 
+	Parameter READ_DATA_WIDTH_B bound to: 142 - type: integer 
+	Parameter BYTE_WRITE_WIDTH_B bound to: 142 - type: integer 
+	Parameter ADDR_WIDTH_B bound to: 5 - type: integer 
+	Parameter READ_RESET_VALUE_B bound to: 0 - type: string 
+	Parameter READ_LATENCY_B bound to: 1 - type: integer 
+	Parameter WRITE_MODE_B bound to: 1 - type: integer 
+	Parameter RST_MODE_B bound to: SYNC - type: string 
+	Parameter P_MEMORY_PRIMITIVE bound to: distributed - type: string 
+	Parameter P_MIN_WIDTH_DATA_A bound to: 142 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_B bound to: 142 - type: integer 
+	Parameter P_MIN_WIDTH_DATA bound to: 142 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_ECC bound to: 142 - type: integer 
+	Parameter P_MAX_DEPTH_DATA bound to: 32 - type: integer 
+	Parameter P_ECC_MODE bound to: no_ecc - type: string 
+	Parameter P_MEMORY_OPT bound to: yes - type: string 
+	Parameter P_WIDTH_COL_WRITE_A bound to: 142 - type: integer 
+	Parameter P_WIDTH_COL_WRITE_B bound to: 142 - type: integer 
+	Parameter P_NUM_COLS_WRITE_A bound to: 1 - type: integer 
+	Parameter P_NUM_COLS_WRITE_B bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_WRITE_A bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_WRITE_B bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_READ_A bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_READ_B bound to: 1 - type: integer 
+	Parameter P_WIDTH_ADDR_WRITE_A bound to: 5 - type: integer 
+	Parameter P_WIDTH_ADDR_WRITE_B bound to: 5 - type: integer 
+	Parameter P_WIDTH_ADDR_READ_A bound to: 5 - type: integer 
+	Parameter P_WIDTH_ADDR_READ_B bound to: 5 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_WRITE_A bound to: 0 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_WRITE_B bound to: 0 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_READ_A bound to: 0 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_READ_B bound to: 0 - type: integer 
+	Parameter P_ENABLE_BYTE_WRITE_A bound to: 0 - type: integer 
+	Parameter P_ENABLE_BYTE_WRITE_B bound to: 0 - type: integer 
+	Parameter P_SDP_WRITE_MODE bound to: yes - type: string 
+	Parameter rsta_loop_iter bound to: 144 - type: integer 
+	Parameter rstb_loop_iter bound to: 144 - type: integer 
+	Parameter NUM_CHAR_LOC bound to: 0 - type: integer 
+	Parameter MAX_NUM_CHAR bound to: 0 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_SHFT bound to: 142 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_LDW bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base__parameterized12' (72#1) [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_sdpram__parameterized12' (72#1) [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8404]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9c60_sarn_1' (73#1) [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_m_0/bd_0/ip/ip_22/synth/bd_9c60_sarn_1.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_9c60_sawn_1' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_m_0/bd_0/ip/ip_24/synth/bd_9c60_sawn_1.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9c60_sawn_1' (74#1) [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_m_0/bd_0/ip/ip_24/synth/bd_9c60_sawn_1.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_9c60_sbn_1' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_m_0/bd_0/ip/ip_26/synth/bd_9c60_sbn_1.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_sdpram__parameterized13' [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8404]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized13' [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+	Parameter MEMORY_TYPE bound to: 1 - type: integer 
+	Parameter MEMORY_SIZE bound to: 832 - type: integer 
+	Parameter MEMORY_PRIMITIVE bound to: 1 - type: integer 
+	Parameter CLOCKING_MODE bound to: 0 - type: integer 
+	Parameter ECC_MODE bound to: 0 - type: integer 
+	Parameter MEMORY_INIT_FILE bound to: none - type: string 
+	Parameter MEMORY_INIT_PARAM bound to: (null) - type: string 
+	Parameter USE_MEM_INIT_MMI bound to: 0 - type: integer 
+	Parameter USE_MEM_INIT bound to: 0 - type: integer 
+	Parameter MEMORY_OPTIMIZATION bound to: true - type: string 
+	Parameter WAKEUP_TIME bound to: 0 - type: integer 
+	Parameter AUTO_SLEEP_TIME bound to: 0 - type: integer 
+	Parameter MESSAGE_CONTROL bound to: 0 - type: integer 
+	Parameter VERSION bound to: 0 - type: integer 
+	Parameter USE_EMBEDDED_CONSTRAINT bound to: 0 - type: integer 
+	Parameter CASCADE_HEIGHT bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter WRITE_PROTECT bound to: 1 - type: integer 
+	Parameter WRITE_DATA_WIDTH_A bound to: 26 - type: integer 
+	Parameter READ_DATA_WIDTH_A bound to: 26 - type: integer 
+	Parameter BYTE_WRITE_WIDTH_A bound to: 26 - type: integer 
+	Parameter ADDR_WIDTH_A bound to: 5 - type: integer 
+	Parameter READ_RESET_VALUE_A bound to: 0 - type: string 
+	Parameter READ_LATENCY_A bound to: 2 - type: integer 
+	Parameter WRITE_MODE_A bound to: 1 - type: integer 
+	Parameter RST_MODE_A bound to: SYNC - type: string 
+	Parameter WRITE_DATA_WIDTH_B bound to: 26 - type: integer 
+	Parameter READ_DATA_WIDTH_B bound to: 26 - type: integer 
+	Parameter BYTE_WRITE_WIDTH_B bound to: 26 - type: integer 
+	Parameter ADDR_WIDTH_B bound to: 5 - type: integer 
+	Parameter READ_RESET_VALUE_B bound to: 0 - type: string 
+	Parameter READ_LATENCY_B bound to: 1 - type: integer 
+	Parameter WRITE_MODE_B bound to: 1 - type: integer 
+	Parameter RST_MODE_B bound to: SYNC - type: string 
+	Parameter P_MEMORY_PRIMITIVE bound to: distributed - type: string 
+	Parameter P_MIN_WIDTH_DATA_A bound to: 26 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_B bound to: 26 - type: integer 
+	Parameter P_MIN_WIDTH_DATA bound to: 26 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_ECC bound to: 26 - type: integer 
+	Parameter P_MAX_DEPTH_DATA bound to: 32 - type: integer 
+	Parameter P_ECC_MODE bound to: no_ecc - type: string 
+	Parameter P_MEMORY_OPT bound to: yes - type: string 
+	Parameter P_WIDTH_COL_WRITE_A bound to: 26 - type: integer 
+	Parameter P_WIDTH_COL_WRITE_B bound to: 26 - type: integer 
+	Parameter P_NUM_COLS_WRITE_A bound to: 1 - type: integer 
+	Parameter P_NUM_COLS_WRITE_B bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_WRITE_A bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_WRITE_B bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_READ_A bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_READ_B bound to: 1 - type: integer 
+	Parameter P_WIDTH_ADDR_WRITE_A bound to: 5 - type: integer 
+	Parameter P_WIDTH_ADDR_WRITE_B bound to: 5 - type: integer 
+	Parameter P_WIDTH_ADDR_READ_A bound to: 5 - type: integer 
+	Parameter P_WIDTH_ADDR_READ_B bound to: 5 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_WRITE_A bound to: 0 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_WRITE_B bound to: 0 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_READ_A bound to: 0 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_READ_B bound to: 0 - type: integer 
+	Parameter P_ENABLE_BYTE_WRITE_A bound to: 0 - type: integer 
+	Parameter P_ENABLE_BYTE_WRITE_B bound to: 0 - type: integer 
+	Parameter P_SDP_WRITE_MODE bound to: yes - type: string 
+	Parameter rsta_loop_iter bound to: 28 - type: integer 
+	Parameter rstb_loop_iter bound to: 28 - type: integer 
+	Parameter NUM_CHAR_LOC bound to: 0 - type: integer 
+	Parameter MAX_NUM_CHAR bound to: 0 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_SHFT bound to: 26 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_LDW bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base__parameterized13' (74#1) [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_sdpram__parameterized13' (74#1) [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8404]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9c60_sbn_1' (75#1) [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_m_0/bd_0/ip/ip_26/synth/bd_9c60_sbn_1.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_9c60_srn_1' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_m_0/bd_0/ip/ip_23/synth/bd_9c60_srn_1.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_sdpram__parameterized14' [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8404]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized14' [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+	Parameter MEMORY_TYPE bound to: 1 - type: integer 
+	Parameter MEMORY_SIZE bound to: 3328 - type: integer 
+	Parameter MEMORY_PRIMITIVE bound to: 1 - type: integer 
+	Parameter CLOCKING_MODE bound to: 0 - type: integer 
+	Parameter ECC_MODE bound to: 0 - type: integer 
+	Parameter MEMORY_INIT_FILE bound to: none - type: string 
+	Parameter MEMORY_INIT_PARAM bound to: (null) - type: string 
+	Parameter USE_MEM_INIT_MMI bound to: 0 - type: integer 
+	Parameter USE_MEM_INIT bound to: 0 - type: integer 
+	Parameter MEMORY_OPTIMIZATION bound to: true - type: string 
+	Parameter WAKEUP_TIME bound to: 0 - type: integer 
+	Parameter AUTO_SLEEP_TIME bound to: 0 - type: integer 
+	Parameter MESSAGE_CONTROL bound to: 0 - type: integer 
+	Parameter VERSION bound to: 0 - type: integer 
+	Parameter USE_EMBEDDED_CONSTRAINT bound to: 0 - type: integer 
+	Parameter CASCADE_HEIGHT bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter WRITE_PROTECT bound to: 1 - type: integer 
+	Parameter WRITE_DATA_WIDTH_A bound to: 104 - type: integer 
+	Parameter READ_DATA_WIDTH_A bound to: 104 - type: integer 
+	Parameter BYTE_WRITE_WIDTH_A bound to: 104 - type: integer 
+	Parameter ADDR_WIDTH_A bound to: 5 - type: integer 
+	Parameter READ_RESET_VALUE_A bound to: 0 - type: string 
+	Parameter READ_LATENCY_A bound to: 2 - type: integer 
+	Parameter WRITE_MODE_A bound to: 1 - type: integer 
+	Parameter RST_MODE_A bound to: SYNC - type: string 
+	Parameter WRITE_DATA_WIDTH_B bound to: 104 - type: integer 
+	Parameter READ_DATA_WIDTH_B bound to: 104 - type: integer 
+	Parameter BYTE_WRITE_WIDTH_B bound to: 104 - type: integer 
+	Parameter ADDR_WIDTH_B bound to: 5 - type: integer 
+	Parameter READ_RESET_VALUE_B bound to: 0 - type: string 
+	Parameter READ_LATENCY_B bound to: 1 - type: integer 
+	Parameter WRITE_MODE_B bound to: 1 - type: integer 
+	Parameter RST_MODE_B bound to: SYNC - type: string 
+	Parameter P_MEMORY_PRIMITIVE bound to: distributed - type: string 
+	Parameter P_MIN_WIDTH_DATA_A bound to: 104 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_B bound to: 104 - type: integer 
+	Parameter P_MIN_WIDTH_DATA bound to: 104 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_ECC bound to: 104 - type: integer 
+	Parameter P_MAX_DEPTH_DATA bound to: 32 - type: integer 
+	Parameter P_ECC_MODE bound to: no_ecc - type: string 
+	Parameter P_MEMORY_OPT bound to: yes - type: string 
+	Parameter P_WIDTH_COL_WRITE_A bound to: 104 - type: integer 
+	Parameter P_WIDTH_COL_WRITE_B bound to: 104 - type: integer 
+	Parameter P_NUM_COLS_WRITE_A bound to: 1 - type: integer 
+	Parameter P_NUM_COLS_WRITE_B bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_WRITE_A bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_WRITE_B bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_READ_A bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_READ_B bound to: 1 - type: integer 
+	Parameter P_WIDTH_ADDR_WRITE_A bound to: 5 - type: integer 
+	Parameter P_WIDTH_ADDR_WRITE_B bound to: 5 - type: integer 
+	Parameter P_WIDTH_ADDR_READ_A bound to: 5 - type: integer 
+	Parameter P_WIDTH_ADDR_READ_B bound to: 5 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_WRITE_A bound to: 0 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_WRITE_B bound to: 0 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_READ_A bound to: 0 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_READ_B bound to: 0 - type: integer 
+	Parameter P_ENABLE_BYTE_WRITE_A bound to: 0 - type: integer 
+	Parameter P_ENABLE_BYTE_WRITE_B bound to: 0 - type: integer 
+	Parameter P_SDP_WRITE_MODE bound to: yes - type: string 
+	Parameter rsta_loop_iter bound to: 104 - type: integer 
+	Parameter rstb_loop_iter bound to: 104 - type: integer 
+	Parameter NUM_CHAR_LOC bound to: 0 - type: integer 
+	Parameter MAX_NUM_CHAR bound to: 0 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_SHFT bound to: 104 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_LDW bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base__parameterized14' (75#1) [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_sdpram__parameterized14' (75#1) [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8404]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9c60_srn_1' (76#1) [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_m_0/bd_0/ip/ip_23/synth/bd_9c60_srn_1.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_9c60_swn_1' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_m_0/bd_0/ip/ip_25/synth/bd_9c60_swn_1.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_sdpram__parameterized15' [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8404]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized15' [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+	Parameter MEMORY_TYPE bound to: 1 - type: integer 
+	Parameter MEMORY_SIZE bound to: 2816 - type: integer 
+	Parameter MEMORY_PRIMITIVE bound to: 1 - type: integer 
+	Parameter CLOCKING_MODE bound to: 0 - type: integer 
+	Parameter ECC_MODE bound to: 0 - type: integer 
+	Parameter MEMORY_INIT_FILE bound to: none - type: string 
+	Parameter MEMORY_INIT_PARAM bound to: (null) - type: string 
+	Parameter USE_MEM_INIT_MMI bound to: 0 - type: integer 
+	Parameter USE_MEM_INIT bound to: 0 - type: integer 
+	Parameter MEMORY_OPTIMIZATION bound to: true - type: string 
+	Parameter WAKEUP_TIME bound to: 0 - type: integer 
+	Parameter AUTO_SLEEP_TIME bound to: 0 - type: integer 
+	Parameter MESSAGE_CONTROL bound to: 0 - type: integer 
+	Parameter VERSION bound to: 0 - type: integer 
+	Parameter USE_EMBEDDED_CONSTRAINT bound to: 0 - type: integer 
+	Parameter CASCADE_HEIGHT bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter WRITE_PROTECT bound to: 1 - type: integer 
+	Parameter WRITE_DATA_WIDTH_A bound to: 88 - type: integer 
+	Parameter READ_DATA_WIDTH_A bound to: 88 - type: integer 
+	Parameter BYTE_WRITE_WIDTH_A bound to: 88 - type: integer 
+	Parameter ADDR_WIDTH_A bound to: 5 - type: integer 
+	Parameter READ_RESET_VALUE_A bound to: 0 - type: string 
+	Parameter READ_LATENCY_A bound to: 2 - type: integer 
+	Parameter WRITE_MODE_A bound to: 1 - type: integer 
+	Parameter RST_MODE_A bound to: SYNC - type: string 
+	Parameter WRITE_DATA_WIDTH_B bound to: 88 - type: integer 
+	Parameter READ_DATA_WIDTH_B bound to: 88 - type: integer 
+	Parameter BYTE_WRITE_WIDTH_B bound to: 88 - type: integer 
+	Parameter ADDR_WIDTH_B bound to: 5 - type: integer 
+	Parameter READ_RESET_VALUE_B bound to: 0 - type: string 
+	Parameter READ_LATENCY_B bound to: 1 - type: integer 
+	Parameter WRITE_MODE_B bound to: 1 - type: integer 
+	Parameter RST_MODE_B bound to: SYNC - type: string 
+	Parameter P_MEMORY_PRIMITIVE bound to: distributed - type: string 
+	Parameter P_MIN_WIDTH_DATA_A bound to: 88 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_B bound to: 88 - type: integer 
+	Parameter P_MIN_WIDTH_DATA bound to: 88 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_ECC bound to: 88 - type: integer 
+	Parameter P_MAX_DEPTH_DATA bound to: 32 - type: integer 
+	Parameter P_ECC_MODE bound to: no_ecc - type: string 
+	Parameter P_MEMORY_OPT bound to: yes - type: string 
+	Parameter P_WIDTH_COL_WRITE_A bound to: 88 - type: integer 
+	Parameter P_WIDTH_COL_WRITE_B bound to: 88 - type: integer 
+	Parameter P_NUM_COLS_WRITE_A bound to: 1 - type: integer 
+	Parameter P_NUM_COLS_WRITE_B bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_WRITE_A bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_WRITE_B bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_READ_A bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_READ_B bound to: 1 - type: integer 
+	Parameter P_WIDTH_ADDR_WRITE_A bound to: 5 - type: integer 
+	Parameter P_WIDTH_ADDR_WRITE_B bound to: 5 - type: integer 
+	Parameter P_WIDTH_ADDR_READ_A bound to: 5 - type: integer 
+	Parameter P_WIDTH_ADDR_READ_B bound to: 5 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_WRITE_A bound to: 0 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_WRITE_B bound to: 0 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_READ_A bound to: 0 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_READ_B bound to: 0 - type: integer 
+	Parameter P_ENABLE_BYTE_WRITE_A bound to: 0 - type: integer 
+	Parameter P_ENABLE_BYTE_WRITE_B bound to: 0 - type: integer 
+	Parameter P_SDP_WRITE_MODE bound to: yes - type: string 
+	Parameter rsta_loop_iter bound to: 88 - type: integer 
+	Parameter rstb_loop_iter bound to: 88 - type: integer 
+	Parameter NUM_CHAR_LOC bound to: 0 - type: integer 
+	Parameter MAX_NUM_CHAR bound to: 0 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_SHFT bound to: 88 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_LDW bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base__parameterized15' (76#1) [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_sdpram__parameterized15' (76#1) [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8404]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9c60_swn_1' (77#1) [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_m_0/bd_0/ip/ip_25/synth/bd_9c60_swn_1.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 's01_nodes_imp_1D3JDC5' (78#1) [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_m_0/bd_0/synth/bd_9c60.v:3640]
+INFO: [Synth 8-6157] synthesizing module 'switchboards_imp_JFP4BR' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_m_0/bd_0/synth/bd_9c60.v:3936]
+INFO: [Synth 8-6157] synthesizing module 'bd_9c60_arsw_0' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_m_0/bd_0/ip/ip_4/synth/bd_9c60_arsw_0.sv:57]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9c60_arsw_0' (81#1) [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_m_0/bd_0/ip/ip_4/synth/bd_9c60_arsw_0.sv:57]
+INFO: [Synth 8-6157] synthesizing module 'bd_9c60_awsw_0' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_m_0/bd_0/ip/ip_6/synth/bd_9c60_awsw_0.sv:57]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9c60_awsw_0' (82#1) [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_m_0/bd_0/ip/ip_6/synth/bd_9c60_awsw_0.sv:57]
+INFO: [Synth 8-6157] synthesizing module 'bd_9c60_bsw_0' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_m_0/bd_0/ip/ip_8/synth/bd_9c60_bsw_0.sv:57]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9c60_bsw_0' (83#1) [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_m_0/bd_0/ip/ip_8/synth/bd_9c60_bsw_0.sv:57]
+INFO: [Synth 8-6157] synthesizing module 'bd_9c60_rsw_0' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_m_0/bd_0/ip/ip_5/synth/bd_9c60_rsw_0.sv:57]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9c60_rsw_0' (84#1) [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_m_0/bd_0/ip/ip_5/synth/bd_9c60_rsw_0.sv:57]
+INFO: [Synth 8-6157] synthesizing module 'bd_9c60_wsw_0' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_m_0/bd_0/ip/ip_7/synth/bd_9c60_wsw_0.sv:57]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9c60_wsw_0' (85#1) [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_m_0/bd_0/ip/ip_7/synth/bd_9c60_wsw_0.sv:57]
+INFO: [Synth 8-6155] done synthesizing module 'switchboards_imp_JFP4BR' (86#1) [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_m_0/bd_0/synth/bd_9c60.v:3936]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9c60' (87#1) [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_m_0/bd_0/synth/bd_9c60.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'riscv_io_axi_m_0' (88#1) [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_m_0/synth/riscv_io_axi_m_0.v:57]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 2303.395 ; gain = 2.934 ; free physical = 18729 ; free virtual = 27631
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 2318.238 ; gain = 17.777 ; free physical = 18699 ; free virtual = 27601
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 2318.238 ; gain = 17.777 ; free physical = 18699 ; free virtual = 27601
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 2420.879 ; gain = 0.000 ; free physical = 18457 ; free virtual = 27360
+INFO: [Netlist 29-17] Analyzing 39 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_m_0/ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_m_0/ooc.xdc] for cell 'inst'
+Parsing XDC File [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_m_0/bd_0/ip/ip_1/bd_9c60_psr0_0_board.xdc] for cell 'inst/clk_map/psr0/U0'
+Finished Parsing XDC File [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_m_0/bd_0/ip/ip_1/bd_9c60_psr0_0_board.xdc] for cell 'inst/clk_map/psr0/U0'
+Parsing XDC File [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_m_0/bd_0/ip/ip_1/bd_9c60_psr0_0.xdc] for cell 'inst/clk_map/psr0/U0'
+Finished Parsing XDC File [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_m_0/bd_0/ip/ip_1/bd_9c60_psr0_0.xdc] for cell 'inst/clk_map/psr0/U0'
+Parsing XDC File [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_m_0/bd_0/ip/ip_2/bd_9c60_psr_aclk_0_board.xdc] for cell 'inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_m_0/bd_0/ip/ip_2/bd_9c60_psr_aclk_0_board.xdc] for cell 'inst/clk_map/psr_aclk/U0'
+Parsing XDC File [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_m_0/bd_0/ip/ip_2/bd_9c60_psr_aclk_0.xdc] for cell 'inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_m_0/bd_0/ip/ip_2/bd_9c60_psr_aclk_0.xdc] for cell 'inst/clk_map/psr_aclk/U0'
+Parsing XDC File [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_m_0/bd_0/ip/ip_3/bd_9c60_psr_aclk1_0_board.xdc] for cell 'inst/clk_map/psr_aclk1/U0'
+Finished Parsing XDC File [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_m_0/bd_0/ip/ip_3/bd_9c60_psr_aclk1_0_board.xdc] for cell 'inst/clk_map/psr_aclk1/U0'
+Parsing XDC File [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_m_0/bd_0/ip/ip_3/bd_9c60_psr_aclk1_0.xdc] for cell 'inst/clk_map/psr_aclk1/U0'
+Finished Parsing XDC File [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_m_0/bd_0/ip/ip_3/bd_9c60_psr_aclk1_0.xdc] for cell 'inst/clk_map/psr_aclk1/U0'
+Parsing XDC File [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.runs/riscv_io_axi_m_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.runs/riscv_io_axi_m_0_synth_1/dont_touch.xdc]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {PRIMITIVE_SUBGROUP==LUTRAM || PRIMITIVE_SUBGROUP==dram || PRIMITIVE_SUBGROUP==uram || PRIMITIVE_SUBGROUP==BRAM}'. [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl:3]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {PRIMITIVE_SUBGROUP==LUTRAM || PRIMITIVE_SUBGROUP==dram || PRIMITIVE_SUBGROUP==uram || PRIMITIVE_SUBGROUP==BRAM}'. [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl:3]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {PRIMITIVE_SUBGROUP==LUTRAM || PRIMITIVE_SUBGROUP==dram || PRIMITIVE_SUBGROUP==uram || PRIMITIVE_SUBGROUP==BRAM}'. [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl:3]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {PRIMITIVE_SUBGROUP==LUTRAM || PRIMITIVE_SUBGROUP==dram || PRIMITIVE_SUBGROUP==uram || PRIMITIVE_SUBGROUP==BRAM}'. [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl:3]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {PRIMITIVE_SUBGROUP==LUTRAM || PRIMITIVE_SUBGROUP==dram || PRIMITIVE_SUBGROUP==uram || PRIMITIVE_SUBGROUP==BRAM}'. [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl:3]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {PRIMITIVE_SUBGROUP==LUTRAM || PRIMITIVE_SUBGROUP==dram || PRIMITIVE_SUBGROUP==uram || PRIMITIVE_SUBGROUP==BRAM}'. [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl:3]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {PRIMITIVE_SUBGROUP==LUTRAM || PRIMITIVE_SUBGROUP==dram || PRIMITIVE_SUBGROUP==uram || PRIMITIVE_SUBGROUP==BRAM}'. [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl:3]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {PRIMITIVE_SUBGROUP==LUTRAM || PRIMITIVE_SUBGROUP==dram || PRIMITIVE_SUBGROUP==uram || PRIMITIVE_SUBGROUP==BRAM}'. [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl:3]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {PRIMITIVE_SUBGROUP==LUTRAM || PRIMITIVE_SUBGROUP==dram || PRIMITIVE_SUBGROUP==uram || PRIMITIVE_SUBGROUP==BRAM}'. [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl:3]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {PRIMITIVE_SUBGROUP==LUTRAM || PRIMITIVE_SUBGROUP==dram || PRIMITIVE_SUBGROUP==uram || PRIMITIVE_SUBGROUP==BRAM}'. [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl:3]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {PRIMITIVE_SUBGROUP==LUTRAM || PRIMITIVE_SUBGROUP==dram || PRIMITIVE_SUBGROUP==uram || PRIMITIVE_SUBGROUP==BRAM}'. [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl:3]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {PRIMITIVE_SUBGROUP==LUTRAM || PRIMITIVE_SUBGROUP==dram || PRIMITIVE_SUBGROUP==uram || PRIMITIVE_SUBGROUP==BRAM}'. [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl:3]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {PRIMITIVE_SUBGROUP==LUTRAM || PRIMITIVE_SUBGROUP==dram || PRIMITIVE_SUBGROUP==uram || PRIMITIVE_SUBGROUP==BRAM}'. [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl:3]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {PRIMITIVE_SUBGROUP==LUTRAM || PRIMITIVE_SUBGROUP==dram || PRIMITIVE_SUBGROUP==uram || PRIMITIVE_SUBGROUP==BRAM}'. [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl:3]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {PRIMITIVE_SUBGROUP==LUTRAM || PRIMITIVE_SUBGROUP==dram || PRIMITIVE_SUBGROUP==uram || PRIMITIVE_SUBGROUP==BRAM}'. [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl:3]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {PRIMITIVE_SUBGROUP==LUTRAM || PRIMITIVE_SUBGROUP==dram || PRIMITIVE_SUBGROUP==uram || PRIMITIVE_SUBGROUP==BRAM}'. [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl:3]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {PRIMITIVE_SUBGROUP==LUTRAM || PRIMITIVE_SUBGROUP==dram || PRIMITIVE_SUBGROUP==uram || PRIMITIVE_SUBGROUP==BRAM}'. [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl:3]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {PRIMITIVE_SUBGROUP==LUTRAM || PRIMITIVE_SUBGROUP==dram || PRIMITIVE_SUBGROUP==uram || PRIMITIVE_SUBGROUP==BRAM}'. [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl:3]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {PRIMITIVE_SUBGROUP==LUTRAM || PRIMITIVE_SUBGROUP==dram || PRIMITIVE_SUBGROUP==uram || PRIMITIVE_SUBGROUP==BRAM}'. [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl:3]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {PRIMITIVE_SUBGROUP==LUTRAM || PRIMITIVE_SUBGROUP==dram || PRIMITIVE_SUBGROUP==uram || PRIMITIVE_SUBGROUP==BRAM}'. [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl:3]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {PRIMITIVE_SUBGROUP==LUTRAM || PRIMITIVE_SUBGROUP==dram || PRIMITIVE_SUBGROUP==uram || PRIMITIVE_SUBGROUP==BRAM}'. [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl:3]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {PRIMITIVE_SUBGROUP==LUTRAM || PRIMITIVE_SUBGROUP==dram || PRIMITIVE_SUBGROUP==uram || PRIMITIVE_SUBGROUP==BRAM}'. [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl:3]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {PRIMITIVE_SUBGROUP==LUTRAM || PRIMITIVE_SUBGROUP==dram || PRIMITIVE_SUBGROUP==uram || PRIMITIVE_SUBGROUP==BRAM}'. [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl:3]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {PRIMITIVE_SUBGROUP==LUTRAM || PRIMITIVE_SUBGROUP==dram || PRIMITIVE_SUBGROUP==uram || PRIMITIVE_SUBGROUP==BRAM}'. [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl:3]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {PRIMITIVE_SUBGROUP==LUTRAM || PRIMITIVE_SUBGROUP==dram || PRIMITIVE_SUBGROUP==uram || PRIMITIVE_SUBGROUP==BRAM}'. [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl:3]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {PRIMITIVE_SUBGROUP==LUTRAM || PRIMITIVE_SUBGROUP==dram || PRIMITIVE_SUBGROUP==uram || PRIMITIVE_SUBGROUP==BRAM}'. [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl:3]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {PRIMITIVE_SUBGROUP==LUTRAM || PRIMITIVE_SUBGROUP==dram || PRIMITIVE_SUBGROUP==uram || PRIMITIVE_SUBGROUP==BRAM}'. [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl:3]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {PRIMITIVE_SUBGROUP==LUTRAM || PRIMITIVE_SUBGROUP==dram || PRIMITIVE_SUBGROUP==uram || PRIMITIVE_SUBGROUP==BRAM}'. [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl:3]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {PRIMITIVE_SUBGROUP==LUTRAM || PRIMITIVE_SUBGROUP==dram || PRIMITIVE_SUBGROUP==uram || PRIMITIVE_SUBGROUP==BRAM}'. [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl:3]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {PRIMITIVE_SUBGROUP==LUTRAM || PRIMITIVE_SUBGROUP==dram || PRIMITIVE_SUBGROUP==uram || PRIMITIVE_SUBGROUP==BRAM}'. [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl:3]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/riscv_io_axi_m_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/riscv_io_axi_m_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-1715] 2 XPM XDC files have been applied to the design.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2756.852 ; gain = 0.000 ; free physical = 18109 ; free virtual = 27012
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 39 instances were transformed.
+  FDR => FDRE: 36 instances
+  SRL16 => SRL16E: 3 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.42 ; elapsed = 00:00:00.43 . Memory (MB): peak = 2768.758 ; gain = 11.906 ; free physical = 18108 ; free virtual = 27010
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:21 ; elapsed = 00:00:27 . Memory (MB): peak = 2768.758 ; gain = 468.297 ; free physical = 18600 ; free virtual = 27503
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:21 ; elapsed = 00:00:27 . Memory (MB): peak = 2768.758 ; gain = 468.297 ; free physical = 18600 ; free virtual = 27503
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  /mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.runs/riscv_io_axi_m_0_synth_1/dont_touch.xdc, line 178).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m00_nodes/m00_ar_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m00_nodes/m00_aw_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m00_nodes/m00_b_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m00_nodes/m00_r_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m00_nodes/m00_w_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_ar_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_aw_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_b_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_r_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_w_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s01_nodes/s01_ar_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s01_nodes/s01_aw_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s01_nodes/s01_b_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s01_nodes/s01_r_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s01_nodes/s01_w_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m00_nodes/m00_ar_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m00_nodes/m00_aw_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m00_nodes/m00_b_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m00_nodes/m00_r_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m00_nodes/m00_w_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_ar_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_aw_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_b_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_r_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_w_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s01_nodes/s01_ar_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s01_nodes/s01_aw_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s01_nodes/s01_b_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s01_nodes/s01_r_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s01_nodes/s01_w_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m00_exit_pipeline/m00_exit/inst/xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_entry_pipeline/s00_mmu/inst/xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_entry_pipeline/s00_si_converter/inst/xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_entry_pipeline/s00_transaction_regulator/inst/xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s01_entry_pipeline/s01_mmu/inst/xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s01_entry_pipeline/s01_si_converter/inst/xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s01_entry_pipeline/s01_transaction_regulator/inst/xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m00_nodes/m00_ar_node/inst/inst_mi_handler/\gen_normal_area.gen_node_prog_full.inst_node_prog_full /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[0].inst_xpm_memory . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m00_nodes/m00_aw_node/inst/inst_mi_handler/\gen_normal_area.gen_node_prog_full.inst_node_prog_full /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[0].inst_xpm_memory . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m00_nodes/m00_w_node/inst/inst_mi_handler/\gen_normal_area.gen_node_prog_full.inst_node_prog_full /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[0].inst_xpm_memory . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s01_nodes/s01_b_node/inst/inst_mi_handler/\gen_normal_area.gen_node_prog_full.inst_node_prog_full /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[0].inst_xpm_memory . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s01_nodes/s01_r_node/inst/inst_mi_handler/\gen_normal_area.gen_node_prog_full.inst_node_prog_full /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[0].inst_xpm_memory . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m00_nodes/m00_ar_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[0].inst_xpm_memory . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m00_nodes/m00_aw_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[0].inst_xpm_memory . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m00_nodes/m00_b_node/inst/inst_mi_handler/\gen_normal_area.gen_fifo_req.inst_fifo_req /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[0].inst_xpm_memory . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m00_nodes/m00_r_node/inst/inst_mi_handler/\gen_normal_area.gen_fifo_req.inst_fifo_req /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[0].inst_xpm_memory . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m00_nodes/m00_b_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[0].inst_xpm_memory . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m00_nodes/m00_r_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[0].inst_xpm_memory . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m00_nodes/m00_w_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[0].inst_xpm_memory . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m00_nodes/m00_w_node/inst/inst_si_handler/\gen_si_handler.gen_request_fifos.gen_req_fifo[0].inst_req_fifo /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[0].inst_xpm_memory . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m00_nodes/m00_w_node/inst/inst_si_handler/\gen_si_handler.gen_request_fifos.gen_req_fifo[1].inst_req_fifo /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[0].inst_xpm_memory . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_ar_node/inst/inst_mi_handler/\gen_normal_area.gen_fifo_req.inst_fifo_req /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[0].inst_xpm_memory . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_aw_node/inst/inst_mi_handler/\gen_normal_area.gen_fifo_req.inst_fifo_req /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[0].inst_xpm_memory . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_w_node/inst/inst_mi_handler/\gen_normal_area.gen_fifo_req.inst_fifo_req /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[0].inst_xpm_memory . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_ar_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[0].inst_xpm_memory . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_aw_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[0].inst_xpm_memory . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_b_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[0].inst_xpm_memory . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_r_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[0].inst_xpm_memory . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_w_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[0].inst_xpm_memory . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s01_nodes/s01_ar_node/inst/inst_mi_handler/\gen_normal_area.gen_fifo_req.inst_fifo_req /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[0].inst_xpm_memory . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s01_nodes/s01_aw_node/inst/inst_mi_handler/\gen_normal_area.gen_fifo_req.inst_fifo_req /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[0].inst_xpm_memory . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s01_nodes/s01_w_node/inst/inst_mi_handler/\gen_normal_area.gen_fifo_req.inst_fifo_req /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[0].inst_xpm_memory . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s01_nodes/s01_ar_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[0].inst_xpm_memory . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s01_nodes/s01_aw_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[0].inst_xpm_memory . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s01_nodes/s01_b_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[0].inst_xpm_memory . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s01_nodes/s01_r_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[0].inst_xpm_memory . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s01_nodes/s01_w_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[0].inst_xpm_memory . (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:27 . Memory (MB): peak = 2768.758 ; gain = 468.297 ; free physical = 18578 ; free virtual = 27481
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4490] FSM extraction disabled for register 'gen_pipelined.state_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'gen_pipelined.state_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'gen_pipelined.state_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'gen_AB_reg_slice.state_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'gen_pipelined.state_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'gen_AB_reg_slice.state_reg' through user attribute
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:25 ; elapsed = 00:00:32 . Memory (MB): peak = 2768.758 ; gain = 468.297 ; free physical = 18571 ; free virtual = 27473
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    8 Bit       Adders := 4     
+	   2 Input    7 Bit       Adders := 4     
+	   2 Input    6 Bit       Adders := 171   
+	   2 Input    5 Bit       Adders := 6     
+	   2 Input    4 Bit       Adders := 20    
+	   2 Input    3 Bit       Adders := 12    
+	   2 Input    2 Bit       Adders := 4     
+	   3 Input    1 Bit       Adders := 6     
+	   2 Input    1 Bit       Adders := 6     
++---XORs : 
+	   2 Input      1 Bit         XORs := 236   
++---Registers : 
+	             2178 Bit    Registers := 30    
+	              160 Bit    Registers := 2     
+	              142 Bit    Registers := 6     
+	              106 Bit    Registers := 1     
+	              104 Bit    Registers := 2     
+	               88 Bit    Registers := 3     
+	               86 Bit    Registers := 3     
+	               47 Bit    Registers := 1     
+	               33 Bit    Registers := 1     
+	               32 Bit    Registers := 2     
+	               26 Bit    Registers := 2     
+	               19 Bit    Registers := 2     
+	               18 Bit    Registers := 8     
+	               16 Bit    Registers := 1     
+	               14 Bit    Registers := 2     
+	                8 Bit    Registers := 21    
+	                7 Bit    Registers := 4     
+	                6 Bit    Registers := 103   
+	                5 Bit    Registers := 6     
+	                4 Bit    Registers := 20    
+	                3 Bit    Registers := 57    
+	                2 Bit    Registers := 28    
+	                1 Bit    Registers := 624   
++---Muxes : 
+	   2 Input 2178 Bit        Muxes := 15    
+	   2 Input  142 Bit        Muxes := 2     
+	   2 Input   88 Bit        Muxes := 1     
+	   2 Input   86 Bit        Muxes := 2     
+	   2 Input   47 Bit        Muxes := 1     
+	   2 Input   33 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 2     
+	   2 Input   16 Bit        Muxes := 1     
+	   2 Input   14 Bit        Muxes := 2     
+	   2 Input    8 Bit        Muxes := 2     
+	   2 Input    7 Bit        Muxes := 24    
+	   2 Input    6 Bit        Muxes := 31    
+	   2 Input    4 Bit        Muxes := 2     
+	   4 Input    3 Bit        Muxes := 5     
+	  11 Input    3 Bit        Muxes := 5     
+	   2 Input    3 Bit        Muxes := 6     
+	   2 Input    2 Bit        Muxes := 128   
+	   7 Input    2 Bit        Muxes := 8     
+	   6 Input    1 Bit        Muxes := 85    
+	   4 Input    1 Bit        Muxes := 30    
+	  10 Input    1 Bit        Muxes := 45    
+	   7 Input    1 Bit        Muxes := 30    
+	  12 Input    1 Bit        Muxes := 5     
+	   2 Input    1 Bit        Muxes := 180   
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:47 ; elapsed = 00:00:58 . Memory (MB): peak = 2768.758 ; gain = 468.297 ; free physical = 18532 ; free virtual = 27434
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping	Report (see note below)
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+----------------+----------------------+---------------+
+|Module Name                                                                                                                                                                                             | RTL Object                       | Inference      | Size (Depth x Width) | Primitives    | 
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+----------------+----------------------+---------------+
+|inst/i_0/\m00_nodes/m00_ar_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                          | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 160             | RAM32M x 27	  | 
+|inst/i_0/\m00_nodes/m00_aw_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                          | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 160             | RAM32M x 27	  | 
+|inst/i_0/\m00_nodes/m00_b_node/inst /\inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                     | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 19              | RAM32M x 4	   | 
+|inst/i_0/\m00_nodes/m00_b_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                           | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 8               | RAM32M x 2	   | 
+|inst/i_0/\m00_nodes/m00_r_node/inst /\inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                     | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 19              | RAM32M x 4	   | 
+|inst/i_0/\m00_nodes/m00_r_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                           | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 86              | RAM32M x 15	  | 
+|inst/i_0/\m00_nodes/m00_w_node/inst /\inst_si_handler/gen_si_handler.gen_request_fifos.gen_req_fifo[0].inst_req_fifo/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 4 x 1                | RAM16X1D x 1	 | 
+|inst/i_0/\m00_nodes/m00_w_node/inst /\inst_si_handler/gen_si_handler.gen_request_fifos.gen_req_fifo[1].inst_req_fifo/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 4 x 1                | RAM16X1D x 1	 | 
+|inst/i_0/\m00_nodes/m00_w_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                           | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 106             | RAM32M x 18	  | 
+|inst/i_0/\s00_nodes/s00_ar_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                          | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 142             | RAM32M x 24	  | 
+|inst/i_0/\s00_nodes/s00_aw_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                          | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 142             | RAM32M x 24	  | 
+|inst/i_0/\s00_nodes/s00_b_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                           | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 26              | RAM32M x 5	   | 
+|inst/i_0/\s00_nodes/s00_r_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                           | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 104             | RAM32M x 18	  | 
+|inst/i_0/\s00_nodes/s00_w_node/inst /\inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                     | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 18              | RAM32M x 3	   | 
+|inst/i_0/\s00_nodes/s00_w_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                           | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 88              | RAM32M x 15	  | 
+|inst/i_0/\s01_nodes/s01_ar_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                          | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 142             | RAM32M x 24	  | 
+|inst/i_0/\s01_nodes/s01_aw_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                          | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 142             | RAM32M x 24	  | 
+|inst/i_0/\s01_nodes/s01_b_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                           | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 26              | RAM32M x 5	   | 
+|inst/i_0/\s01_nodes/s01_r_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                           | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 104             | RAM32M x 18	  | 
+|inst/i_0/\s01_nodes/s01_w_node/inst /\inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                     | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 18              | RAM32M x 3	   | 
+|inst/i_0/\s01_nodes/s01_w_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                           | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 88              | RAM32M x 15	  | 
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+----------------+----------------------+---------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:50 ; elapsed = 00:01:02 . Memory (MB): peak = 2768.758 ; gain = 468.297 ; free physical = 18414 ; free virtual = 27316
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:53 ; elapsed = 00:01:05 . Memory (MB): peak = 2768.758 ; gain = 468.297 ; free physical = 18396 ; free virtual = 27298
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping	Report
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+----------------+----------------------+---------------+
+|Module Name                                                                                                                                                                                             | RTL Object                       | Inference      | Size (Depth x Width) | Primitives    | 
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+----------------+----------------------+---------------+
+|inst/i_0/\s00_nodes/s00_ar_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                          | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 142             | RAM32M x 24	  | 
+|inst/i_0/\s00_nodes/s00_aw_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                          | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 142             | RAM32M x 24	  | 
+|inst/i_0/\s00_nodes/s00_b_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                           | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 26              | RAM32M x 5	   | 
+|inst/i_0/\s00_nodes/s00_r_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                           | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 104             | RAM32M x 18	  | 
+|inst/i_0/\s00_nodes/s00_w_node/inst /\inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                     | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 18              | RAM32M x 3	   | 
+|inst/i_0/\s00_nodes/s00_w_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                           | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 88              | RAM32M x 15	  | 
+|inst/i_0/\m00_nodes/m00_ar_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                          | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 160             | RAM32M x 27	  | 
+|inst/i_0/\m00_nodes/m00_aw_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                          | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 160             | RAM32M x 27	  | 
+|inst/i_0/\m00_nodes/m00_b_node/inst /\inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                     | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 19              | RAM32M x 4	   | 
+|inst/i_0/\m00_nodes/m00_b_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                           | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 8               | RAM32M x 2	   | 
+|inst/i_0/\m00_nodes/m00_r_node/inst /\inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                     | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 19              | RAM32M x 4	   | 
+|inst/i_0/\m00_nodes/m00_r_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                           | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 86              | RAM32M x 15	  | 
+|inst/i_0/\m00_nodes/m00_w_node/inst /\inst_si_handler/gen_si_handler.gen_request_fifos.gen_req_fifo[0].inst_req_fifo/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 4 x 1                | RAM16X1D x 1	 | 
+|inst/i_0/\m00_nodes/m00_w_node/inst /\inst_si_handler/gen_si_handler.gen_request_fifos.gen_req_fifo[1].inst_req_fifo/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 4 x 1                | RAM16X1D x 1	 | 
+|inst/i_0/\m00_nodes/m00_w_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                           | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 106             | RAM32M x 18	  | 
+|inst/i_0/\s01_nodes/s01_ar_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                          | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 142             | RAM32M x 24	  | 
+|inst/i_0/\s01_nodes/s01_aw_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                          | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 142             | RAM32M x 24	  | 
+|inst/i_0/\s01_nodes/s01_b_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                           | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 26              | RAM32M x 5	   | 
+|inst/i_0/\s01_nodes/s01_r_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                           | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 104             | RAM32M x 18	  | 
+|inst/i_0/\s01_nodes/s01_w_node/inst /\inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                     | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 18              | RAM32M x 3	   | 
+|inst/i_0/\s01_nodes/s01_w_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                           | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 88              | RAM32M x 15	  | 
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+----------------+----------------------+---------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:56 ; elapsed = 00:01:09 . Memory (MB): peak = 2768.758 ; gain = 468.297 ; free physical = 18418 ; free virtual = 27320
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:58 ; elapsed = 00:01:11 . Memory (MB): peak = 2768.758 ; gain = 468.297 ; free physical = 18417 ; free virtual = 27320
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:58 ; elapsed = 00:01:11 . Memory (MB): peak = 2768.758 ; gain = 468.297 ; free physical = 18417 ; free virtual = 27320
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:59 ; elapsed = 00:01:12 . Memory (MB): peak = 2768.758 ; gain = 468.297 ; free physical = 18417 ; free virtual = 27320
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:59 ; elapsed = 00:01:12 . Memory (MB): peak = 2768.758 ; gain = 468.297 ; free physical = 18417 ; free virtual = 27320
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:59 ; elapsed = 00:01:12 . Memory (MB): peak = 2768.758 ; gain = 468.297 ; free physical = 18418 ; free virtual = 27320
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:59 ; elapsed = 00:01:12 . Memory (MB): peak = 2768.758 ; gain = 468.297 ; free physical = 18417 ; free virtual = 27319
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Dynamic Shift Register Report:
++------------+---------------+--------+------------+--------+---------+--------+--------+--------+
+|Module Name | RTL Name      | Length | Data Width | SRL16E | SRLC32E | Mux F7 | Mux F8 | Mux F9 | 
++------------+---------------+--------+------------+--------+---------+--------+--------+--------+
+|dsrl        | shift_reg_reg | 16     | 1          | 1      | 0       | 0      | 0      | 0      | 
++------------+---------------+--------+------------+--------+---------+--------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY4   |     8|
+|2     |LUT1     |   226|
+|3     |LUT2     |   213|
+|4     |LUT3     |  1059|
+|5     |LUT4     |   341|
+|6     |LUT5     |   373|
+|7     |LUT6     |   630|
+|8     |RAM16X1D |     2|
+|9     |RAM32M   |   167|
+|10    |SRL16    |     3|
+|11    |SRL16E   |    32|
+|12    |FDCE     |   111|
+|13    |FDR      |    20|
+|14    |FDRE     |  3538|
+|15    |FDSE     |   154|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:59 ; elapsed = 00:01:12 . Memory (MB): peak = 2768.758 ; gain = 468.297 ; free physical = 18417 ; free virtual = 27319
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:48 ; elapsed = 00:01:00 . Memory (MB): peak = 2768.758 ; gain = 17.777 ; free physical = 18466 ; free virtual = 27368
+Synthesis Optimization Complete : Time (s): cpu = 00:00:59 ; elapsed = 00:01:12 . Memory (MB): peak = 2768.766 ; gain = 468.297 ; free physical = 18468 ; free virtual = 27370
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.20 ; elapsed = 00:00:00.19 . Memory (MB): peak = 2768.766 ; gain = 0.000 ; free physical = 18554 ; free virtual = 27456
+INFO: [Netlist 29-17] Analyzing 200 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2768.766 ; gain = 0.000 ; free physical = 18491 ; free virtual = 27393
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 192 instances were transformed.
+  FDR => FDRE: 20 instances
+  RAM16X1D => RAM32X1D (RAMD32(x2)): 2 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 167 instances
+  SRL16 => SRL16E: 3 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+211 Infos, 51 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:06 ; elapsed = 00:01:18 . Memory (MB): peak = 2768.766 ; gain = 468.371 ; free physical = 18560 ; free virtual = 27463
+INFO: [Common 17-600] The following parameters have non-default value.
+general.maxThreads
+INFO: [Common 17-1381] The checkpoint '/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.runs/riscv_io_axi_m_0_synth_1/riscv_io_axi_m_0.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP riscv_io_axi_m_0, cache-ID = 4f0fcb2fea74e3b3
+INFO: [Coretcl 2-1174] Renamed 450 cell refs.
+INFO: [Common 17-1381] The checkpoint '/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.runs/riscv_io_axi_m_0_synth_1/riscv_io_axi_m_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file riscv_io_axi_m_0_utilization_synth.rpt -pb riscv_io_axi_m_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Nov 15 19:27:04 2022...

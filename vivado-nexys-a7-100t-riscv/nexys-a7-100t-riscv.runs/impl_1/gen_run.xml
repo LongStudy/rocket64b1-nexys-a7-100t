@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1668514468">
+  <File Type="CFI_FILE" Name="riscv_wrapper.cfi"/>
+  <File Type="RCFI_FILE" Name="riscv_wrapper.rcfi"/>
+  <File Type="PDI-FILE" Name="riscv_wrapper.pdi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="riscv_wrapper_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-DRC-RPX" Name="riscv_wrapper_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="riscv_wrapper_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="riscv_wrapper_methodology_drc_routed.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="riscv_wrapper_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="riscv_wrapper_postroute_physopt.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="riscv_wrapper_physopt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="riscv_wrapper_postplace_pwropt.dcp"/>
+  <File Type="PWROPT-DCP" Name="riscv_wrapper_pwropt.dcp"/>
+  <File Type="PLACE-DCP" Name="riscv_wrapper_placed.dcp"/>
+  <File Type="OPT-DCP" Name="riscv_wrapper_opt.dcp"/>
+  <File Type="ROUTE-BUS-SKEW" Name="riscv_wrapper_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="riscv_wrapper_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-TIMING-RPX" Name="riscv_wrapper_timing_summary_routed.rpx"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="riscv_wrapper.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="riscv_wrapper.sysdef"/>
+  <File Type="BITSTR-MMI" Name="riscv_wrapper.mmi"/>
+  <File Type="BITSTR-BMM" Name="riscv_wrapper_bd.bmm"/>
+  <File Type="BITSTR-NKY" Name="riscv_wrapper.nky"/>
+  <File Type="BITSTR-RBT" Name="riscv_wrapper.rbt"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="riscv_wrapper_bus_skew_routed.rpx"/>
+  <File Type="REPORTS-TCL" Name="riscv_wrapper_reports.tcl"/>
+  <File Type="BITSTR-MSK" Name="riscv_wrapper.msk"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="riscv_wrapper_bus_skew_routed.pb"/>
+  <File Type="PA-TCL" Name="riscv_wrapper.tcl"/>
+  <File Type="ROUTE-TIMING-PB" Name="riscv_wrapper_timing_summary_routed.pb"/>
+  <File Type="OPT-DRC" Name="riscv_wrapper_drc_opted.rpt"/>
+  <File Type="RBD_FILE" Name="riscv_wrapper.rbd"/>
+  <File Type="BG-BIN" Name="riscv_wrapper.bin"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="riscv_wrapper_timing_summary_routed.rpt"/>
+  <File Type="NPI_FILE" Name="riscv_wrapper.npi"/>
+  <File Type="BG-BGN" Name="riscv_wrapper.bgn"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="riscv_wrapper_routed_bb.dcp"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="RDI-RDI" Name="riscv_wrapper.vdi"/>
+  <File Type="RNPI_FILE" Name="riscv_wrapper.rnpi"/>
+  <File Type="BG-DRC" Name="riscv_wrapper.drc"/>
+  <File Type="ROUTE-ERROR-DCP" Name="riscv_wrapper_routed_error.dcp"/>
+  <File Type="BG-BIT" Name="riscv_wrapper.bit"/>
+  <File Type="ROUTE-STATUS-PB" Name="riscv_wrapper_route_status.pb"/>
+  <File Type="OPT-HWDEF" Name="riscv_wrapper.hwdef"/>
+  <File Type="PLACE-IO" Name="riscv_wrapper_io_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="riscv_wrapper_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="riscv_wrapper_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="riscv_wrapper_control_sets_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="riscv_wrapper_incremental_reuse_pre_placed.rpt"/>
+  <File Type="ROUTE-DRC" Name="riscv_wrapper_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="riscv_wrapper_drc_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="riscv_wrapper_power_routed.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="riscv_wrapper_power_summary_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="riscv_wrapper_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="riscv_wrapper_route_status.rpt"/>
+  <File Type="ROUTE-DCP" Name="riscv_wrapper_routed.dcp"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PPRDIR/../../../board/mem-reset-control.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../ethernet/ethernet.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../sdc/sd_defines.h">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../sdc/sd_cmd_master.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../sdc/sd_cmd_serial_host.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../sdc/sd_data_master.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../sdc/sd_data_serial_host.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../sdc/axi_sdc_controller.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../uart/uart.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../ethernet/verilog-ethernet/lib/axis/rtl/axis_adapter.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../ethernet/verilog-ethernet/lib/axis/rtl/axis_async_fifo.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../ethernet/verilog-ethernet/lib/axis/rtl/axis_async_fifo_adapter.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../ethernet/verilog-ethernet/rtl/axis_gmii_rx.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../ethernet/verilog-ethernet/rtl/axis_gmii_tx.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../ethernet/verilog-ethernet/rtl/eth_mac_1g.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../ethernet/verilog-ethernet/rtl/lfsr.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../board/nexys-a7-100t/ethernet-nexys-a7-100t.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../srams.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../system-nexys-a7-100t.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../rocket.vhdl">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/riscv/riscv.bd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PGENDIR/sources_1/bd/riscv/hdl/riscv_wrapper.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../vhdl-wrapper/src/net/largest/riscv/vhdl/bscan2jtag.vhdl">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../board/fan-control.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../ethernet/verilog-ethernet/rtl/eth_mac_mii_fifo.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../ethernet/verilog-ethernet/rtl/eth_mac_mii.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../ethernet/verilog-ethernet/rtl/ssio_sdr_in.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../ethernet/verilog-ethernet/rtl/mii_phy_if.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/mig_a.prj">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="ScopedToCell" Val="riscv_mig_7series_0_0"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="riscv_wrapper"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PPRDIR/../../../board/nexys-a7-100t/top.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../board/nexys-a7-100t/sdc.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../board/nexys-a7-100t/uart.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../board/nexys-a7-100t/ethernet.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../ethernet/verilog-ethernet/lib/axis/syn/vivado/sync_reset.tcl">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../ethernet/verilog-ethernet/lib/axis/syn/vivado/axis_async_fifo.tcl">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../ethernet/verilog-ethernet/syn/vivado/eth_mac_fifo.tcl">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../ethernet/verilog-ethernet/syn/vivado/mii_phy_if.tcl">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../board/timing-constraints.tcl">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+    <Step Id="write_device_image"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="riscv_SD_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="riscv_mig_7series_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="riscv_Ethernet_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="riscv_UART_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="riscv_mem_reset_control_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="riscv_ethernet_stream_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="riscv_util_vector_logic_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="riscv_io_axi_s_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="riscv_RocketChip_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="riscv_io_axi_m_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="riscv_clk_wiz_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="riscv_XADC_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="riscv_axi_smc_1_0"/>
+</GenRun>

@@ -1,0 +1,1036 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Nov 15 19:27:13 2022
+# Process ID: 7628
+# Current directory: /mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.runs/riscv_io_axi_s_0_synth_1
+# Command line: vivado -log riscv_io_axi_s_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source riscv_io_axi_s_0.tcl
+# Log file: /mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.runs/riscv_io_axi_s_0_synth_1/riscv_io_axi_s_0.vds
+# Journal file: /mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.runs/riscv_io_axi_s_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+INFO: [Common 17-1239] XILINX_LOCAL_USER_DATA is set to 'no'.
+source riscv_io_axi_s_0.tcl -notrace
+Command: synth_design -top riscv_io_axi_s_0 -part xc7a100tcsg324-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 1 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 7966
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 2300.457 ; gain = 0.000 ; free physical = 18858 ; free virtual = 27760
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'riscv_io_axi_s_0' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/synth/riscv_io_axi_s_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'bd_9a00' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/synth/bd_9a00.v:10]
+INFO: [Synth 8-6157] synthesizing module 'clk_map_imp_64RM6X' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/synth/bd_9a00.v:2002]
+INFO: [Synth 8-6157] synthesizing module 'bd_9a00_one_0' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_0/synth/bd_9a00_one_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_7_xlconstant' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ipshared/fcfc/hdl/xlconstant_v1_1_vl_rfs.v:23]
+	Parameter CONST_VAL bound to: 1'b1 
+	Parameter CONST_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_7_xlconstant' (1#1) [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ipshared/fcfc/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9a00_one_0' (2#1) [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_0/synth/bd_9a00_one_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'bd_9a00_psr0_0' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_1/synth/bd_9a00_psr0_0.vhd:74]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_EXT_RST_WIDTH bound to: 4 - type: integer 
+	Parameter C_AUX_RST_WIDTH bound to: 1 - type: integer 
+	Parameter C_EXT_RESET_HIGH bound to: 1'b0 
+	Parameter C_AUX_RESET_HIGH bound to: 1'b0 
+	Parameter C_NUM_BUS_RST bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_RST bound to: 1 - type: integer 
+	Parameter C_NUM_INTERCONNECT_ARESETN bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_ARESETN bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'proc_sys_reset' declared at '/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1264' bound to instance 'U0' of component 'proc_sys_reset' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_1/synth/bd_9a00_psr0_0.vhd:129]
+INFO: [Synth 8-638] synthesizing module 'proc_sys_reset' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1323]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_EXT_RST_WIDTH bound to: 4 - type: integer 
+	Parameter C_AUX_RST_WIDTH bound to: 1 - type: integer 
+	Parameter C_EXT_RESET_HIGH bound to: 1'b0 
+	Parameter C_AUX_RESET_HIGH bound to: 1'b0 
+	Parameter C_NUM_BUS_RST bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_RST bound to: 1 - type: integer 
+	Parameter C_NUM_INTERCONNECT_ARESETN bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_ARESETN bound to: 1 - type: integer 
+	Parameter INIT bound to: 1'b1 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDRE_inst' to cell 'FDRE' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1392]
+	Parameter INIT bound to: 1'b1 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDRE_BSR' to cell 'FDRE' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1408]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDRE_BSR_N' to cell 'FDRE' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1434]
+	Parameter INIT bound to: 1'b1 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDRE_PER' to cell 'FDRE' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1457]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDRE_PER_N' to cell 'FDRE' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1481]
+INFO: [Synth 8-638] synthesizing module 'lpf' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:816]
+	Parameter C_EXT_RST_WIDTH bound to: 4 - type: integer 
+	Parameter C_AUX_RST_WIDTH bound to: 1 - type: integer 
+	Parameter C_EXT_RESET_HIGH bound to: 1'b0 
+	Parameter C_AUX_RESET_HIGH bound to: 1'b0 
+INFO: [Synth 8-3491] module 'SRL16' declared at '/opt/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:78018' bound to instance 'POR_SRL_I' of component 'SRL16' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:868]
+INFO: [Synth 8-6157] synthesizing module 'SRL16' [/opt/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:78018]
+	Parameter INIT bound to: 16'b0000000000000000 
+INFO: [Synth 8-6155] done synthesizing module 'SRL16' (3#1) [/opt/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:78018]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
+	Parameter C_CDC_TYPE bound to: 1 - type: integer 
+	Parameter C_RESET_STATE bound to: 0 - type: integer 
+	Parameter C_SINGLE_BIT bound to: 1 - type: integer 
+	Parameter C_FLOP_INPUT bound to: 0 - type: integer 
+	Parameter C_VECTOR_WIDTH bound to: 2 - type: integer 
+	Parameter C_MTBF_STAGES bound to: 4 - type: integer 
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:514]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d2' to cell 'FDR' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:545]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d3' to cell 'FDR' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:554]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4' to cell 'FDR' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:564]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5' to cell 'FDR' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:574]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6' to cell 'FDR' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:584]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync' (4#1) [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'lpf' (5#1) [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:816]
+INFO: [Synth 8-638] synthesizing module 'sequence_psr' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:301]
+INFO: [Synth 8-638] synthesizing module 'upcnt_n' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:125]
+	Parameter C_SIZE bound to: 6 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'upcnt_n' (6#1) [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:125]
+INFO: [Synth 8-256] done synthesizing module 'sequence_psr' (7#1) [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:301]
+INFO: [Synth 8-256] done synthesizing module 'proc_sys_reset' (8#1) [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1323]
+INFO: [Synth 8-256] done synthesizing module 'bd_9a00_psr0_0' (9#1) [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_1/synth/bd_9a00_psr0_0.vhd:74]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'bd_9a00_psr0_0' is unconnected for instance 'psr0' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/synth/bd_9a00.v:2063]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'bd_9a00_psr0_0' is unconnected for instance 'psr0' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/synth/bd_9a00.v:2063]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'bd_9a00_psr0_0' is unconnected for instance 'psr0' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/synth/bd_9a00.v:2063]
+WARNING: [Synth 8-7071] port 'peripheral_aresetn' of module 'bd_9a00_psr0_0' is unconnected for instance 'psr0' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/synth/bd_9a00.v:2063]
+WARNING: [Synth 8-7023] instance 'psr0' of module 'bd_9a00_psr0_0' has 10 connections declared, but only 6 given [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/synth/bd_9a00.v:2063]
+INFO: [Synth 8-638] synthesizing module 'bd_9a00_psr_aclk_0' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_2/synth/bd_9a00_psr_aclk_0.vhd:74]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_EXT_RST_WIDTH bound to: 4 - type: integer 
+	Parameter C_AUX_RST_WIDTH bound to: 1 - type: integer 
+	Parameter C_EXT_RESET_HIGH bound to: 1'b0 
+	Parameter C_AUX_RESET_HIGH bound to: 1'b0 
+	Parameter C_NUM_BUS_RST bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_RST bound to: 1 - type: integer 
+	Parameter C_NUM_INTERCONNECT_ARESETN bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_ARESETN bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'proc_sys_reset' declared at '/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1264' bound to instance 'U0' of component 'proc_sys_reset' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_2/synth/bd_9a00_psr_aclk_0.vhd:129]
+INFO: [Synth 8-256] done synthesizing module 'bd_9a00_psr_aclk_0' (10#1) [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_2/synth/bd_9a00_psr_aclk_0.vhd:74]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'bd_9a00_psr_aclk_0' is unconnected for instance 'psr_aclk' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/synth/bd_9a00.v:2070]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'bd_9a00_psr_aclk_0' is unconnected for instance 'psr_aclk' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/synth/bd_9a00.v:2070]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'bd_9a00_psr_aclk_0' is unconnected for instance 'psr_aclk' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/synth/bd_9a00.v:2070]
+WARNING: [Synth 8-7071] port 'peripheral_aresetn' of module 'bd_9a00_psr_aclk_0' is unconnected for instance 'psr_aclk' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/synth/bd_9a00.v:2070]
+WARNING: [Synth 8-7023] instance 'psr_aclk' of module 'bd_9a00_psr_aclk_0' has 10 connections declared, but only 6 given [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/synth/bd_9a00.v:2070]
+INFO: [Synth 8-638] synthesizing module 'bd_9a00_psr_aclk1_0' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_3/synth/bd_9a00_psr_aclk1_0.vhd:74]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_EXT_RST_WIDTH bound to: 4 - type: integer 
+	Parameter C_AUX_RST_WIDTH bound to: 1 - type: integer 
+	Parameter C_EXT_RESET_HIGH bound to: 1'b0 
+	Parameter C_AUX_RESET_HIGH bound to: 1'b0 
+	Parameter C_NUM_BUS_RST bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_RST bound to: 1 - type: integer 
+	Parameter C_NUM_INTERCONNECT_ARESETN bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_ARESETN bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'proc_sys_reset' declared at '/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1264' bound to instance 'U0' of component 'proc_sys_reset' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_3/synth/bd_9a00_psr_aclk1_0.vhd:129]
+INFO: [Synth 8-256] done synthesizing module 'bd_9a00_psr_aclk1_0' (11#1) [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_3/synth/bd_9a00_psr_aclk1_0.vhd:74]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'bd_9a00_psr_aclk1_0' is unconnected for instance 'psr_aclk1' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/synth/bd_9a00.v:2077]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'bd_9a00_psr_aclk1_0' is unconnected for instance 'psr_aclk1' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/synth/bd_9a00.v:2077]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'bd_9a00_psr_aclk1_0' is unconnected for instance 'psr_aclk1' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/synth/bd_9a00.v:2077]
+WARNING: [Synth 8-7071] port 'peripheral_aresetn' of module 'bd_9a00_psr_aclk1_0' is unconnected for instance 'psr_aclk1' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/synth/bd_9a00.v:2077]
+WARNING: [Synth 8-7023] instance 'psr_aclk1' of module 'bd_9a00_psr_aclk1_0' has 10 connections declared, but only 6 given [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/synth/bd_9a00.v:2077]
+INFO: [Synth 8-6155] done synthesizing module 'clk_map_imp_64RM6X' (12#1) [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/synth/bd_9a00.v:2002]
+INFO: [Synth 8-6157] synthesizing module 'm00_exit_pipeline_imp_1U8DV42' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/synth/bd_9a00.v:2382]
+INFO: [Synth 8-6157] synthesizing module 'bd_9a00_m00e_0' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_34/synth/bd_9a00_m00e_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_async_rst' [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1175]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_async_rst' (13#1) [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1175]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9a00_m00e_0' (20#1) [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_34/synth/bd_9a00_m00e_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'm00_exit_pipeline_imp_1U8DV42' (21#1) [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/synth/bd_9a00.v:2382]
+INFO: [Synth 8-6157] synthesizing module 'm00_nodes_imp_1GUV2EM' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/synth/bd_9a00.v:2683]
+INFO: [Synth 8-6157] synthesizing module 'bd_9a00_m00arn_0' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_29/synth/bd_9a00_m00arn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9a00_m00arn_0' (31#1) [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_29/synth/bd_9a00_m00arn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_9a00_m00awn_0' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_31/synth/bd_9a00_m00awn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9a00_m00awn_0' (32#1) [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_31/synth/bd_9a00_m00awn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_9a00_m00bn_0' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_33/synth/bd_9a00_m00bn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9a00_m00bn_0' (33#1) [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_33/synth/bd_9a00_m00bn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_9a00_m00rn_0' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_30/synth/bd_9a00_m00rn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9a00_m00rn_0' (34#1) [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_30/synth/bd_9a00_m00rn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_9a00_m00wn_0' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_32/synth/bd_9a00_m00wn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9a00_m00wn_0' (35#1) [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_32/synth/bd_9a00_m00wn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'm00_nodes_imp_1GUV2EM' (36#1) [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/synth/bd_9a00.v:2683]
+INFO: [Synth 8-6157] synthesizing module 'bd_9a00_m00s2a_0' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_28/synth/bd_9a00_m00s2a_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9a00_m00s2a_0' (38#1) [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_28/synth/bd_9a00_m00s2a_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'm01_exit_pipeline_imp_1X9BU2Q' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/synth/bd_9a00.v:2979]
+INFO: [Synth 8-6157] synthesizing module 'bd_9a00_m01e_0' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_41/synth/bd_9a00_m01e_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9a00_m01e_0' (39#1) [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_41/synth/bd_9a00_m01e_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'm01_exit_pipeline_imp_1X9BU2Q' (40#1) [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/synth/bd_9a00.v:2979]
+INFO: [Synth 8-6157] synthesizing module 'm01_nodes_imp_9V7LAW' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/synth/bd_9a00.v:3280]
+INFO: [Synth 8-6157] synthesizing module 'bd_9a00_m01arn_0' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_36/synth/bd_9a00_m01arn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9a00_m01arn_0' (41#1) [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_36/synth/bd_9a00_m01arn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_9a00_m01awn_0' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_38/synth/bd_9a00_m01awn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9a00_m01awn_0' (42#1) [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_38/synth/bd_9a00_m01awn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_9a00_m01bn_0' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_40/synth/bd_9a00_m01bn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9a00_m01bn_0' (43#1) [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_40/synth/bd_9a00_m01bn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_9a00_m01rn_0' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_37/synth/bd_9a00_m01rn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9a00_m01rn_0' (44#1) [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_37/synth/bd_9a00_m01rn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_9a00_m01wn_0' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_39/synth/bd_9a00_m01wn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9a00_m01wn_0' (45#1) [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_39/synth/bd_9a00_m01wn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'm01_nodes_imp_9V7LAW' (46#1) [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/synth/bd_9a00.v:3280]
+INFO: [Synth 8-6157] synthesizing module 'bd_9a00_m01s2a_0' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_35/synth/bd_9a00_m01s2a_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9a00_m01s2a_0' (47#1) [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_35/synth/bd_9a00_m01s2a_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'm02_exit_pipeline_imp_1HISZ7M' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/synth/bd_9a00.v:3576]
+INFO: [Synth 8-6157] synthesizing module 'bd_9a00_m02e_0' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_48/synth/bd_9a00_m02e_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9a00_m02e_0' (48#1) [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_48/synth/bd_9a00_m02e_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'm02_exit_pipeline_imp_1HISZ7M' (49#1) [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/synth/bd_9a00.v:3576]
+INFO: [Synth 8-6157] synthesizing module 'm02_nodes_imp_QM8ITF' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/synth/bd_9a00.v:3877]
+INFO: [Synth 8-6157] synthesizing module 'bd_9a00_m02arn_0' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_43/synth/bd_9a00_m02arn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_handshake' [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:469]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_single' [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:153]
+	Parameter DEST_SYNC_FF bound to: 3 - type: integer 
+	Parameter INIT_SYNC_FF bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter SRC_INPUT_REG bound to: 0 - type: integer 
+	Parameter VERSION bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_single' (51#1) [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:153]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_handshake' (52#1) [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:469]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9a00_m02arn_0' (55#1) [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_43/synth/bd_9a00_m02arn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_9a00_m02awn_0' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_45/synth/bd_9a00_m02awn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9a00_m02awn_0' (56#1) [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_45/synth/bd_9a00_m02awn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_9a00_m02bn_0' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_47/synth/bd_9a00_m02bn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_handshake__parameterized0' [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:469]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_handshake__parameterized0' (56#1) [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:469]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_handshake__parameterized1' [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:469]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_handshake__parameterized1' (56#1) [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:469]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9a00_m02bn_0' (57#1) [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_47/synth/bd_9a00_m02bn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_9a00_m02rn_0' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_44/synth/bd_9a00_m02rn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_handshake__parameterized2' [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:469]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_handshake__parameterized2' (57#1) [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:469]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9a00_m02rn_0' (58#1) [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_44/synth/bd_9a00_m02rn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_9a00_m02wn_0' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_46/synth/bd_9a00_m02wn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_handshake__parameterized3' [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:469]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_handshake__parameterized3' (58#1) [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:469]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9a00_m02wn_0' (59#1) [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_46/synth/bd_9a00_m02wn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'm02_nodes_imp_QM8ITF' (60#1) [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/synth/bd_9a00.v:3877]
+INFO: [Synth 8-6157] synthesizing module 'bd_9a00_m02s2a_0' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_42/synth/bd_9a00_m02s2a_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9a00_m02s2a_0' (61#1) [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_42/synth/bd_9a00_m02s2a_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'm03_exit_pipeline_imp_1NVLDOI' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/synth/bd_9a00.v:4173]
+INFO: [Synth 8-6157] synthesizing module 'bd_9a00_m03e_0' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_55/synth/bd_9a00_m03e_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9a00_m03e_0' (62#1) [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_55/synth/bd_9a00_m03e_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'm03_exit_pipeline_imp_1NVLDOI' (63#1) [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/synth/bd_9a00.v:4173]
+INFO: [Synth 8-6157] synthesizing module 'm03_nodes_imp_1I2LVSL' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/synth/bd_9a00.v:4474]
+INFO: [Synth 8-6157] synthesizing module 'bd_9a00_m03arn_0' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_50/synth/bd_9a00_m03arn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9a00_m03arn_0' (64#1) [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_50/synth/bd_9a00_m03arn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_9a00_m03awn_0' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_52/synth/bd_9a00_m03awn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9a00_m03awn_0' (65#1) [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_52/synth/bd_9a00_m03awn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_9a00_m03bn_0' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_54/synth/bd_9a00_m03bn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9a00_m03bn_0' (66#1) [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_54/synth/bd_9a00_m03bn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_9a00_m03rn_0' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_51/synth/bd_9a00_m03rn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9a00_m03rn_0' (67#1) [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_51/synth/bd_9a00_m03rn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_9a00_m03wn_0' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_53/synth/bd_9a00_m03wn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9a00_m03wn_0' (68#1) [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_53/synth/bd_9a00_m03wn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'm03_nodes_imp_1I2LVSL' (69#1) [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/synth/bd_9a00.v:4474]
+INFO: [Synth 8-6157] synthesizing module 'bd_9a00_m03s2a_0' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_49/synth/bd_9a00_m03s2a_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9a00_m03s2a_0' (70#1) [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_49/synth/bd_9a00_m03s2a_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_9a00_s00a2s_0' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_22/synth/bd_9a00_s00a2s_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9a00_s00a2s_0' (72#1) [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_22/synth/bd_9a00_s00a2s_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 's00_entry_pipeline_imp_UEW05D' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/synth/bd_9a00.v:4770]
+INFO: [Synth 8-6157] synthesizing module 'bd_9a00_s00mmu_0' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_19/synth/bd_9a00_s00mmu_0.sv:59]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9a00_s00mmu_0' (77#1) [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_19/synth/bd_9a00_s00mmu_0.sv:59]
+INFO: [Synth 8-6157] synthesizing module 'bd_9a00_s00sic_0' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_21/synth/bd_9a00_s00sic_0.sv:59]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9a00_s00sic_0' (80#1) [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_21/synth/bd_9a00_s00sic_0.sv:59]
+INFO: [Synth 8-6157] synthesizing module 'bd_9a00_s00tr_0' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_20/synth/bd_9a00_s00tr_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9a00_s00tr_0' (83#1) [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_20/synth/bd_9a00_s00tr_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 's00_entry_pipeline_imp_UEW05D' (84#1) [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/synth/bd_9a00.v:4770]
+INFO: [Synth 8-6157] synthesizing module 's00_nodes_imp_XC3YZF' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/synth/bd_9a00.v:5419]
+INFO: [Synth 8-6157] synthesizing module 'bd_9a00_sarn_0' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_23/synth/bd_9a00_sarn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9a00_sarn_0' (85#1) [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_23/synth/bd_9a00_sarn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_9a00_sawn_0' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_25/synth/bd_9a00_sawn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9a00_sawn_0' (86#1) [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_25/synth/bd_9a00_sawn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_9a00_sbn_0' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_27/synth/bd_9a00_sbn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9a00_sbn_0' (87#1) [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_27/synth/bd_9a00_sbn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_9a00_srn_0' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_24/synth/bd_9a00_srn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9a00_srn_0' (88#1) [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_24/synth/bd_9a00_srn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_9a00_swn_0' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_26/synth/bd_9a00_swn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9a00_swn_0' (89#1) [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_26/synth/bd_9a00_swn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 's00_nodes_imp_XC3YZF' (90#1) [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/synth/bd_9a00.v:5419]
+INFO: [Synth 8-6157] synthesizing module 'switchboards_imp_5HZCGF' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/synth/bd_9a00.v:5715]
+INFO: [Synth 8-6157] synthesizing module 'bd_9a00_arinsw_0' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_4/synth/bd_9a00_arinsw_0.sv:57]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9a00_arinsw_0' (93#1) [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_4/synth/bd_9a00_arinsw_0.sv:57]
+INFO: [Synth 8-6157] synthesizing module 'bd_9a00_aroutsw_0' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_9/synth/bd_9a00_aroutsw_0.sv:57]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9a00_aroutsw_0' (94#1) [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_9/synth/bd_9a00_aroutsw_0.sv:57]
+INFO: [Synth 8-6157] synthesizing module 'bd_9a00_awinsw_0' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_6/synth/bd_9a00_awinsw_0.sv:57]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9a00_awinsw_0' (95#1) [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_6/synth/bd_9a00_awinsw_0.sv:57]
+INFO: [Synth 8-6157] synthesizing module 'bd_9a00_awoutsw_0' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_11/synth/bd_9a00_awoutsw_0.sv:57]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9a00_awoutsw_0' (96#1) [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_11/synth/bd_9a00_awoutsw_0.sv:57]
+INFO: [Synth 8-6157] synthesizing module 'bd_9a00_binsw_0' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_8/synth/bd_9a00_binsw_0.sv:57]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9a00_binsw_0' (97#1) [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_8/synth/bd_9a00_binsw_0.sv:57]
+INFO: [Synth 8-6157] synthesizing module 'bd_9a00_boutsw_0' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_13/synth/bd_9a00_boutsw_0.sv:57]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9a00_boutsw_0' (98#1) [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_13/synth/bd_9a00_boutsw_0.sv:57]
+INFO: [Synth 8-6157] synthesizing module 'i_nodes_imp_1NX4E0N' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/synth/bd_9a00.v:2086]
+INFO: [Synth 8-6157] synthesizing module 'bd_9a00_arni_0' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_14/synth/bd_9a00_arni_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9a00_arni_0' (101#1) [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_14/synth/bd_9a00_arni_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_9a00_awni_0' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_16/synth/bd_9a00_awni_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9a00_awni_0' (102#1) [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_16/synth/bd_9a00_awni_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_9a00_bni_0' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_18/synth/bd_9a00_bni_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9a00_bni_0' (105#1) [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_18/synth/bd_9a00_bni_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_9a00_rni_0' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_15/synth/bd_9a00_rni_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9a00_rni_0' (106#1) [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_15/synth/bd_9a00_rni_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_9a00_wni_0' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_17/synth/bd_9a00_wni_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9a00_wni_0' (107#1) [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_17/synth/bd_9a00_wni_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'i_nodes_imp_1NX4E0N' (108#1) [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/synth/bd_9a00.v:2086]
+INFO: [Synth 8-6157] synthesizing module 'bd_9a00_rinsw_0' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_5/synth/bd_9a00_rinsw_0.sv:57]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9a00_rinsw_0' (109#1) [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_5/synth/bd_9a00_rinsw_0.sv:57]
+INFO: [Synth 8-6157] synthesizing module 'bd_9a00_routsw_0' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_10/synth/bd_9a00_routsw_0.sv:57]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9a00_routsw_0' (110#1) [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_10/synth/bd_9a00_routsw_0.sv:57]
+INFO: [Synth 8-6157] synthesizing module 'bd_9a00_winsw_0' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_7/synth/bd_9a00_winsw_0.sv:57]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9a00_winsw_0' (111#1) [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_7/synth/bd_9a00_winsw_0.sv:57]
+INFO: [Synth 8-6157] synthesizing module 'bd_9a00_woutsw_0' [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_12/synth/bd_9a00_woutsw_0.sv:57]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9a00_woutsw_0' (112#1) [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_12/synth/bd_9a00_woutsw_0.sv:57]
+INFO: [Synth 8-6155] done synthesizing module 'switchboards_imp_5HZCGF' (113#1) [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/synth/bd_9a00.v:5715]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9a00' (114#1) [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/synth/bd_9a00.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'riscv_io_axi_s_0' (115#1) [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/synth/riscv_io_axi_s_0.v:57]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 2309.391 ; gain = 8.934 ; free physical = 18713 ; free virtual = 27615
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 2321.266 ; gain = 20.809 ; free physical = 18682 ; free virtual = 27585
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 2321.266 ; gain = 20.809 ; free physical = 18682 ; free virtual = 27585
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.78 ; elapsed = 00:00:00.79 . Memory (MB): peak = 2379.539 ; gain = 0.000 ; free physical = 18483 ; free virtual = 27385
+INFO: [Netlist 29-17] Analyzing 39 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/ooc.xdc] for cell 'inst'
+Parsing XDC File [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_1/bd_9a00_psr0_0_board.xdc] for cell 'inst/clk_map/psr0/U0'
+Finished Parsing XDC File [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_1/bd_9a00_psr0_0_board.xdc] for cell 'inst/clk_map/psr0/U0'
+Parsing XDC File [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_1/bd_9a00_psr0_0.xdc] for cell 'inst/clk_map/psr0/U0'
+Finished Parsing XDC File [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_1/bd_9a00_psr0_0.xdc] for cell 'inst/clk_map/psr0/U0'
+Parsing XDC File [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_2/bd_9a00_psr_aclk_0_board.xdc] for cell 'inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_2/bd_9a00_psr_aclk_0_board.xdc] for cell 'inst/clk_map/psr_aclk/U0'
+Parsing XDC File [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_2/bd_9a00_psr_aclk_0.xdc] for cell 'inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_2/bd_9a00_psr_aclk_0.xdc] for cell 'inst/clk_map/psr_aclk/U0'
+Parsing XDC File [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_3/bd_9a00_psr_aclk1_0_board.xdc] for cell 'inst/clk_map/psr_aclk1/U0'
+Finished Parsing XDC File [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_3/bd_9a00_psr_aclk1_0_board.xdc] for cell 'inst/clk_map/psr_aclk1/U0'
+Parsing XDC File [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_3/bd_9a00_psr_aclk1_0.xdc] for cell 'inst/clk_map/psr_aclk1/U0'
+Finished Parsing XDC File [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_3/bd_9a00_psr_aclk1_0.xdc] for cell 'inst/clk_map/psr_aclk1/U0'
+Parsing XDC File [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.runs/riscv_io_axi_s_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.runs/riscv_io_axi_s_0_synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/riscv_io_axi_s_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/riscv_io_axi_s_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/riscv_io_axi_s_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/riscv_io_axi_s_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-1715] 3 XPM XDC files have been applied to the design.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2689.512 ; gain = 0.000 ; free physical = 18179 ; free virtual = 27081
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 39 instances were transformed.
+  FDR => FDRE: 36 instances
+  SRL16 => SRL16E: 3 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.14 ; elapsed = 00:00:00.15 . Memory (MB): peak = 2699.418 ; gain = 9.906 ; free physical = 18178 ; free virtual = 27080
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:24 . Memory (MB): peak = 2699.418 ; gain = 398.961 ; free physical = 18581 ; free virtual = 27484
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:24 . Memory (MB): peak = 2699.418 ; gain = 398.961 ; free physical = 18581 ; free virtual = 27484
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  /mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.runs/riscv_io_axi_s_0_synth_1/dont_touch.xdc, line 288).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m00_nodes/m00_ar_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m00_nodes/m00_aw_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m00_nodes/m00_b_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m00_nodes/m00_r_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m00_nodes/m00_w_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m01_nodes/m01_ar_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m01_nodes/m01_aw_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m01_nodes/m01_b_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m01_nodes/m01_r_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m01_nodes/m01_w_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m02_nodes/m02_ar_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m02_nodes/m02_aw_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m02_nodes/m02_b_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m02_nodes/m02_r_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m02_nodes/m02_w_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m03_nodes/m03_ar_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m03_nodes/m03_aw_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m03_nodes/m03_b_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m03_nodes/m03_r_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m03_nodes/m03_w_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_ar_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_aw_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_b_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_r_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_w_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/switchboards/i_nodes/i_ar_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/switchboards/i_nodes/i_aw_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/switchboards/i_nodes/i_b_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/switchboards/i_nodes/i_r_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/switchboards/i_nodes/i_w_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m00_nodes/m00_ar_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m00_nodes/m00_aw_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m00_nodes/m00_b_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m00_nodes/m00_r_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m00_nodes/m00_w_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m01_nodes/m01_ar_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m01_nodes/m01_aw_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m01_nodes/m01_b_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m01_nodes/m01_r_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m01_nodes/m01_w_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m02_nodes/m02_ar_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m02_nodes/m02_aw_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m02_nodes/m02_b_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m02_nodes/m02_r_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m02_nodes/m02_w_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m03_nodes/m03_ar_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m03_nodes/m03_aw_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m03_nodes/m03_b_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m03_nodes/m03_r_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m03_nodes/m03_w_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_ar_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_aw_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_b_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_r_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_w_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/switchboards/i_nodes/i_ar_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/switchboards/i_nodes/i_aw_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/switchboards/i_nodes/i_b_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/switchboards/i_nodes/i_r_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/switchboards/i_nodes/i_w_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m00_exit_pipeline/m00_exit/inst/xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m01_exit_pipeline/m01_exit/inst/xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m02_exit_pipeline/m02_exit/inst/xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m03_exit_pipeline/m03_exit/inst/xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_entry_pipeline/s00_mmu/inst/xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_entry_pipeline/s00_si_converter/inst/xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_entry_pipeline/s00_transaction_regulator/inst/xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m02_nodes/m02_ar_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_reg_fifo_async.inst_reg_fifo_async /\gen_xpm_cdc_handshake_array[0].inst_cdc_handshake . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m02_nodes/m02_aw_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_reg_fifo_async.inst_reg_fifo_async /\gen_xpm_cdc_handshake_array[0].inst_cdc_handshake . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m03_nodes/m03_ar_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_reg_fifo_async.inst_reg_fifo_async /\gen_xpm_cdc_handshake_array[0].inst_cdc_handshake . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m03_nodes/m03_aw_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_reg_fifo_async.inst_reg_fifo_async /\gen_xpm_cdc_handshake_array[0].inst_cdc_handshake . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m02_nodes/m02_b_node/inst/inst_mi_handler/\gen_normal_area.gen_fifo_req.inst_fifo_req /\gen_reg_fifo_async.inst_reg_fifo_async /\gen_xpm_cdc_handshake_array[0].inst_cdc_handshake . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m02_nodes/m02_r_node/inst/inst_mi_handler/\gen_normal_area.gen_fifo_req.inst_fifo_req /\gen_reg_fifo_async.inst_reg_fifo_async /\gen_xpm_cdc_handshake_array[0].inst_cdc_handshake . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m03_nodes/m03_b_node/inst/inst_mi_handler/\gen_normal_area.gen_fifo_req.inst_fifo_req /\gen_reg_fifo_async.inst_reg_fifo_async /\gen_xpm_cdc_handshake_array[0].inst_cdc_handshake . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m03_nodes/m03_r_node/inst/inst_mi_handler/\gen_normal_area.gen_fifo_req.inst_fifo_req /\gen_reg_fifo_async.inst_reg_fifo_async /\gen_xpm_cdc_handshake_array[0].inst_cdc_handshake . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m02_nodes/m02_b_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_reg_fifo_async.inst_reg_fifo_async /\gen_xpm_cdc_handshake_array[0].inst_cdc_handshake . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m03_nodes/m03_b_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_reg_fifo_async.inst_reg_fifo_async /\gen_xpm_cdc_handshake_array[0].inst_cdc_handshake . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m02_nodes/m02_r_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_reg_fifo_async.inst_reg_fifo_async /\gen_xpm_cdc_handshake_array[0].inst_cdc_handshake . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m03_nodes/m03_r_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_reg_fifo_async.inst_reg_fifo_async /\gen_xpm_cdc_handshake_array[0].inst_cdc_handshake . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m02_nodes/m02_w_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_reg_fifo_async.inst_reg_fifo_async /\gen_xpm_cdc_handshake_array[0].inst_cdc_handshake . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m03_nodes/m03_w_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_reg_fifo_async.inst_reg_fifo_async /\gen_xpm_cdc_handshake_array[0].inst_cdc_handshake . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m02_nodes/m02_ar_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_reg_fifo_async.inst_reg_fifo_async /\gen_xpm_cdc_handshake_array[0].inst_cdc_handshake /xpm_cdc_single_dest2src_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m02_nodes/m02_aw_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_reg_fifo_async.inst_reg_fifo_async /\gen_xpm_cdc_handshake_array[0].inst_cdc_handshake /xpm_cdc_single_dest2src_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m02_nodes/m02_b_node/inst/inst_mi_handler/\gen_normal_area.gen_fifo_req.inst_fifo_req /\gen_reg_fifo_async.inst_reg_fifo_async /\gen_xpm_cdc_handshake_array[0].inst_cdc_handshake /xpm_cdc_single_dest2src_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m02_nodes/m02_b_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_reg_fifo_async.inst_reg_fifo_async /\gen_xpm_cdc_handshake_array[0].inst_cdc_handshake /xpm_cdc_single_dest2src_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m02_nodes/m02_r_node/inst/inst_mi_handler/\gen_normal_area.gen_fifo_req.inst_fifo_req /\gen_reg_fifo_async.inst_reg_fifo_async /\gen_xpm_cdc_handshake_array[0].inst_cdc_handshake /xpm_cdc_single_dest2src_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m02_nodes/m02_r_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_reg_fifo_async.inst_reg_fifo_async /\gen_xpm_cdc_handshake_array[0].inst_cdc_handshake /xpm_cdc_single_dest2src_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m02_nodes/m02_w_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_reg_fifo_async.inst_reg_fifo_async /\gen_xpm_cdc_handshake_array[0].inst_cdc_handshake /xpm_cdc_single_dest2src_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m03_nodes/m03_ar_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_reg_fifo_async.inst_reg_fifo_async /\gen_xpm_cdc_handshake_array[0].inst_cdc_handshake /xpm_cdc_single_dest2src_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m03_nodes/m03_aw_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_reg_fifo_async.inst_reg_fifo_async /\gen_xpm_cdc_handshake_array[0].inst_cdc_handshake /xpm_cdc_single_dest2src_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m03_nodes/m03_b_node/inst/inst_mi_handler/\gen_normal_area.gen_fifo_req.inst_fifo_req /\gen_reg_fifo_async.inst_reg_fifo_async /\gen_xpm_cdc_handshake_array[0].inst_cdc_handshake /xpm_cdc_single_dest2src_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m03_nodes/m03_b_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_reg_fifo_async.inst_reg_fifo_async /\gen_xpm_cdc_handshake_array[0].inst_cdc_handshake /xpm_cdc_single_dest2src_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m03_nodes/m03_r_node/inst/inst_mi_handler/\gen_normal_area.gen_fifo_req.inst_fifo_req /\gen_reg_fifo_async.inst_reg_fifo_async /\gen_xpm_cdc_handshake_array[0].inst_cdc_handshake /xpm_cdc_single_dest2src_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m03_nodes/m03_r_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_reg_fifo_async.inst_reg_fifo_async /\gen_xpm_cdc_handshake_array[0].inst_cdc_handshake /xpm_cdc_single_dest2src_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m03_nodes/m03_w_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_reg_fifo_async.inst_reg_fifo_async /\gen_xpm_cdc_handshake_array[0].inst_cdc_handshake /xpm_cdc_single_dest2src_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m02_nodes/m02_ar_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_reg_fifo_async.inst_reg_fifo_async /\gen_xpm_cdc_handshake_array[0].inst_cdc_handshake /xpm_cdc_single_src2dest_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m02_nodes/m02_aw_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_reg_fifo_async.inst_reg_fifo_async /\gen_xpm_cdc_handshake_array[0].inst_cdc_handshake /xpm_cdc_single_src2dest_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m02_nodes/m02_b_node/inst/inst_mi_handler/\gen_normal_area.gen_fifo_req.inst_fifo_req /\gen_reg_fifo_async.inst_reg_fifo_async /\gen_xpm_cdc_handshake_array[0].inst_cdc_handshake /xpm_cdc_single_src2dest_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m02_nodes/m02_b_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_reg_fifo_async.inst_reg_fifo_async /\gen_xpm_cdc_handshake_array[0].inst_cdc_handshake /xpm_cdc_single_src2dest_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m02_nodes/m02_r_node/inst/inst_mi_handler/\gen_normal_area.gen_fifo_req.inst_fifo_req /\gen_reg_fifo_async.inst_reg_fifo_async /\gen_xpm_cdc_handshake_array[0].inst_cdc_handshake /xpm_cdc_single_src2dest_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m02_nodes/m02_r_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_reg_fifo_async.inst_reg_fifo_async /\gen_xpm_cdc_handshake_array[0].inst_cdc_handshake /xpm_cdc_single_src2dest_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m02_nodes/m02_w_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_reg_fifo_async.inst_reg_fifo_async /\gen_xpm_cdc_handshake_array[0].inst_cdc_handshake /xpm_cdc_single_src2dest_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m03_nodes/m03_ar_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_reg_fifo_async.inst_reg_fifo_async /\gen_xpm_cdc_handshake_array[0].inst_cdc_handshake /xpm_cdc_single_src2dest_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m03_nodes/m03_aw_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_reg_fifo_async.inst_reg_fifo_async /\gen_xpm_cdc_handshake_array[0].inst_cdc_handshake /xpm_cdc_single_src2dest_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m03_nodes/m03_b_node/inst/inst_mi_handler/\gen_normal_area.gen_fifo_req.inst_fifo_req /\gen_reg_fifo_async.inst_reg_fifo_async /\gen_xpm_cdc_handshake_array[0].inst_cdc_handshake /xpm_cdc_single_src2dest_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m03_nodes/m03_b_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_reg_fifo_async.inst_reg_fifo_async /\gen_xpm_cdc_handshake_array[0].inst_cdc_handshake /xpm_cdc_single_src2dest_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m03_nodes/m03_r_node/inst/inst_mi_handler/\gen_normal_area.gen_fifo_req.inst_fifo_req /\gen_reg_fifo_async.inst_reg_fifo_async /\gen_xpm_cdc_handshake_array[0].inst_cdc_handshake /xpm_cdc_single_src2dest_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m03_nodes/m03_r_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_reg_fifo_async.inst_reg_fifo_async /\gen_xpm_cdc_handshake_array[0].inst_cdc_handshake /xpm_cdc_single_src2dest_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m03_nodes/m03_w_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_reg_fifo_async.inst_reg_fifo_async /\gen_xpm_cdc_handshake_array[0].inst_cdc_handshake /xpm_cdc_single_src2dest_inst. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:24 . Memory (MB): peak = 2699.418 ; gain = 398.961 ; free physical = 18560 ; free virtual = 27463
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'wr_state_reg' in module 'sc_node_v1_0_12_reg_fifo_async__xdcDup__1'
+INFO: [Synth 8-802] inferred FSM for state register 'rd_state_reg' in module 'sc_node_v1_0_12_reg_fifo_async__xdcDup__1'
+INFO: [Synth 8-802] inferred FSM for state register 'wr_state_reg' in module 'sc_node_v1_0_12_reg_fifo_async__xdcDup__2'
+INFO: [Synth 8-802] inferred FSM for state register 'rd_state_reg' in module 'sc_node_v1_0_12_reg_fifo_async__xdcDup__2'
+INFO: [Synth 8-802] inferred FSM for state register 'wr_state_reg' in module 'sc_node_v1_0_12_reg_fifo_async__parameterized0__xdcDup__1'
+INFO: [Synth 8-802] inferred FSM for state register 'rd_state_reg' in module 'sc_node_v1_0_12_reg_fifo_async__parameterized0__xdcDup__1'
+INFO: [Synth 8-4490] FSM extraction disabled for register 'gen_AB_reg_slice.state_reg' through user attribute
+INFO: [Synth 8-802] inferred FSM for state register 'wr_state_reg' in module 'sc_node_v1_0_12_reg_fifo_async__parameterized1__xdcDup__1'
+INFO: [Synth 8-802] inferred FSM for state register 'rd_state_reg' in module 'sc_node_v1_0_12_reg_fifo_async__parameterized1__xdcDup__1'
+INFO: [Synth 8-802] inferred FSM for state register 'wr_state_reg' in module 'sc_node_v1_0_12_reg_fifo_async__parameterized0__xdcDup__2'
+INFO: [Synth 8-802] inferred FSM for state register 'rd_state_reg' in module 'sc_node_v1_0_12_reg_fifo_async__parameterized0__xdcDup__2'
+INFO: [Synth 8-802] inferred FSM for state register 'wr_state_reg' in module 'sc_node_v1_0_12_reg_fifo_async__parameterized2__xdcDup__1'
+INFO: [Synth 8-802] inferred FSM for state register 'rd_state_reg' in module 'sc_node_v1_0_12_reg_fifo_async__parameterized2__xdcDup__1'
+INFO: [Synth 8-802] inferred FSM for state register 'wr_state_reg' in module 'sc_node_v1_0_12_reg_fifo_async__parameterized3__xdcDup__1'
+INFO: [Synth 8-802] inferred FSM for state register 'rd_state_reg' in module 'sc_node_v1_0_12_reg_fifo_async__parameterized3__xdcDup__1'
+INFO: [Synth 8-802] inferred FSM for state register 'wr_state_reg' in module 'sc_node_v1_0_12_reg_fifo_async__xdcDup__3'
+INFO: [Synth 8-802] inferred FSM for state register 'rd_state_reg' in module 'sc_node_v1_0_12_reg_fifo_async__xdcDup__3'
+INFO: [Synth 8-802] inferred FSM for state register 'wr_state_reg' in module 'sc_node_v1_0_12_reg_fifo_async'
+INFO: [Synth 8-802] inferred FSM for state register 'rd_state_reg' in module 'sc_node_v1_0_12_reg_fifo_async'
+INFO: [Synth 8-802] inferred FSM for state register 'wr_state_reg' in module 'sc_node_v1_0_12_reg_fifo_async__parameterized0__xdcDup__3'
+INFO: [Synth 8-802] inferred FSM for state register 'rd_state_reg' in module 'sc_node_v1_0_12_reg_fifo_async__parameterized0__xdcDup__3'
+INFO: [Synth 8-802] inferred FSM for state register 'wr_state_reg' in module 'sc_node_v1_0_12_reg_fifo_async__parameterized1'
+INFO: [Synth 8-802] inferred FSM for state register 'rd_state_reg' in module 'sc_node_v1_0_12_reg_fifo_async__parameterized1'
+INFO: [Synth 8-802] inferred FSM for state register 'wr_state_reg' in module 'sc_node_v1_0_12_reg_fifo_async__parameterized0'
+INFO: [Synth 8-802] inferred FSM for state register 'rd_state_reg' in module 'sc_node_v1_0_12_reg_fifo_async__parameterized0'
+INFO: [Synth 8-802] inferred FSM for state register 'wr_state_reg' in module 'sc_node_v1_0_12_reg_fifo_async__parameterized2'
+INFO: [Synth 8-802] inferred FSM for state register 'rd_state_reg' in module 'sc_node_v1_0_12_reg_fifo_async__parameterized2'
+INFO: [Synth 8-802] inferred FSM for state register 'wr_state_reg' in module 'sc_node_v1_0_12_reg_fifo_async__parameterized3'
+INFO: [Synth 8-802] inferred FSM for state register 'rd_state_reg' in module 'sc_node_v1_0_12_reg_fifo_async__parameterized3'
+INFO: [Synth 8-802] inferred FSM for state register 'gen_axi.gen_write.write_cs_reg' in module 'sc_mmu_v1_0_10_decerr_slave'
+INFO: [Synth 8-802] inferred FSM for state register 'w_state_reg' in module 'sc_si_converter_v1_0_10_axilite_conv'
+INFO: [Synth 8-802] inferred FSM for state register 'r_state_reg' in module 'sc_si_converter_v1_0_10_axilite_conv'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE0 |                            00001 |                              110
+*
+              SM_WR_IDLE |                            00010 |                              000
+              SM_WR_FULL |                            00100 |                              011
+              SM_WR_WAIT |                            01000 |                              010
+                  iSTATE |                            10000 |                              111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wr_state_reg' using encoding 'one-hot' in module 'sc_node_v1_0_12_reg_fifo_async__xdcDup__1'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+              SM_RD_IDLE |                              001 |                               10
+             SM_RD_VALID |                              010 |                               00
+              SM_RD_WAIT |                              100 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rd_state_reg' using encoding 'one-hot' in module 'sc_node_v1_0_12_reg_fifo_async__xdcDup__1'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE0 |                            00001 |                              110
+*
+              SM_WR_IDLE |                            00010 |                              000
+              SM_WR_FULL |                            00100 |                              011
+              SM_WR_WAIT |                            01000 |                              010
+                  iSTATE |                            10000 |                              111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wr_state_reg' using encoding 'one-hot' in module 'sc_node_v1_0_12_reg_fifo_async__xdcDup__2'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+              SM_RD_IDLE |                              001 |                               10
+             SM_RD_VALID |                              010 |                               00
+              SM_RD_WAIT |                              100 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rd_state_reg' using encoding 'one-hot' in module 'sc_node_v1_0_12_reg_fifo_async__xdcDup__2'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE0 |                            00001 |                              110
+*
+              SM_WR_IDLE |                            00010 |                              000
+              SM_WR_FULL |                            00100 |                              011
+              SM_WR_WAIT |                            01000 |                              010
+                  iSTATE |                            10000 |                              111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wr_state_reg' using encoding 'one-hot' in module 'sc_node_v1_0_12_reg_fifo_async__parameterized0__xdcDup__1'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+              SM_RD_IDLE |                              001 |                               10
+             SM_RD_VALID |                              010 |                               00
+              SM_RD_WAIT |                              100 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rd_state_reg' using encoding 'one-hot' in module 'sc_node_v1_0_12_reg_fifo_async__parameterized0__xdcDup__1'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE0 |                            00001 |                              110
+*
+              SM_WR_IDLE |                            00010 |                              000
+              SM_WR_FULL |                            00100 |                              011
+              SM_WR_WAIT |                            01000 |                              010
+                  iSTATE |                            10000 |                              111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wr_state_reg' using encoding 'one-hot' in module 'sc_node_v1_0_12_reg_fifo_async__parameterized1__xdcDup__1'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+              SM_RD_IDLE |                              001 |                               10
+             SM_RD_VALID |                              010 |                               00
+              SM_RD_WAIT |                              100 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rd_state_reg' using encoding 'one-hot' in module 'sc_node_v1_0_12_reg_fifo_async__parameterized1__xdcDup__1'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE0 |                            00001 |                              110
+*
+              SM_WR_IDLE |                            00010 |                              000
+              SM_WR_FULL |                            00100 |                              011
+              SM_WR_WAIT |                            01000 |                              010
+                  iSTATE |                            10000 |                              111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wr_state_reg' using encoding 'one-hot' in module 'sc_node_v1_0_12_reg_fifo_async__parameterized0__xdcDup__2'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+              SM_RD_IDLE |                              001 |                               10
+             SM_RD_VALID |                              010 |                               00
+              SM_RD_WAIT |                              100 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rd_state_reg' using encoding 'one-hot' in module 'sc_node_v1_0_12_reg_fifo_async__parameterized0__xdcDup__2'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE0 |                            00001 |                              110
+*
+              SM_WR_IDLE |                            00010 |                              000
+              SM_WR_FULL |                            00100 |                              011
+              SM_WR_WAIT |                            01000 |                              010
+                  iSTATE |                            10000 |                              111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wr_state_reg' using encoding 'one-hot' in module 'sc_node_v1_0_12_reg_fifo_async__parameterized2__xdcDup__1'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+              SM_RD_IDLE |                              001 |                               10
+             SM_RD_VALID |                              010 |                               00
+              SM_RD_WAIT |                              100 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rd_state_reg' using encoding 'one-hot' in module 'sc_node_v1_0_12_reg_fifo_async__parameterized2__xdcDup__1'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE0 |                            00001 |                              110
+*
+              SM_WR_IDLE |                            00010 |                              000
+              SM_WR_FULL |                            00100 |                              011
+              SM_WR_WAIT |                            01000 |                              010
+                  iSTATE |                            10000 |                              111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wr_state_reg' using encoding 'one-hot' in module 'sc_node_v1_0_12_reg_fifo_async__parameterized3__xdcDup__1'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+              SM_RD_IDLE |                              001 |                               10
+             SM_RD_VALID |                              010 |                               00
+              SM_RD_WAIT |                              100 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rd_state_reg' using encoding 'one-hot' in module 'sc_node_v1_0_12_reg_fifo_async__parameterized3__xdcDup__1'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE0 |                            00001 |                              110
+*
+              SM_WR_IDLE |                            00010 |                              000
+              SM_WR_FULL |                            00100 |                              011
+              SM_WR_WAIT |                            01000 |                              010
+                  iSTATE |                            10000 |                              111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wr_state_reg' using encoding 'one-hot' in module 'sc_node_v1_0_12_reg_fifo_async__xdcDup__3'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+              SM_RD_IDLE |                              001 |                               10
+             SM_RD_VALID |                              010 |                               00
+              SM_RD_WAIT |                              100 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rd_state_reg' using encoding 'one-hot' in module 'sc_node_v1_0_12_reg_fifo_async__xdcDup__3'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE0 |                            00001 |                              110
+*
+              SM_WR_IDLE |                            00010 |                              000
+              SM_WR_FULL |                            00100 |                              011
+              SM_WR_WAIT |                            01000 |                              010
+                  iSTATE |                            10000 |                              111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wr_state_reg' using encoding 'one-hot' in module 'sc_node_v1_0_12_reg_fifo_async'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+              SM_RD_IDLE |                              001 |                               10
+             SM_RD_VALID |                              010 |                               00
+              SM_RD_WAIT |                              100 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rd_state_reg' using encoding 'one-hot' in module 'sc_node_v1_0_12_reg_fifo_async'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE0 |                            00001 |                              110
+*
+              SM_WR_IDLE |                            00010 |                              000
+              SM_WR_FULL |                            00100 |                              011
+              SM_WR_WAIT |                            01000 |                              010
+                  iSTATE |                            10000 |                              111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wr_state_reg' using encoding 'one-hot' in module 'sc_node_v1_0_12_reg_fifo_async__parameterized0__xdcDup__3'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+              SM_RD_IDLE |                              001 |                               10
+             SM_RD_VALID |                              010 |                               00
+              SM_RD_WAIT |                              100 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rd_state_reg' using encoding 'one-hot' in module 'sc_node_v1_0_12_reg_fifo_async__parameterized0__xdcDup__3'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE0 |                            00001 |                              110
+*
+              SM_WR_IDLE |                            00010 |                              000
+              SM_WR_FULL |                            00100 |                              011
+              SM_WR_WAIT |                            01000 |                              010
+                  iSTATE |                            10000 |                              111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wr_state_reg' using encoding 'one-hot' in module 'sc_node_v1_0_12_reg_fifo_async__parameterized1'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+              SM_RD_IDLE |                              001 |                               10
+             SM_RD_VALID |                              010 |                               00
+              SM_RD_WAIT |                              100 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rd_state_reg' using encoding 'one-hot' in module 'sc_node_v1_0_12_reg_fifo_async__parameterized1'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE0 |                            00001 |                              110
+*
+              SM_WR_IDLE |                            00010 |                              000
+              SM_WR_FULL |                            00100 |                              011
+              SM_WR_WAIT |                            01000 |                              010
+                  iSTATE |                            10000 |                              111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wr_state_reg' using encoding 'one-hot' in module 'sc_node_v1_0_12_reg_fifo_async__parameterized0'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+              SM_RD_IDLE |                              001 |                               10
+             SM_RD_VALID |                              010 |                               00
+              SM_RD_WAIT |                              100 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rd_state_reg' using encoding 'one-hot' in module 'sc_node_v1_0_12_reg_fifo_async__parameterized0'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE0 |                            00001 |                              110
+*
+              SM_WR_IDLE |                            00010 |                              000
+              SM_WR_FULL |                            00100 |                              011
+              SM_WR_WAIT |                            01000 |                              010
+                  iSTATE |                            10000 |                              111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wr_state_reg' using encoding 'one-hot' in module 'sc_node_v1_0_12_reg_fifo_async__parameterized2'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+              SM_RD_IDLE |                              001 |                               10
+             SM_RD_VALID |                              010 |                               00
+              SM_RD_WAIT |                              100 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rd_state_reg' using encoding 'one-hot' in module 'sc_node_v1_0_12_reg_fifo_async__parameterized2'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE0 |                            00001 |                              110
+*
+              SM_WR_IDLE |                            00010 |                              000
+              SM_WR_FULL |                            00100 |                              011
+              SM_WR_WAIT |                            01000 |                              010
+                  iSTATE |                            10000 |                              111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wr_state_reg' using encoding 'one-hot' in module 'sc_node_v1_0_12_reg_fifo_async__parameterized3'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+              SM_RD_IDLE |                              001 |                               10
+             SM_RD_VALID |                              010 |                               00
+              SM_RD_WAIT |                              100 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rd_state_reg' using encoding 'one-hot' in module 'sc_node_v1_0_12_reg_fifo_async__parameterized3'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+            P_WRITE_IDLE |                              001 |                               00
+            P_WRITE_DATA |                              010 |                               01
+            P_WRITE_RESP |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'gen_axi.gen_write.write_cs_reg' using encoding 'one-hot' in module 'sc_mmu_v1_0_10_decerr_slave'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  W_IDLE |                              000 | 00000000000000000000000000000000
+                    W_RX |                              001 | 00000000000000000000000000000001
+                    W_TX |                              010 | 00000000000000000000000000000010
+              W_COMPLETE |                              011 | 00000000000000000000000000000100
+               W_RECOVER |                              100 | 00000000000000000000000000000011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'w_state_reg' using encoding 'sequential' in module 'sc_si_converter_v1_0_10_axilite_conv'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  R_IDLE |                               00 | 00000000000000000000000000000000
+                    R_RX |                               01 | 00000000000000000000000000000001
+                    R_TX |                               10 | 00000000000000000000000000000010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'r_state_reg' using encoding 'sequential' in module 'sc_si_converter_v1_0_10_axilite_conv'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:22 ; elapsed = 00:00:30 . Memory (MB): peak = 2699.418 ; gain = 398.961 ; free physical = 18540 ; free virtual = 27442
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   12 Bit       Adders := 2     
+	   2 Input   11 Bit       Adders := 1     
+	   2 Input   10 Bit       Adders := 4     
+	   4 Input   10 Bit       Adders := 1     
+	   2 Input    8 Bit       Adders := 3     
+	   2 Input    7 Bit       Adders := 2     
+	   2 Input    6 Bit       Adders := 3     
+	   2 Input    4 Bit       Adders := 31    
+	   2 Input    3 Bit       Adders := 1     
+	   2 Input    2 Bit       Adders := 8     
+	   2 Input    1 Bit       Adders := 6     
+	   3 Input    1 Bit       Adders := 12    
++---XORs : 
+	   2 Input      1 Bit         XORs := 114   
++---Registers : 
+	             2178 Bit    Registers := 2     
+	              512 Bit    Registers := 1     
+	              167 Bit    Registers := 2     
+	              164 Bit    Registers := 8     
+	               78 Bit    Registers := 1     
+	               75 Bit    Registers := 4     
+	               74 Bit    Registers := 1     
+	               64 Bit    Registers := 6     
+	               55 Bit    Registers := 4     
+	               47 Bit    Registers := 4     
+	               33 Bit    Registers := 4     
+	               32 Bit    Registers := 1     
+	               31 Bit    Registers := 1     
+	               28 Bit    Registers := 1     
+	               18 Bit    Registers := 8     
+	               12 Bit    Registers := 1     
+	               10 Bit    Registers := 4     
+	                9 Bit    Registers := 4     
+	                8 Bit    Registers := 4     
+	                7 Bit    Registers := 3     
+	                6 Bit    Registers := 4     
+	                5 Bit    Registers := 3     
+	                4 Bit    Registers := 38    
+	                3 Bit    Registers := 134   
+	                2 Bit    Registers := 29    
+	                1 Bit    Registers := 500   
++---Muxes : 
+	   2 Input 2178 Bit        Muxes := 2     
+	   2 Input  146 Bit        Muxes := 10    
+	   2 Input   64 Bit        Muxes := 5     
+	   3 Input   64 Bit        Muxes := 2     
+	   2 Input   57 Bit        Muxes := 5     
+	   2 Input   55 Bit        Muxes := 1     
+	   4 Input   55 Bit        Muxes := 1     
+	   3 Input   32 Bit        Muxes := 1     
+	   3 Input   31 Bit        Muxes := 1     
+	   2 Input   31 Bit        Muxes := 1     
+	   2 Input   12 Bit        Muxes := 6     
+	   5 Input   12 Bit        Muxes := 1     
+	   5 Input   10 Bit        Muxes := 1     
+	   4 Input   10 Bit        Muxes := 4     
+	   3 Input   10 Bit        Muxes := 1     
+	   2 Input   10 Bit        Muxes := 6     
+	   2 Input    9 Bit        Muxes := 1     
+	   4 Input    9 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 1     
+	   3 Input    8 Bit        Muxes := 1     
+	   3 Input    7 Bit        Muxes := 1     
+	   2 Input    7 Bit        Muxes := 4     
+	   4 Input    7 Bit        Muxes := 2     
+	   2 Input    6 Bit        Muxes := 3     
+	   4 Input    5 Bit        Muxes := 14    
+	   2 Input    5 Bit        Muxes := 14    
+	   2 Input    4 Bit        Muxes := 10    
+	   3 Input    4 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 53    
+	   4 Input    3 Bit        Muxes := 16    
+	   5 Input    3 Bit        Muxes := 3     
+	   3 Input    3 Bit        Muxes := 14    
+	   2 Input    2 Bit        Muxes := 49    
+	   4 Input    2 Bit        Muxes := 2     
+	   3 Input    2 Bit        Muxes := 16    
+	   7 Input    2 Bit        Muxes := 4     
+	   2 Input    1 Bit        Muxes := 163   
+	   3 Input    1 Bit        Muxes := 41    
+	   5 Input    1 Bit        Muxes := 27    
+	   4 Input    1 Bit        Muxes := 18    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:00:44 . Memory (MB): peak = 2699.418 ; gain = 398.961 ; free physical = 18557 ; free virtual = 27460
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:36 ; elapsed = 00:00:48 . Memory (MB): peak = 2699.418 ; gain = 398.961 ; free physical = 18447 ; free virtual = 27350
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:37 ; elapsed = 00:00:48 . Memory (MB): peak = 2699.418 ; gain = 398.961 ; free physical = 18443 ; free virtual = 27346
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:39 ; elapsed = 00:00:51 . Memory (MB): peak = 2699.418 ; gain = 398.961 ; free physical = 18445 ; free virtual = 27348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:40 ; elapsed = 00:00:53 . Memory (MB): peak = 2699.418 ; gain = 398.961 ; free physical = 18445 ; free virtual = 27348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:40 ; elapsed = 00:00:53 . Memory (MB): peak = 2699.418 ; gain = 398.961 ; free physical = 18445 ; free virtual = 27348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:41 ; elapsed = 00:00:53 . Memory (MB): peak = 2699.418 ; gain = 398.961 ; free physical = 18445 ; free virtual = 27348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:41 ; elapsed = 00:00:53 . Memory (MB): peak = 2699.418 ; gain = 398.961 ; free physical = 18445 ; free virtual = 27348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:41 ; elapsed = 00:00:53 . Memory (MB): peak = 2699.418 ; gain = 398.961 ; free physical = 18445 ; free virtual = 27348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:41 ; elapsed = 00:00:53 . Memory (MB): peak = 2699.418 ; gain = 398.961 ; free physical = 18445 ; free virtual = 27348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |     6|
+|2     |LUT1   |   218|
+|3     |LUT2   |   172|
+|4     |LUT3   |   247|
+|5     |LUT4   |   242|
+|6     |LUT5   |   143|
+|7     |LUT6   |   297|
+|8     |SRL16  |     3|
+|9     |FDCE   |   201|
+|10    |FDR    |    20|
+|11    |FDRE   |  2543|
+|12    |FDSE   |    86|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:41 ; elapsed = 00:00:53 . Memory (MB): peak = 2699.418 ; gain = 398.961 ; free physical = 18445 ; free virtual = 27348
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:32 ; elapsed = 00:00:44 . Memory (MB): peak = 2699.418 ; gain = 20.809 ; free physical = 18491 ; free virtual = 27394
+Synthesis Optimization Complete : Time (s): cpu = 00:00:41 ; elapsed = 00:00:53 . Memory (MB): peak = 2699.426 ; gain = 398.961 ; free physical = 18494 ; free virtual = 27397
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.16 ; elapsed = 00:00:00.17 . Memory (MB): peak = 2699.426 ; gain = 0.000 ; free physical = 18583 ; free virtual = 27486
+INFO: [Netlist 29-17] Analyzing 29 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2699.426 ; gain = 0.000 ; free physical = 18522 ; free virtual = 27425
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 23 instances were transformed.
+  FDR => FDRE: 20 instances
+  SRL16 => SRL16E: 3 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+267 Infos, 15 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:47 ; elapsed = 00:00:59 . Memory (MB): peak = 2699.426 ; gain = 399.035 ; free physical = 18591 ; free virtual = 27494
+INFO: [Common 17-600] The following parameters have non-default value.
+general.maxThreads
+INFO: [Common 17-1381] The checkpoint '/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.runs/riscv_io_axi_s_0_synth_1/riscv_io_axi_s_0.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP riscv_io_axi_s_0, cache-ID = eeb030aea2187f1d
+INFO: [Coretcl 2-1174] Renamed 354 cell refs.
+INFO: [Common 17-1381] The checkpoint '/mnt/d/vivado-risc-v/workspace/rocket64b1/vivado-nexys-a7-100t-riscv/nexys-a7-100t-riscv.runs/riscv_io_axi_s_0_synth_1/riscv_io_axi_s_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file riscv_io_axi_s_0_utilization_synth.rpt -pb riscv_io_axi_s_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Nov 15 19:28:49 2022...
